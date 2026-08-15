@@ -44,22 +44,26 @@ Streamlit は導入が速い一方、依存が大きく更新制御も限定的�
 
 ### 板・約定
 
-上下 N ティック（既定 5、最大は入力次第）を扱います。各価格に `quantity`, `previous_quantity`, `quantity_delta`, `executed_quantity`, `replenished_quantity`, `cancelled_quantity` を保持します。
+現在値に近い上下 N ティック（既定 5）を解析対象にします。各価格に `quantity`, `previous_quantity`, `quantity_delta`, `executed_quantity`, `replenished_quantity`, `cancelled_quantity` を保持します。
+
+スナップショットでは同一区間中の「新規注文」と「取消」を注文 ID 単位で分離できないため、保存則から**ネットの補充または取消**を推定します。
 
 ```text
-expected_after_execution = max(previous_quantity - execution_quantity, 0)
-replenishment = max(current_quantity - expected_after_execution, 0)
-cancellation  = max(expected_after_execution - current_quantity, 0)
+net_queue_flow = current_quantity - previous_quantity + execution_quantity
+replenishment = max(net_queue_flow, 0)
+cancellation  = max(-net_queue_flow, 0)
 TradeDelta = AggressiveBuyVolume - AggressiveSellVolume
 NormalizedTradeFlow = TradeDelta / (BuyVolume + SellVolume)
 OBI = (BidDepth - AskDepth) / (BidDepth + AskDepth)
 ```
 
-Weighted OBI は近い順に既定 `[1.0, .8, .6, .4, .2]` を掛けます。売り約定量/秒を Bid consumption、買い約定量/秒を Ask consumption とします。約定を受けながら閾値以上再補充された板を Absorption と推定します。重み・深さ・閾値は `AnalysisConfig` で変更できます。
+この式により、前回表示数量より大きな約定が発生した場合も、その区間中に最低限必要だった補充量を取りこぼしません。Weighted OBI は近い順に既定 `[1.0, .8, .6, .4, .2]` を掛けます。売り約定量/秒を Bid consumption、買い約定量/秒を Ask consumption とします。Absorption は、**同じ価格レベルで約定があり、かつ閾値以上のネット補充が確認された場合**にのみ推定します。重み・深さ・閾値は `AnalysisConfig` で変更できます。
 
 ### テクニカル
 
-日足から MA5/25/75 と 3 サンプル差の slope、EMA12−EMA26 の MACD、EMA9 signal/histogram、RSI14（逆張り命令ではなく momentum 表示）、20MA ±1σ/±2σ と BandWidth、20 日平均に対する VolumeRatio を計算します。価格と MA の順序および全 slope が揃ったときだけ UPTREND/DOWNTREND です。直前区間より BandWidth が 25% 超拡大すると volatility expansion とします。
+日足から MA5/25/75 と 3 サンプル差の slope、EMA12−EMA26 の MACD、EMA9 signal/histogram、Wilder 平滑の RSI14（逆張り命令ではなく momentum 表示）、20MA ±1σ/±2σ と BandWidth、20 日平均に対する VolumeRatio を計算します。
+
+MA は必要な期間が揃った場合だけその期間名で計算します。特に 75 日トレンドは、現在と 3 日前の 75 日窓を比較できる **78 点以上**の履歴がある場合だけ UPTREND/DOWNTREND を判定し、それ未満では NEUTRAL とします。Volatility expansion は 20 日窓を直前の 20 日窓と比較できる 40 点以上の履歴がある場合だけ判定します。
 
 ### Pressure Score v2
 
@@ -70,7 +74,7 @@ raw = clamp(50 + 50 × Σ(weight_i × normalized_i) / Σweight, 0, 100)
 smoothed[k] = 0.30 × raw[k] + 0.70 × smoothed[k-1]
 ```
 
-既定重みは Weighted OBI 20%、Trade Flow 20%、Replenishment balance 12%、Consumption balance 12%、Cancellation balance 8%、短期価格 Momentum 8%、MA Trend 10%、MACD histogram 6%、方向付き Volume 4% です。内訳は UI に符号付きで表示します。状態境界は `[20,40,60,80]`（強い売り / 売り / 中立 / 買い / 強い買い）で、重み・EMA・境界は `config.py` の dataclass を差し替え可能です。
+既定重みは Weighted OBI 20%、Trade Flow 20%、Replenishment balance 12%、Consumption balance 12%、Cancellation balance 8%、短期価格 Momentum 8%、MA Trend 10%、MACD histogram 6%、方向付き Volume 4% です。出来高は方向そのものとはみなさず、**平均超の出来高が価格モメンタムの方向を補強する場合だけ**正負の材料として加えます。内訳は UI に符号付きで表示します。状態境界は `[20,40,60,80]`（強い売り / 売り / 中立 / 買い / 強い買い）で、重み・EMA・境界は `config.py` の dataclass を差し替え可能です。
 
 ## シミュレーションと画面
 
