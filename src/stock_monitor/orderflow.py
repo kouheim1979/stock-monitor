@@ -46,9 +46,13 @@ class OrderFlowResult:
 class OrderFlowAnalyzer:
     """Compare two book snapshots and the executions between them.
 
-    This is intentionally deterministic and conservative. It does not claim to
-    reconstruct exchange-level order IDs. Instead, it estimates how much of a
-    displayed level was consumed by executions, replenished, or cancelled.
+    Snapshot feeds do not expose exchange order IDs, so replenishment and
+    cancellation are estimates based on queue conservation:
+
+        current = previous + additions - executions - cancellations
+
+    We report the net addition or net cancellation required to reconcile the
+    two snapshots with the observed executions at each price level.
     """
 
     def __init__(self, depth_levels: int = 5) -> None:
@@ -133,22 +137,14 @@ class OrderFlowAnalyzer:
         current_quantity: int,
         executed_quantity: int,
     ) -> LevelChange:
-        # If executions would have reduced the old displayed queue below the
-        # observed current quantity, the difference must have been replenished.
-        expected_after_execution = max(previous_quantity - executed_quantity, 0)
-        replenished = max(current_quantity - expected_after_execution, 0)
-
-        # Quantity that disappeared beyond what executions explain is treated
-        # as cancellation. This is an estimate because snapshot feeds do not
-        # expose exchange order IDs.
-        explained_current = expected_after_execution + replenished
-        cancelled = max(explained_current - current_quantity, 0)
-
-        # For the common case where executions do not fully explain the visible
-        # decrease, explicitly recover the unexplained disappearance.
-        visible_decrease = max(previous_quantity - current_quantity, 0)
-        execution_decrease = min(previous_quantity, executed_quantity)
-        cancelled = max(visible_decrease - execution_decrease, cancelled)
+        # Rearranging queue conservation gives:
+        # additions - cancellations = current - previous + executions.
+        # A snapshot cannot identify simultaneous additions and cancellations,
+        # so we expose the net positive side as replenishment and the net
+        # negative side as cancellation.
+        net_queue_flow = current_quantity - previous_quantity + executed_quantity
+        replenished = max(net_queue_flow, 0)
+        cancelled = max(-net_queue_flow, 0)
 
         return LevelChange(
             price=price,
