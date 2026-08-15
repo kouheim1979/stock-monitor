@@ -4,7 +4,15 @@
 
 > **重要:** 板の補充・取消・Absorption は、板スナップショットと約定の差分から得る**推定値**です。取引所の注文 ID を復元するものではなく、真の注文理由を保証しません。UI にもこの注意を常時表示します。
 
-## クイックスタート
+## iPhoneだけで確認する
+
+Render に無料デプロイすると、PCなしで iPhone Safari から `https://...onrender.com` のURLで確認できます。
+
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/kouheim1979/stock-monitor)
+
+Render にログインして内容を確認し、Blueprint の作成を承認してください。`render.yaml` がビルド・起動方法を設定します。無料Web Serviceは15分アクセスがないとスリープし、次のアクセス時に起動まで少し待つことがあります。
+
+## ローカルで確認する場合
 
 ```bash
 python -m venv .venv
@@ -14,7 +22,7 @@ pytest
 python -m stock_monitor
 ```
 
-Safari で `http://localhost:8000` を開きます。同一 Wi-Fi の iPhone からは、PC の LAN IP を調べて `http://<PCのIP>:8000` を開いてください（OS のファイアウォールで TCP 8000 を LAN 内だけ許可）。公開インターネットへ直接露出させないでください。`STOCK_MONITOR_HOST`、`STOCK_MONITOR_PORT`、`STOCK_MONITOR_SYMBOL` は環境変数で変更できます。
+Safari で `http://localhost:8000` を開きます。同一 Wi-Fi の iPhone からは、PC の LAN IP を調べて `http://<PCのIP>:8000` を開いてください（OS のファイアウォールで TCP 8000 を LAN 内だけ許可）。公開インターネットへ直接露出させないでください。`STOCK_MONITOR_HOST`、`STOCK_MONITOR_PORT`、`STOCK_MONITOR_SYMBOL` は環境変数で変更できます。クラウド環境では標準の `PORT` 環境変数を優先します。
 
 ## アーキテクチャ
 
