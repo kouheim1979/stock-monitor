@@ -36,54 +36,146 @@ class OrderFlowAnalyzer:
     def classify_trades(trades: tuple[Trade, ...], snapshot: BookSnapshot) -> tuple[Trade, ...]:
         best_ask = min((x.price for x in snapshot.asks), default=float("inf"))
         best_bid = max((x.price for x in snapshot.bids), default=-float("inf"))
-        return tuple(Trade(t.timestamp, t.price, t.quantity,
-                           t.aggressor if t.aggressor != Aggressor.UNKNOWN else
-                           (Aggressor.BUY if t.price >= best_ask else Aggressor.SELL if t.price <= best_bid else Aggressor.UNKNOWN))
-                     for t in trades)
+        return tuple(
+            Trade(
+                t.timestamp,
+                t.price,
+                t.quantity,
+                t.aggressor
+                if t.aggressor != Aggressor.UNKNOWN
+                else (
+                    Aggressor.BUY
+                    if t.price >= best_ask
+                    else Aggressor.SELL
+                    if t.price <= best_bid
+                    else Aggressor.UNKNOWN
+                ),
+            )
+            for t in trades
+        )
 
     def analyze(self, snapshot: BookSnapshot, trades: tuple[Trade, ...]) -> FlowMetrics:
         trades = self.classify_trades(trades, self.previous or snapshot)
         buy = sum(t.quantity for t in trades if t.aggressor == Aggressor.BUY)
         sell = sum(t.quantity for t in trades if t.aggressor == Aggressor.SELL)
-        elapsed = max((snapshot.timestamp - self.previous.timestamp).total_seconds(), 1) if self.previous else 1
-        totals = {"bid_rep": 0., "ask_rep": 0., "bid_can": 0., "ask_can": 0.}
+        elapsed = (
+            max((snapshot.timestamp - self.previous.timestamp).total_seconds(), 1)
+            if self.previous
+            else 1
+        )
+
+        totals = {
+            "bid_rep": 0.0,
+            "ask_rep": 0.0,
+            "bid_can": 0.0,
+            "ask_can": 0.0,
+            "bid_exec": 0.0,
+            "ask_exec": 0.0,
+        }
         previous_maps = self._maps(self.previous) if self.previous else {Side.BID: {}, Side.ASK: {}}
         current_maps = self._maps(snapshot)
+        new_levels: dict[tuple[Side, float], LevelState] = {}
+        bid_absorption = False
+        ask_absorption = False
+
         for side in Side:
             for price in set(previous_maps[side]) | set(current_maps[side]):
-                old, current = previous_maps[side].get(price, 0), current_maps[side].get(price, 0)
-                executed = sum(t.quantity for t in trades if t.price == price and
-                               ((side == Side.BID and t.aggressor == Aggressor.SELL) or
-                                (side == Side.ASK and t.aggressor == Aggressor.BUY)))
-                expected = max(old - executed, 0)
-                replenished = max(current - expected, 0) if self.previous else 0
-                cancelled = max(expected - current, 0) if self.previous else 0
-                self.levels[(side, price)] = LevelState(price, current, old, current-old, executed, replenished, cancelled)
+                old = previous_maps[side].get(price, 0)
+                current = current_maps[side].get(price, 0)
+                executed = sum(
+                    t.quantity
+                    for t in trades
+                    if t.price == price
+                    and (
+                        (side == Side.BID and t.aggressor == Aggressor.SELL)
+                        or (side == Side.ASK and t.aggressor == Aggressor.BUY)
+                    )
+                )
+
+                # Queue conservation:
+                # current = previous + additions - executions - cancellations
+                # Therefore additions - cancellations = current - previous + executions.
+                # A snapshot feed cannot identify simultaneous additions and cancellations,
+                # so expose the observable NET positive side as replenishment and the NET
+                # negative side as cancellation. This also correctly handles executions
+                # larger than the previously displayed queue (which implies replenishment/
+                # hidden liquidity occurred during the interval).
+                net_queue_flow = current - old + executed if self.previous else 0
+                replenished = max(net_queue_flow, 0)
+                cancelled = max(-net_queue_flow, 0)
+
+                state = LevelState(
+                    price,
+                    current,
+                    old,
+                    current - old,
+                    executed,
+                    replenished,
+                    cancelled,
+                )
+                new_levels[(side, price)] = state
                 totals[f"{side.value}_rep"] += replenished
                 totals[f"{side.value}_can"] += cancelled
+                totals[f"{side.value}_exec"] += executed
+
+                if executed > 0 and replenished >= self.config.absorption_min_replenishment:
+                    if side == Side.BID:
+                        bid_absorption = True
+                    else:
+                        ask_absorption = True
+
+        self.levels = new_levels
         obi = self._imbalance(snapshot, weighted=False)
         weighted = self._imbalance(snapshot, weighted=True)
         total_flow = buy + sell
         self.previous = snapshot
-        return FlowMetrics(buy, sell, buy-sell, (buy-sell)/total_flow if total_flow else 0,
-                           obi, weighted, totals["bid_rep"], totals["ask_rep"],
-                           totals["bid_can"], totals["ask_can"], sell/elapsed, buy/elapsed,
-                           totals["bid_rep"] >= self.config.absorption_min_replenishment and sell > 0,
-                           totals["ask_rep"] >= self.config.absorption_min_replenishment and buy > 0)
 
-    @staticmethod
-    def _maps(snapshot: BookSnapshot | None) -> dict[Side, dict[float, float]]:
+        return FlowMetrics(
+            buy,
+            sell,
+            buy - sell,
+            (buy - sell) / total_flow if total_flow else 0,
+            obi,
+            weighted,
+            totals["bid_rep"],
+            totals["ask_rep"],
+            totals["bid_can"],
+            totals["ask_can"],
+            totals["bid_exec"] / elapsed,
+            totals["ask_exec"] / elapsed,
+            bid_absorption,
+            ask_absorption,
+        )
+
+    def _maps(self, snapshot: BookSnapshot | None) -> dict[Side, dict[float, float]]:
         if snapshot is None:
             return {Side.BID: {}, Side.ASK: {}}
-        return {Side.BID: {x.price: x.quantity for x in snapshot.bids},
-                Side.ASK: {x.price: x.quantity for x in snapshot.asks}}
+        n = self.config.depth_levels
+        bids = sorted(snapshot.bids, key=lambda x: x.price, reverse=True)[:n]
+        asks = sorted(snapshot.asks, key=lambda x: x.price)[:n]
+        return {
+            Side.BID: {x.price: x.quantity for x in bids},
+            Side.ASK: {x.price: x.quantity for x in asks},
+        }
 
     def _imbalance(self, snapshot: BookSnapshot, weighted: bool) -> float:
         n = self.config.depth_levels
         bids = sorted(snapshot.bids, key=lambda x: x.price, reverse=True)[:n]
         asks = sorted(snapshot.asks, key=lambda x: x.price)[:n]
+
         def depth(levels):
-            return sum(x.quantity * (self.config.depth_weights[i] if weighted and i < len(self.config.depth_weights) else 1)
-                       for i, x in enumerate(levels))
+            total = 0.0
+            for i, level in enumerate(levels):
+                if weighted and self.config.depth_weights:
+                    weight = (
+                        self.config.depth_weights[i]
+                        if i < len(self.config.depth_weights)
+                        else self.config.depth_weights[-1]
+                    )
+                else:
+                    weight = 1.0
+                total += level.quantity * weight
+            return total
+
         bid, ask = depth(bids), depth(asks)
-        return (bid-ask)/(bid+ask) if bid+ask else 0
+        return (bid - ask) / (bid + ask) if bid + ask else 0
