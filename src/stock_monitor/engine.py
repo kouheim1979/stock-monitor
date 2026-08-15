@@ -1,7 +1,7 @@
 """Application service connecting market data, analytics, scoring, and events."""
 
 import logging
-from dataclasses import asdict, dataclass
+from dataclasses import dataclass
 
 from .adapters import MarketDataAdapter
 from .config import AnalysisConfig
@@ -33,27 +33,85 @@ class StockMonitor:
     def process(self, frame: MarketFrame) -> AnalysisResult:
         flow = self.orderflow.analyze(frame.snapshot, frame.trades)
         technical = calculate_technicals(frame.daily_closes, frame.daily_volumes)
-        cancellation_balance = PressureScore.bounded_ratio(flow.ask_cancellation-flow.bid_cancellation, 5000)
-        replenishment = PressureScore.bounded_ratio(flow.bid_replenishment-flow.ask_replenishment, 5000)
-        consumption = PressureScore.bounded_ratio(flow.ask_consumed_per_second-flow.bid_consumed_per_second, 1000)
-        momentum = 0
-        if len(frame.daily_closes) > 1:
-            momentum = PressureScore.bounded_ratio((frame.daily_closes[-1]/frame.daily_closes[-2]-1), .02)
-        macd_signal = max(-1, min(1, technical.macd_histogram/(frame.snapshot.last_price*.01))) if frame.snapshot.last_price else 0
-        volume_signal = max(-1, min(1, (technical.volume_ratio-1)/2)) * (1 if momentum >= 0 else -1)
-        pressure = self.scorer.calculate({"book": flow.weighted_obi, "trade_flow": flow.normalized_trade_flow,
-            "replenishment": replenishment, "consumption": consumption, "cancellation": cancellation_balance,
-            "momentum": momentum, "trend": technical.trend_signal, "macd": macd_signal, "volume": volume_signal})
-        events = []
+
+        cancellation_balance = PressureScore.bounded_ratio(
+            flow.ask_cancellation - flow.bid_cancellation, 5000
+        )
+        replenishment = PressureScore.bounded_ratio(
+            flow.bid_replenishment - flow.ask_replenishment, 5000
+        )
+        consumption = PressureScore.bounded_ratio(
+            flow.ask_consumed_per_second - flow.bid_consumed_per_second, 1000
+        )
+
+        momentum = 0.0
+        if len(frame.daily_closes) > 1 and frame.daily_closes[-2]:
+            momentum = PressureScore.bounded_ratio(
+                frame.daily_closes[-1] / frame.daily_closes[-2] - 1,
+                0.02,
+            )
+
+        macd_signal = (
+            max(
+                -1.0,
+                min(
+                    1.0,
+                    technical.macd_histogram / (frame.snapshot.last_price * 0.01),
+                ),
+            )
+            if frame.snapshot.last_price
+            else 0.0
+        )
+
+        # Relative volume is supporting evidence, not a direction by itself.
+        # Only above-average volume reinforces the sign of price momentum;
+        # flat momentum or below-average volume contributes no directional bias.
+        volume_magnitude = max(0.0, min(1.0, (technical.volume_ratio - 1.0) / 2.0))
+        if momentum > 0:
+            volume_signal = volume_magnitude
+        elif momentum < 0:
+            volume_signal = -volume_magnitude
+        else:
+            volume_signal = 0.0
+
+        pressure = self.scorer.calculate(
+            {
+                "book": flow.weighted_obi,
+                "trade_flow": flow.normalized_trade_flow,
+                "replenishment": replenishment,
+                "consumption": consumption,
+                "cancellation": cancellation_balance,
+                "momentum": momentum,
+                "trend": technical.trend_signal,
+                "macd": macd_signal,
+                "volume": volume_signal,
+            }
+        )
+
+        events: list[str] = []
         for trade in frame.trades:
-            events.append(f"{trade.timestamp:%H:%M:%S} {trade.price:g}円 {trade.aggressor.value} 約定 {trade.quantity:g}株")
-        if flow.bid_replenishment: events.append(f"買い板 {flow.bid_replenishment:g}株補充（推定）")
-        if flow.ask_replenishment: events.append(f"売り板 {flow.ask_replenishment:g}株補充（推定）")
-        if flow.bid_absorption: events.append("BID ABSORPTION detected（推定）")
-        if flow.ask_absorption: events.append("ASK ABSORPTION detected（推定）")
-        if self._last_state and self._last_state != pressure.state: events.append(f"Pressure state: {self._last_state} → {pressure.state}")
+            events.append(
+                f"{trade.timestamp:%H:%M:%S} {trade.price:g}円 "
+                f"{trade.aggressor.value} 約定 {trade.quantity:g}株"
+            )
+        if flow.bid_replenishment:
+            events.append(f"買い板 {flow.bid_replenishment:g}株補充（推定）")
+        if flow.ask_replenishment:
+            events.append(f"売り板 {flow.ask_replenishment:g}株補充（推定）")
+        if flow.bid_absorption:
+            events.append("BID ABSORPTION detected（推定）")
+        if flow.ask_absorption:
+            events.append("ASK ABSORPTION detected（推定）")
+        if self._last_state and self._last_state != pressure.state:
+            events.append(f"Pressure state: {self._last_state} → {pressure.state}")
         self._last_state = pressure.state
-        logger.info("analysis symbol=%s pressure=%.1f state=%s", frame.snapshot.symbol, pressure.smoothed, pressure.state)
+
+        logger.info(
+            "analysis symbol=%s pressure=%.1f state=%s",
+            frame.snapshot.symbol,
+            pressure.smoothed,
+            pressure.state,
+        )
         return AnalysisResult(frame, flow, technical, pressure, tuple(events))
 
     def run(self, symbol: str):
