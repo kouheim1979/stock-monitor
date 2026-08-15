@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: stock-monitor
+    runtime: python
+    plan: free
+    buildCommand: pip install -e .
+    startCommand: python -m stock_monitor
+    healthCheckPath: /
+    autoDeployTrigger: checksPass
+    envVars:
+      - key: STOCK_MONITOR_HOST
+        value: 0.0.0.0
+      - key: STOCK_MONITOR_SYMBOL
+        value: "7203"
