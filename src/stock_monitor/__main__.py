@@ -1,8 +1,8 @@
-"""Start the no-credentials simulation dashboard."""
+"""Start the iPhone-friendly long-term trend dashboard."""
 
 import os
 
-from .dashboard import serve
+from .trend_dashboard import serve
 
 
 if __name__ == "__main__":
@@ -10,5 +10,4 @@ if __name__ == "__main__":
     serve(
         os.getenv("STOCK_MONITOR_HOST", "0.0.0.0"),
         port,
-        os.getenv("STOCK_MONITOR_SYMBOL", "7203"),
     )
