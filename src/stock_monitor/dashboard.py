@@ -38,7 +38,30 @@ function drawTrend(h){const c=document.getElementById('trendChart'),o=setupCanva
 async function load(){try{let d=await(await fetch('/api')).json();document.getElementById('state').textContent=d.pressure.state.replaceAll('_',' ');document.getElementById('score').textContent=d.pressure.smoothed.toFixed(1)+' / 100';document.getElementById('quote').textContent=`${d.symbol} ${d.name}  ¥${d.price}  (${d.change>=0?'+':''}${d.change})`;document.getElementById('parts').innerHTML=Object.entries(d.pressure.components).map(([k,v])=>row(names[k],(v>=0?'+':'')+v)).join('');document.getElementById('book').innerHTML=[...d.asks.slice().reverse().map(x=>`<tr class=sell><td>ASK</td><td>${x.price}</td><td>${x.quantity}</td></tr>`),...d.bids.map(x=>`<tr class=buy><td>BID</td><td>${x.price}</td><td>${x.quantity}</td></tr>`)].join('');document.getElementById('trades').innerHTML=d.trades.map(x=>`<tr><td>${x.timestamp.slice(11,19)}</td><td>${x.price}</td><td>${x.quantity}</td><td>${x.aggressor}</td></tr>`).join('');document.getElementById('flow').innerHTML=['weighted_obi','trade_delta','bid_replenishment','ask_replenishment','bid_cancellation','ask_cancellation','bid_consumed_per_second','ask_consumed_per_second','bid_absorption','ask_absorption'].map(k=>row(k,d.flow[k])).join('');document.getElementById('tech').innerHTML=['ma5','ma25','ma75','trend','macd','macd_signal','macd_histogram','rsi14','bandwidth','volatility_expansion','volume_ratio'].map(k=>row(k,d.technical[k])).join('');document.getElementById('events').innerHTML=d.events.map(x=>'<div>'+x+'</div>').join('');document.getElementById('notice').textContent=d.notice;draw(d.history);}catch(e){document.getElementById('state').textContent='SIMULATION ERROR';}}
 function arrow(direction){return direction==='上向き'?'↗':direction==='下向き'?'↘':'→'}
 function trendClass(direction){return direction==='上向き'?'up':direction==='下向き'?'down':'neutral'}
-async function loadTrend(query){const button=document.getElementById('trendButton'),status=document.getElementById('trendStatus'),result=document.getElementById('trendResult');button.disabled=true;status.className='muted';status.textContent='日足データを取得して計算中…';try{const response=await fetch('/api/trend?q='+encodeURIComponent(query));const d=await response.json();if(!response.ok||d.error)throw new Error(d.error||'取得に失敗しました');document.getElementById('trendTitle').textContent=`${d.symbol} ${d.name}`;document.getElementById('trendMeta').textContent=`${d.as_of} 終値 ¥${d.price.toLocaleString('ja-JP',{maximumFractionDigits:2})}`;document.getElementById('trendGrade').textContent=`${d.stars} ${d.label}`;document.getElementById('trendOrder').innerHTML=`<b>並び順:</b> ${d.order}`;document.getElementById('maGrid').innerHTML=Object.entries(d.moving_averages).map(([period,m])=>`<div class=ma><div>MA${period}</div><strong>¥${m.value.toLocaleString('ja-JP',{maximumFractionDigits:2})}</strong><div class=${trendClass(m.direction)}>${arrow(m.direction)} ${m.direction}（5日 ${m.slope_5d_pct>=0?'+':''}${m.slope_5d_pct.toFixed(2)}%）</div><small>株価との差 ${m.price_distance_pct>=0?'+':''}${m.price_distance_pct.toFixed(2)}%</small></div>`).join('');document.getElementById('trendSource').textContent=`データ元: ${d.source}。売買判断ではなくテクニカル状態の可視化です。`;result.hidden=false;status.textContent='';drawTrend(d.history);}catch(e){result.hidden=true;status.className='error';status.textContent=e.message;}finally{button.disabled=false;}}
+async function loadTrend(query){
+  const button=document.getElementById('trendButton'),status=document.getElementById('trendStatus'),result=document.getElementById('trendResult');
+  button.disabled=true;status.className='muted';status.textContent='日足データを取得して計算中…';
+  try{
+    const url=new URL('/api/trend',window.location.origin);
+    url.searchParams.set('q',query);
+    const response=await fetch(url.href,{cache:'no-store',headers:{'Accept':'application/json'}});
+    const text=await response.text();
+    let d;
+    try{d=JSON.parse(text);}catch(_){throw new Error(`サーバー応答を読み取れませんでした (HTTP ${response.status})`);}
+    if(!response.ok||d.error)throw new Error(d.error||`取得に失敗しました (HTTP ${response.status})`);
+    document.getElementById('trendTitle').textContent=`${d.symbol} ${d.name}`;
+    document.getElementById('trendMeta').textContent=`${d.as_of} 終値 ¥${Number(d.price).toLocaleString('ja-JP',{maximumFractionDigits:2})}`;
+    document.getElementById('trendGrade').textContent=`${d.stars} ${d.label}`;
+    document.getElementById('trendOrder').innerHTML=`<b>並び順:</b> ${d.order}`;
+    document.getElementById('maGrid').innerHTML=Object.entries(d.moving_averages).map(([period,m])=>`<div class=ma><div>MA${period}</div><strong>¥${Number(m.value).toLocaleString('ja-JP',{maximumFractionDigits:2})}</strong><div class=${trendClass(m.direction)}>${arrow(m.direction)} ${m.direction}（5日 ${m.slope_5d_pct>=0?'+':''}${Number(m.slope_5d_pct).toFixed(2)}%）</div><small>株価との差 ${m.price_distance_pct>=0?'+':''}${Number(m.price_distance_pct).toFixed(2)}%</small></div>`).join('');
+    document.getElementById('trendSource').textContent=`データ元: ${d.source}。売買判断ではなくテクニカル状態の可視化です。`;
+    result.hidden=false;status.textContent='';drawTrend(d.history);
+  }catch(e){
+    result.hidden=true;status.className='error';
+    const message=e&&typeof e.message==='string'&&e.message?e.message:'長期トレンド分析に失敗しました';
+    status.textContent=message==='The string did not match the expected pattern.'?'通信URLの生成に失敗しました。ページを再読み込みしてください。':message;
+  }finally{button.disabled=false;}
+}
 document.getElementById('trendForm').addEventListener('submit',e=>{e.preventDefault();loadTrend(document.getElementById('trendQuery').value.trim());});
 load();setInterval(load,2000);loadTrend(document.getElementById('trendQuery').value);
 </script></html>"""
@@ -72,6 +95,7 @@ def serve(host: str = "0.0.0.0", port: int = 8000, symbol: str = "7203") -> None
                 self.send_response(200); self.send_header("Content-Type", "application/json; charset=utf-8")
             else:
                 body = HTML.encode(); self.send_response(200); self.send_header("Content-Type", "text/html; charset=utf-8")
+            self.send_header("Cache-Control", "no-store")
             self.send_header("Content-Length", str(len(body))); self.end_headers(); self.wfile.write(body)
         def log_message(self, format, *args): return
     print(f"Stock Monitor: http://{host}:{port}")
