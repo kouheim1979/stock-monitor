@@ -6,7 +6,7 @@ from urllib.parse import parse_qs, urlparse
 
 from .market_history import MarketHistoryError, get_long_term_analysis
 
-BUILD = "0.3.2"
+BUILD = "0.3.3"
 
 HTML = r'''<!doctype html>
 <html lang="ja">
@@ -14,7 +14,7 @@ HTML = r'''<!doctype html>
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Stock Trend Monitor</title>
 <style>
-:root{color-scheme:dark}*{box-sizing:border-box}body{margin:0;background:#07101d;color:#e8eef7;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}.wrap{max-width:900px;margin:auto;padding:16px}.card{background:#101c2d;border-radius:16px;padding:16px;margin-bottom:14px}h1{font-size:27px;margin:0 0 6px}h2{font-size:20px;margin:0 0 12px}.sub,.muted{color:#9dafc7}.form{display:flex;gap:10px;flex-wrap:wrap}.form input{flex:1;min-width:190px;background:#07101d;color:#fff;border:1px solid #41536d;border-radius:12px;padding:14px;font-size:18px}.form button{border:0;border-radius:12px;padding:14px 20px;background:#55e69c;color:#07101d;font-size:17px;font-weight:800}.form button:disabled{opacity:.55}.error{color:#ff7185;margin-top:10px;white-space:pre-wrap}.ok{color:#55e69c}.headline{font-size:24px;font-weight:800;margin-top:12px}.grade{font-size:25px;font-weight:800;margin:8px 0}.order{font-size:15px;overflow-wrap:anywhere}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:12px}.ma{background:#13233b;border-radius:12px;padding:12px}.ma .v{font-size:21px;font-weight:800}.up{color:#55e69c}.down{color:#ff7185}.flat{color:#ffc857}canvas{display:block;width:100%;height:260px;background:#0b1626;border-radius:12px;margin-top:12px}.legend{display:flex;gap:12px;flex-wrap:wrap;font-size:12px;color:#bdc9d8;margin-top:8px}.dot:before{content:"●";margin-right:4px}.c0:before{color:#fff}.c25:before{color:#55e69c}.c75:before{color:#ffc857}.c125:before{color:#5ab8ff}.c200:before{color:#df7cff}.build{font-size:11px;color:#73849a;text-align:right}@media(min-width:700px){.grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
+:root{color-scheme:dark}*{box-sizing:border-box}body{margin:0;background:#07101d;color:#e8eef7;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}.wrap{max-width:900px;margin:auto;padding:16px}.card{background:#101c2d;border-radius:16px;padding:16px;margin-bottom:14px}h1{font-size:27px;margin:0 0 6px}.sub,.muted{color:#9dafc7}.form{display:flex;gap:10px;flex-wrap:wrap}.form input{flex:1;min-width:190px;background:#07101d;color:#fff;border:1px solid #41536d;border-radius:12px;padding:14px;font-size:18px}.form button{border:0;border-radius:12px;padding:14px 20px;background:#55e69c;color:#07101d;font-size:17px;font-weight:800}.form button:disabled{opacity:.55}.error{color:#ff7185;margin-top:10px;white-space:pre-wrap}.ok{color:#55e69c}.headline{font-size:24px;font-weight:800;margin-top:12px}.grade{font-size:25px;font-weight:800;margin:8px 0}.order{font-size:15px;overflow-wrap:anywhere}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:12px}.ma{background:#13233b;border-radius:12px;padding:12px}.ma .v{font-size:21px;font-weight:800}.up{color:#55e69c}.down{color:#ff7185}.flat{color:#ffc857}canvas{display:block;width:100%;height:260px;background:#0b1626;border-radius:12px;margin-top:12px}.legend{display:flex;gap:12px;flex-wrap:wrap;font-size:12px;color:#bdc9d8;margin-top:8px}.dot:before{content:"●";margin-right:4px}.c0:before{color:#fff}.c25:before{color:#55e69c}.c75:before{color:#ffc857}.c125:before{color:#5ab8ff}.c200:before{color:#df7cff}.build{font-size:11px;color:#73849a;text-align:right}@media(min-width:700px){.grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
 </style>
 <div class="wrap">
   <div class="card">
@@ -24,8 +24,8 @@ HTML = r'''<!doctype html>
       <input id="q" value="8301" inputmode="search" autocomplete="off" placeholder="8301 または 三菱UFJ">
       <button id="b" type="submit">分析する</button>
     </form>
-    <div id="status" class="muted" style="margin-top:10px">銘柄コードまたは会社名を入力してください。</div>
-    <div class="build">build 0.3.2</div>
+    <div id="status" class="muted" style="margin-top:10px">銘柄コードを入れて「分析する」を押してください。4桁コードが最も安定します。</div>
+    <div class="build">build 0.3.3</div>
   </div>
   <div id="result" class="card" hidden>
     <div id="title" class="headline"></div>
@@ -55,16 +55,16 @@ async function run(){
   var text=q.value.trim();if(!text){status.className='error';status.textContent='銘柄コードまたは会社名を入力してください。';return}
   b.disabled=true;result.hidden=true;status.className='muted';status.textContent='日足データを取得中…';
   try{
-    var response=await fetch('/api/trend?q='+encodeURIComponent(text)+'&_='+Date.now(),{cache:'no-store'});
+    var response=await fetch('/api/trend?q='+encodeURIComponent(text),{cache:'no-store'});
     var body=await response.text(),d;try{d=JSON.parse(body)}catch(e){throw new Error('サーバー応答を読み取れませんでした (HTTP '+response.status+')')}
     if(!response.ok||d.error)throw new Error(d.error||('取得に失敗しました (HTTP '+response.status+')'));
     document.getElementById('title').textContent=d.symbol+' '+d.name;document.getElementById('meta').textContent=d.as_of+' 終値 ¥'+fmt(d.price);document.getElementById('grade').textContent=d.stars+' '+d.label;document.getElementById('order').textContent='並び順: '+d.order;
     var html='';Object.keys(d.moving_averages).forEach(function(p){var m=d.moving_averages[p];html+='<div class="ma"><div>MA'+p+'</div><div class="v">¥'+fmt(m.value)+'</div><div class="'+cls(m.direction)+'">'+arrow(m.direction)+' '+m.direction+'（5日 '+(m.slope_5d_pct>=0?'+':'')+Number(m.slope_5d_pct).toFixed(2)+'%）</div><div class="muted" style="font-size:12px">株価との差 '+(m.price_distance_pct>=0?'+':'')+Number(m.price_distance_pct).toFixed(2)+'%</div></div>'});document.getElementById('grid').innerHTML=html;
-    document.getElementById('source').textContent='データ元: '+d.source+'。売買判断ではなくテクニカル状態の可視化です。';result.hidden=false;status.className='ok';status.textContent='取得完了';draw(d.history);
+    document.getElementById('source').textContent='データ元: '+d.source+'。売買判断ではなくテクニカル状態の可視化です。';result.hidden=false;status.className='ok';status.textContent=d.stale?'保存済みデータで表示中':(d.cached?'取得完了（当日キャッシュ）':'取得完了');draw(d.history);
   }catch(e){status.className='error';status.textContent=(e&&e.message)?e.message:'長期トレンド分析に失敗しました';}
   finally{b.disabled=false}
 }
-f.addEventListener('submit',function(e){e.preventDefault();run()});run();
+f.addEventListener('submit',function(e){e.preventDefault();run()});
 })();
 </script>
 </html>'''
