@@ -14,6 +14,12 @@ from urllib.request import Request, urlopen
 
 from . import market_history as legacy
 
+# Keep references to the original legacy functions because __main__ replaces
+# market_history entry points with this module before the web server starts.
+_LEGACY_GET_LONG_TERM_ANALYSIS = legacy.get_long_term_analysis
+_LEGACY_PROVIDER_STATUS = legacy.provider_status
+_LEGACY_ANALYZE_ROWS = legacy.analyze_rows
+
 IRBANK_BASE_URL = "https://api.irbank.net/v1"
 CACHE_TTL_SECONDS = 12 * 60 * 60
 _CACHE_LOCK = RLock()
@@ -199,7 +205,7 @@ def _irbank_analysis(query: str) -> dict:
             return result
 
     market = _fetch_irbank_history(resolved)
-    analysis = legacy.analyze_rows(market["rows"])
+    analysis = _LEGACY_ANALYZE_ROWS(market["rows"])
     result = {
         "symbol": market["symbol"],
         "code": market["code"],
@@ -228,7 +234,7 @@ def get_long_term_analysis(query: str) -> dict:
         irbank_error = "IRBANK APIキー未設定"
 
     try:
-        return legacy.get_long_term_analysis(query)
+        return _LEGACY_GET_LONG_TERM_ANALYSIS(query)
     except legacy.MarketHistoryError as exc:
         raise legacy.MarketHistoryError(
             "日足を取得できませんでした。"
@@ -241,5 +247,5 @@ def provider_status() -> dict:
         "primary": "irbank",
         "irbank_configured": bool(_api_key()),
         "irbank_cached_symbols": len(_RESULT_CACHE),
-        "fallback": legacy.provider_status(),
+        "fallback": _LEGACY_PROVIDER_STATUS(),
     }
