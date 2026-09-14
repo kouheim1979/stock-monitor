@@ -1,0 +1,44 @@
+name: refresh pages stock data
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Japan market hours: 09:15-16:15 JST, weekdays.
+    - cron: "15 0-7 * * 1-5"
+  push:
+    branches: [main]
+    paths:
+      - "scripts/refresh_static_data.py"
+      - "src/stock_monitor/**"
+      - ".github/workflows/refresh-pages-data.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-pages-stock-data
+  cancel-in-progress: true
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m pip install --upgrade pip
+      - run: pip install -e .
+      - name: Refresh stock snapshots
+        run: python scripts/refresh_static_data.py
+      - name: Commit updated snapshot
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/stocks.json
+          if git diff --cached --quiet; then
+            echo "No data changes"
+          else
+            git commit -m "data: refresh stock snapshot"
+            git push
+          fi
