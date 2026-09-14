@@ -1,18 +1,43 @@
-# stock-monitor
+# K-Stock Commander / stock-monitor
 
-日本株の板・歩み値・日足を、**観測・解析・表示だけ**行う個人向けリアルタイム・モニターです。発注、口座操作、自動売買は実装していません。証券 API がなくても同梱 JSON リプレイで全機能を確認できます。
+日本株を **「長期トレンド × 押し目 × モメンタム × 変動率」** で採点し、iPhoneで素早く確認する個人向けテクニカル判断ダッシュボードです。
 
-> **重要:** 板の補充・取消・Absorption は、板スナップショットと約定の差分から得る**推定値**です。取引所の注文 ID を復元するものではなく、真の注文理由を保証しません。UI にもこの注意を常時表示します。
+> 発注・口座操作・自動売買はしません。表示するスコア・指値・崩れ確認ラインは、日足データから機械的に計算する参考値です。決算、ニュース、PER/PBR、配当、信用需給、呼値・単元株数は証券会社等で別途確認してください。
 
-## iPhoneだけで確認する
+## v1.0 の主な機能
 
-Render に無料デプロイすると、PCなしで iPhone Safari から `https://...onrender.com` のURLで確認できます。
+- 銘柄コード / 会社名検索
+- MA25 / 75 / 125 / 200 の長期トレンド判定
+- 0〜100 の **TECH SCORE** と A〜E ランク
+- 「攻め / 本命 / 深押し」の3段階参考指値
+- 20日・60日モメンタム、MA25乖離、年率換算ボラティリティ
+- 60日高値からのドローダウン、上値見直し・崩れ確認ライン
+- スコアを「なぜその点数か」まで内訳表示
+- iPhone localStorage に予算・売買単位・ウォッチリストを保存
+- ウォッチリスト一括採点とランキング
+- 価格 / MAチャート
+- Yahoo Finance 日足を Jina Reader 経由で取得し、12時間サーバーキャッシュ
+- 取得不能時は既存の直接データ取得ルートへフォールバック
 
-[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/kouheim1979/stock-monitor)
+## ロジック
 
-Render にログインして内容を確認し、Blueprint の作成を承認してください。`render.yaml` がビルド・起動方法を設定します。無料Web Serviceは15分アクセスがないとスリープし、次のアクセス時に起動まで少し待つことがあります。
+ベースの日足分析は 205営業日以上のデータから MA25 / 75 / 125 / 200 と5日傾きを計算します。`strategy.py` が次の要素を説明可能な形で合成します。
 
-## ローカルで確認する場合
+```text
+TECH SCORE
+  = 長期トレンド
+  + MAの傾き
+  + MAの並び順
+  + MA25からの乖離（押し目 / 過熱）
+  + 20日モメンタム
+  - 高ボラティリティのペナルティ
+```
+
+強い下降 + 20日急落 + 短中期MA下向きの場合は falling-knife 判定を行い、スコア上限を抑えます。
+
+参考指値は20日の日次変動率と MA25 / MA75 を使って3段階に配置します。TSEの実際の呼値単位は銘柄・価格帯等で異なるため、このアプリでは1円丸めの「参考値」として表示します。
+
+## 起動
 
 ```bash
 python -m venv .venv
@@ -22,75 +47,64 @@ pytest
 python -m stock_monitor
 ```
 
-Safari で `http://localhost:8000` を開きます。同一 Wi-Fi の iPhone からは、PC の LAN IP を調べて `http://<PCのIP>:8000` を開いてください（OS のファイアウォールで TCP 8000 を LAN 内だけ許可）。公開インターネットへ直接露出させないでください。`STOCK_MONITOR_HOST`、`STOCK_MONITOR_PORT`、`STOCK_MONITOR_SYMBOL` は環境変数で変更できます。クラウド環境では標準の `PORT` 環境変数を優先します。
+ブラウザで `http://localhost:8000` を開きます。
 
-## アーキテクチャ
-
-```text
-MarketDataAdapter (Mock / Replay / 将来の公式API)
-  ↓
-Book Level State (previous, delta, execution, replenishment, cancellation)
-  ↓
-Trade classification (Aggressive Buy / Sell)
-  ↓
-OrderFlowAnalyzer (OBI, weighted OBI, absorption, consume rate)
-  ↓
-Technical Indicators (SMA/EMA, MA, MACD, RSI, Bollinger, volume)
-  ↓
-Signal normalization / EMA smoothing
-  ↓
-PressureScore
-  ↓
-Dependency-free responsive Dashboard
-```
-
-取得・解析・UI は分離されています。`MarketDataAdapter` は `get_snapshot`、`get_recent_trades`、`stream` を定義します。`ReplayMarketDataAdapter` は JSON、`MockMarketDataAdapter` は同梱シナリオを使います。将来の証券会社実装は、**公式仕様を確認してから**このポートに追加します。現時点では仕様・認証情報が指定されていないため、推測したリアル API 実装は置いていません。
-
-Streamlit は導入が速い一方、依存が大きく更新制御も限定的です。FastAPI + HTML/JS は API 拡張性が高い一方、この単一利用シミュレーターには ASGI 依存が増えます。そこで初版は標準ライブラリ HTTP server + responsive HTML/JS を採用しました。ゼロ依存で軽量、iPhone でも表示でき、解析エンジンと完全分離されています。本番公開時には認証・TLS・堅牢な ASGI サーバーを追加してください。
-
-## 解析仕様
-
-### 板・約定
-
-現在値に近い上下 N ティック（既定 5）を解析対象にします。各価格に `quantity`, `previous_quantity`, `quantity_delta`, `executed_quantity`, `replenished_quantity`, `cancelled_quantity` を保持します。
-
-スナップショットでは同一区間中の「新規注文」と「取消」を注文 ID 単位で分離できないため、保存則から**ネットの補充または取消**を推定します。
+環境変数:
 
 ```text
-net_queue_flow = current_quantity - previous_quantity + execution_quantity
-replenishment = max(net_queue_flow, 0)
-cancellation  = max(-net_queue_flow, 0)
-TradeDelta = AggressiveBuyVolume - AggressiveSellVolume
-NormalizedTradeFlow = TradeDelta / (BuyVolume + SellVolume)
-OBI = (BidDepth - AskDepth) / (BidDepth + AskDepth)
+STOCK_MONITOR_HOST=0.0.0.0
+STOCK_MONITOR_PORT=8000
 ```
 
-この式により、前回表示数量より大きな約定が発生した場合も、その区間中に最低限必要だった補充量を取りこぼしません。Weighted OBI は近い順に既定 `[1.0, .8, .6, .4, .2]` を掛けます。売り約定量/秒を Bid consumption、買い約定量/秒を Ask consumption とします。Absorption は、**同じ価格レベルで約定があり、かつ閾値以上のネット補充が確認された場合**にのみ推定します。重み・深さ・閾値は `AnalysisConfig` で変更できます。
+クラウド環境では `PORT` があれば優先します。
 
-### テクニカル
-
-日足から MA5/25/75 と 3 サンプル差の slope、EMA12−EMA26 の MACD、EMA9 signal/histogram、Wilder 平滑の RSI14（逆張り命令ではなく momentum 表示）、20MA ±1σ/±2σ と BandWidth、20 日平均に対する VolumeRatio を計算します。
-
-MA は必要な期間が揃った場合だけその期間名で計算します。特に 75 日トレンドは、現在と 3 日前の 75 日窓を比較できる **78 点以上**の履歴がある場合だけ UPTREND/DOWNTREND を判定し、それ未満では NEUTRAL とします。Volatility expansion は 20 日窓を直前の 20 日窓と比較できる 40 点以上の履歴がある場合だけ判定します。
-
-### Pressure Score v2
-
-すべてを `[-1,+1]` に制限し、次式で説明可能な点数にします。
+## API
 
 ```text
-raw = clamp(50 + 50 × Σ(weight_i × normalized_i) / Σweight, 0, 100)
-smoothed[k] = 0.30 × raw[k] + 0.70 × smoothed[k-1]
+GET /api/analyze?q=8306
+GET /api/trend?q=8306      # 互換エンドポイント
+GET /health
 ```
 
-既定重みは Weighted OBI 20%、Trade Flow 20%、Replenishment balance 12%、Consumption balance 12%、Cancellation balance 8%、短期価格 Momentum 8%、MA Trend 10%、MACD histogram 6%、方向付き Volume 4% です。出来高は方向そのものとはみなさず、**平均超の出来高が価格モメンタムの方向を補強する場合だけ**正負の材料として加えます。内訳は UI に符号付きで表示します。状態境界は `[20,40,60,80]`（強い売り / 売り / 中立 / 買い / 強い買い）で、重み・EMA・境界は `config.py` の dataclass を差し替え可能です。
+`/api/analyze` は長期MA分析に `decision` を追加して返します。
 
-## シミュレーションと画面
+## Render
 
-`simulation.json` は 1000 円中心の上下 5 本、998 円買い板 8000 株への 2000 株売り、板 7800 株（1800 株補充）、その後の売り板消化と価格上昇を再生します。画面は最上部の Pressure/状態/現在値/前日比、スコア内訳、板、歩み値、OBI、Delta、補充・取消・消化速度・Absorption、MA/MACD/RSI/Bollinger/出来高、および Price/Raw Pressure/Delta/OBI 時系列とイベントを表示します。
+既存の `render.yaml` をそのまま利用できます。
 
-## セキュリティとリアルデータ TODO
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/kouheim1979/stock-monitor)
 
-- 秘密は `.env` または環境変数から読み、`.env` は Git 除外済みです。ログへ秘密を出しません。
-- リアル接続には、利用する証券会社/情報サービス、公式 API 仕様、利用契約、認証方式、板・歩み値の配信権限が必要です。
-- サービス決定後、公式仕様に沿った adapter、再接続、rate limit、時刻同期、欠落/訂正データ処理を追加します。
-- 現在は一銘柄のオフライン replay、推定解析、表示、イベント生成までです。永続 DB、認証、リアル配信、発注は未実装です。
+## 構成
+
+```text
+src/stock_monitor/
+  market_history.py   日足取得・MA分析
+  jina_history.py     Jina Reader -> Yahoo Finance + cache
+  strategy.py         TECH SCORE / 指値 / リスク判定
+  pro_dashboard.py    iPhone向け UI + HTTP API
+  orderflow.py        既存の板・約定解析エンジン
+  indicators.py       既存テクニカル指標
+```
+
+旧 `trend_dashboard.py` と板・約定解析コードは残しているため、今後「長期判断」と「リアルタイム板圧力」を統合できます。
+
+## テスト
+
+```bash
+pytest
+```
+
+`tests/test_strategy_decision.py` は、上昇ケースのスコア、下降ケースの低スコア、3段階指値の順序を検証します。
+
+## 次の拡張候補
+
+- 決算・PER/PBR・配当利回り・ROEを使ったファンダメンタルスコア
+- 日経平均 / TOPIX / ドル円を使った地合いフィルター
+- RSI / MACD / 出来高を長期判断画面へ統合
+- 証券会社の**公式API仕様に沿った**リアルタイム株価アダプタ
+- 通知（指値接近、スコア急変、決算予定）
+- 認証・永続DB・複数端末同期
+
+## 注意
+
+このソフトウェアは個人向けの分析・可視化用途です。投資助言、利益保証、売買執行を行うものではありません。外部データ元の仕様変更や利用制限により取得できない場合があります。
