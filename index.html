@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#07111f">
+<title>K-Stock Commander</title>
+<style>
+:root{color-scheme:dark;--bg:#07111f;--card:#0e1d31;--card2:#081729;--line:#233957;--text:#eef5ff;--muted:#91a4bd;--green:#55e49d;--red:#ff7187;--yellow:#ffd166;--blue:#67b7ff;--purple:#ca8cff}*{box-sizing:border-box}html{background:var(--bg)}body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans JP",sans-serif}.wrap{max-width:1050px;margin:auto;padding:14px 14px 50px}.top{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin:3px 0 13px}.brand{font-size:25px;font-weight:950;letter-spacing:-.02em}.sub,.muted{color:var(--muted)}.sub{font-size:12px;margin-top:3px}.badge{font-size:11px;border:1px solid var(--line);border-radius:999px;padding:5px 8px;background:#0b1829;white-space:nowrap}.card{background:var(--card);border:1px solid var(--line);border-radius:17px;padding:14px;margin-bottom:11px;box-shadow:0 8px 28px rgba(0,0,0,.12)}.toolbar{display:grid;grid-template-columns:minmax(0,1fr) auto auto;gap:8px}.toolbar input,.settings input{width:100%;background:#081321;color:#fff;border:1px solid #355171;border-radius:11px;padding:12px;font-size:16px}button{border:0;border-radius:11px;padding:11px 14px;background:var(--green);font-weight:900;color:#06130c;cursor:pointer}button.alt{background:#1b3150;color:#fff;border:1px solid #355171}button:disabled{opacity:.5;cursor:default}.status{font-size:12px;color:var(--muted);margin-top:8px;white-space:pre-wrap;line-height:1.5}.ok{color:var(--green)}.bad{color:var(--red)}.warn{color:var(--yellow)}.hero{display:grid;grid-template-columns:96px 1fr;gap:14px;align-items:center}.ring{width:96px;height:96px;border-radius:50%;display:grid;place-items:center;background:conic-gradient(var(--green) calc(var(--score)*1%),#243853 0);position:relative}.ring:after{content:"";position:absolute;inset:8px;background:#0b192b;border-radius:50%}.ring b{z-index:1;font-size:31px}.code{font-size:12px;color:var(--muted)}.name{font-size:21px;font-weight:900;margin-top:2px}.price{font-size:29px;font-weight:950;margin-top:2px}.tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:7px}.tag{font-size:11px;padding:5px 8px;border-radius:999px;background:#17304d;border:1px solid #29496d}.title{font-weight:900;margin-bottom:8px}.orders{display:grid;grid-template-columns:repeat(3,1fr);gap:7px}.order,.metric,.ma,.reason,.rankrow{background:var(--card2);border:1px solid var(--line);border-radius:12px;padding:9px}.order small,.metric small,.ma small,.reason small{color:var(--muted)}.yen{font-size:21px;font-weight:950;margin:3px 0}.o1 .yen{color:var(--yellow)}.o2 .yen{color:var(--green)}.o3 .yen{color:var(--blue)}.metrics,.mas{display:grid;grid-template-columns:repeat(2,1fr);gap:7px}.metric b,.ma b{display:block;font-size:16px;margin-top:2px}.reasons{display:grid;gap:6px}.reason{display:grid;grid-template-columns:1fr auto;gap:8px}.impact{font-weight:900;align-self:center}.mainGrid{display:grid;grid-template-columns:1fr;gap:0}.settings{display:grid;grid-template-columns:1fr 1fr;gap:8px}.settings label{font-size:11px;color:var(--muted)}canvas{display:block;width:100%;height:230px;background:#071321;border:1px solid var(--line);border-radius:12px}.ranklist{display:grid;gap:6px}.rankrow{display:grid;grid-template-columns:34px 64px minmax(0,1fr) auto;gap:8px;align-items:center;cursor:pointer}.rankno{font-size:12px;color:var(--muted);text-align:center}.rankcode{font-weight:900}.rankname{min-width:0}.rankname b{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.rankname small{color:var(--muted)}.rankscore{font-size:18px;font-weight:950;text-align:right}.note{font-size:11px;line-height:1.55;color:var(--muted)}.empty{padding:24px;text-align:center;color:var(--muted)}.hide{display:none!important}.footer{text-align:center;color:#60748f;font-size:10px;padding-top:8px}.legend{display:flex;gap:11px;flex-wrap:wrap;font-size:11px;color:var(--muted);margin-top:7px}.legend i{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:4px}.lg0{background:#fff}.lg25{background:var(--green)}.lg75{background:var(--yellow)}.lg125{background:var(--blue)}.lg200{background:var(--purple)}@media(min-width:760px){.mainGrid{grid-template-columns:1.1fr .9fr;gap:11px}.metrics,.mas{grid-template-columns:repeat(4,1fr)}.card.inGrid{margin-bottom:11px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <div><div class="brand">K-Stock Commander</div><div class="sub">日本株テクニカル判定・押し目指値・ランキング</div></div>
+    <div id="fresh" class="badge">データ読込中</div>
+  </div>
+
+  <div class="card">
+    <div class="toolbar">
+      <input id="query" value="8306" inputmode="search" autocomplete="off" placeholder="コード / 銘柄名（例 8306, OLC）">
+      <button id="analyze">分析</button>
+      <button id="reload" class="alt">更新</button>
+    </div>
+    <div id="status" class="status">GitHub Pagesの株価スナップショットを読み込んでいます…</div>
+  </div>
+
+  <div id="detail" class="hide">
+    <div class="card hero">
+      <div id="ring" class="ring" style="--score:0"><b id="score">--</b></div>
+      <div>
+        <div id="meta" class="code"></div>
+        <div id="company" class="name"></div>
+        <div id="price" class="price"></div>
+        <div id="tags" class="tags"></div>
+      </div>
+    </div>
+
+    <div class="mainGrid">
+      <div>
+        <div class="card inGrid"><div class="title">買い指値プラン <span class="muted">参考値</span></div><div class="orders">
+          <div class="order o1"><small>① 攻め</small><div id="p1" class="yen">-</div><small id="q1"></small></div>
+          <div class="order o2"><small>② 本命</small><div id="p2" class="yen">-</div><small id="q2"></small></div>
+          <div class="order o3"><small>③ 深押し</small><div id="p3" class="yen">-</div><small id="q3"></small></div>
+        </div></div>
+        <div class="card inGrid"><div class="title">状態</div><div id="metrics" class="metrics"></div></div>
+        <div class="card inGrid"><div class="title">移動平均</div><div id="mas" class="mas"></div></div>
+        <div class="card inGrid"><div class="title">点数の理由</div><div id="reasons" class="reasons"></div></div>
+      </div>
+      <div>
+        <div class="card inGrid"><div class="title">価格 / MA</div><canvas id="chart"></canvas><div class="legend"><span><i class="lg0"></i>株価</span><span><i class="lg25"></i>MA25</span><span><i class="lg75"></i>MA75</span><span><i class="lg125"></i>MA125</span><span><i class="lg200"></i>MA200</span></div></div>
+        <div class="card inGrid"><div class="title">資金設定</div><div class="settings"><label>1銘柄予算<input id="budget" type="number" value="300000" step="10000"></label><label>売買単位<input id="lot" type="number" value="100" min="1"></label></div><div class="note" style="margin-top:8px">予算から参考株数を計算します。実際の呼値・単元・注文可否は証券会社画面で確認してください。</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="top" style="margin:0 0 9px"><div><div class="title" style="margin:0">今日の候補ランキング</div><div class="sub">TECH SCOREの高い順。行をタップすると詳細表示。</div></div><div id="count" class="badge">--銘柄</div></div>
+    <div id="ranking" class="ranklist"><div class="empty">データ読込中…</div></div>
+  </div>
+
+  <div class="card note"><b>判定ロジック:</b> MA25/75/125/200の並び・傾き、20日/60日モメンタム、MA25乖離、20日ボラティリティを合成して0〜100点化しています。決算・ニュース・PER/PBR・配当・信用需給はこの点数には含みません。自動売買は行いません。</div>
+  <div class="footer">K-Stock Commander / static GitHub Pages edition</div>
+</div>
+<script>
+(function(){
+'use strict';
+var $=function(id){return document.getElementById(id)};
+var dataset=null,current=null;
+function esc(v){return String(v==null?'':v).replace(/[&<>"']/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})}
+function num(v,d){var n=Number(v);return Number.isFinite(n)?n.toLocaleString('ja-JP',{maximumFractionDigits:d||0}):'-'}
+function yen(v){return '¥'+num(v)}
+function pct(v,d){var n=Number(v);return Number.isFinite(n)?(n>=0?'+':'')+n.toFixed(d==null?1:d)+'%':'-'}
+function getLocal(k,d){try{var v=localStorage.getItem(k);return v==null?d:v}catch(e){return d}}
+function setLocal(k,v){try{localStorage.setItem(k,v)}catch(e){}}
+function tag(text,cls){return '<span class="tag '+(cls||'')+'">'+esc(text)+'</span>'}
+function metric(k,v,cls){return '<div class="metric"><small>'+esc(k)+'</small><b class="'+(cls||'')+'">'+esc(v)+'</b></div>'}
+function qty(px){var b=Number($('budget').value)||0,l=Math.max(1,Number($('lot').value)||100),units=Math.floor(b/(Number(px)*l));return units>0?num(units*l)+'株 / '+yen(units*l*Number(px)):'予算内0株'}
+function ageText(iso){if(!iso)return '初回更新待ち';var t=Date.parse(iso);if(!Number.isFinite(t))return '更新時刻不明';var min=Math.max(0,Math.floor((Date.now()-t)/60000));if(min<60)return min+'分前';var h=Math.floor(min/60);if(h<48)return h+'時間前';return Math.floor(h/24)+'日前'}
+function stocks(){return dataset&&dataset.stocks?Object.values(dataset.stocks):[]}
+function findStock(q){var key=String(q||'').trim().toUpperCase().replace(/\.T$/,'');if(!key)return null;var exact=(dataset.stocks||{})[key];if(exact)return exact;var low=key.toLowerCase();return stocks().find(function(s){return String(s.name||'').toLowerCase().includes(low)||String(s.symbol||'').toUpperCase()===key})||null}
+function draw(rows){var c=$('chart'),ratio=window.devicePixelRatio||1,w=Math.max(280,c.clientWidth),h=230;c.width=Math.floor(w*ratio);c.height=Math.floor(h*ratio);var x=c.getContext('2d');x.setTransform(ratio,0,0,ratio,0,0);x.clearRect(0,0,w,h);var defs=[['close','#ffffff',2],['ma25','#55e49d',1.2],['ma75','#ffd166',1.2],['ma125','#67b7ff',1.2],['ma200','#ca8cff',1.2]],values=[];(rows||[]).forEach(function(r){defs.forEach(function(d){var v=Number(r[d[0]]);if(Number.isFinite(v))values.push(v)})});if(!values.length)return;var lo=Math.min.apply(null,values),hi=Math.max.apply(null,values),pad=Math.max((hi-lo)*.08,1);lo-=pad;hi+=pad;defs.forEach(function(d){x.beginPath();x.strokeStyle=d[1];x.lineWidth=d[2];var on=false;(rows||[]).forEach(function(r,i){var v=Number(r[d[0]]);if(!Number.isFinite(v)){on=false;return}var px=6+i*(w-12)/Math.max(1,rows.length-1),py=8+(hi-v)*(h-16)/(hi-lo);if(on)x.lineTo(px,py);else{x.moveTo(px,py);on=true}});x.stroke()})}
+function render(d){if(!d||!d.decision)return;current=d;var z=d.decision,m=d.moving_averages||{};$('detail').classList.remove('hide');$('ring').style.setProperty('--score',z.score);$('score').textContent=z.score;$('meta').textContent=d.code+' / '+d.as_of;$('company').textContent=d.name;$('price').textContent=yen(d.price);var rankClass=(z.rank==='A'||z.rank==='B')?'ok':(z.rank==='D'||z.rank==='E')?'bad':'warn';$('tags').innerHTML=tag(z.rank+' '+z.label,rankClass)+tag('熱 '+z.heat,z.heat&&z.heat.indexOf('過熱')>=0?'warn':'')+tag('リスク '+z.risk_level,z.risk_level==='高め'?'bad':'');var ladder=[['p1','q1','aggressive'],['p2','q2','standard'],['p3','q3','deep']];ladder.forEach(function(a){var p=z.limit_prices[a[2]];$(a[0]).textContent=yen(p);$(a[1]).textContent=qty(p)});$('metrics').innerHTML=metric('20日',pct(z.return20_pct),z.return20_pct>=0?'ok':'bad')+metric('60日',pct(z.return60_pct),z.return60_pct>=0?'ok':'bad')+metric('MA25乖離',pct(z.distance_ma25_pct),z.distance_ma25_pct>10?'bad':'')+metric('年率ボラ',num(z.annualized_vol_pct,1)+'%',z.annualized_vol_pct>38?'bad':'')+metric('60日高値から',pct(z.drawdown60_pct),'')+metric('見直し上値',yen(z.review_upside_price),'ok')+metric('崩れ確認',yen(z.invalidation_price),'bad')+metric('データ日',d.as_of,'');$('mas').innerHTML=['25','75','125','200'].map(function(p){var a=m[p];if(!a)return'';return '<div class="ma"><small>MA'+p+' / '+esc(a.direction)+'</small><b>'+yen(a.value)+'</b><small>傾き '+pct(a.slope_5d_pct,2)+' / 乖離 '+pct(a.price_distance_pct,1)+'</small></div>'}).join('');$('reasons').innerHTML=(z.reasons||[]).map(function(r){var cls=Number(r.impact)>=0?'ok':'bad';return '<div class="reason"><div><b>'+esc(r.name)+'</b><br><small>'+esc(r.detail)+'</small></div><div class="impact '+cls+'">'+(Number(r.impact)>=0?'+':'')+Number(r.impact).toFixed(1)+'</div></div>'}).join('');draw(d.history||[]);$('query').value=d.code;setLocal('ksc:last',d.code);$('status').className='status ok';$('status').textContent=d.name+' を表示中（株価データ '+d.as_of+'）'}
+function renderRanking(){var list=stocks().filter(function(s){return s&&s.decision}).sort(function(a,b){return b.decision.score-a.decision.score});$('count').textContent=list.length+'銘柄';if(!list.length){$('ranking').innerHTML='<div class="empty">株価データの初回生成中です。数分後に「更新」を押してください。</div>';return}$('ranking').innerHTML=list.map(function(s,i){var z=s.decision,cls=(z.rank==='A'||z.rank==='B')?'ok':(z.rank==='D'||z.rank==='E')?'bad':'warn';return '<div class="rankrow" data-code="'+esc(s.code)+'"><div class="rankno">#'+(i+1)+'</div><div class="rankcode">'+esc(s.code)+'</div><div class="rankname"><b>'+esc(s.name)+'</b><small>'+esc(z.label)+' / '+esc(z.heat)+'</small></div><div class="rankscore '+cls+'">'+esc(z.rank)+' '+z.score+'</div></div>'}).join('')}
+async function load(force){$('reload').disabled=true;$('status').className='status';$('status').textContent='株価スナップショットを読み込んでいます…';try{var url='./data/stocks.json'+(force?'?t='+Date.now():'');var r=await fetch(url,{cache:'no-store'});if(!r.ok)throw new Error('データ取得エラー HTTP '+r.status);dataset=await r.json();$('fresh').textContent='更新 '+ageText(dataset.generated_at);$('fresh').className='badge '+(dataset.count>0?'ok':'warn');renderRanking();var code=getLocal('ksc:last','8306'),d=findStock(code)||stocks()[0];if(d)render(d);else{$('status').className='status warn';$('status').textContent='初回の株価データをGitHub Actionsで作成中です。数分後に「更新」を押してください。'}if(dataset.errors&&Object.keys(dataset.errors).length){$('status').textContent+=' / 一部取得失敗 '+Object.keys(dataset.errors).length+'銘柄'}}catch(e){$('fresh').textContent='読込失敗';$('fresh').className='badge bad';$('status').className='status bad';$('status').textContent='データを読み込めませんでした: '+e.message}finally{$('reload').disabled=false}}
+function analyze(){if(!dataset)return;var q=$('query').value,d=findStock(q);if(d){render(d);return}$('status').className='status warn';$('status').textContent='「'+q+'」は現在の定期更新対象にありません。下のランキングにある銘柄から選んでください。追加したい銘柄はこのアプリのGitHub設定に追記できます。'}
+$('analyze').onclick=analyze;$('query').onkeydown=function(e){if(e.key==='Enter')analyze()};$('reload').onclick=function(){load(true)};$('ranking').onclick=function(e){var row=e.target.closest('.rankrow');if(row){var d=findStock(row.getAttribute('data-code'));if(d){render(d);window.scrollTo({top:0,behavior:'smooth'})}}};$('budget').value=getLocal('ksc:budget','300000');$('lot').value=getLocal('ksc:lot','100');$('budget').onchange=function(){setLocal('ksc:budget',this.value);if(current)render(current)};$('lot').onchange=function(){setLocal('ksc:lot',this.value);if(current)render(current)};window.addEventListener('resize',function(){if(current)draw(current.history||[])});load(false);
+})();
+</script>
+</body>
+</html>
