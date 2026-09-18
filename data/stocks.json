@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T04:37:08.916766+00:00",
+  "generated_at": "2026-09-18T09:41:34.937665+00:00",
   "count": 12,
   "stocks": {
     "8306": {
@@ -51,7 +51,7 @@
       "history": [
         {
           "date": "2025-09-18",
-          "close": 2206.404541015625,
+          "close": 2206.40478515625,
           "ma25": null,
           "ma75": null,
           "ma125": null,
@@ -75,7 +75,7 @@
         },
         {
           "date": "2025-09-24",
-          "close": 2283.271240234375,
+          "close": 2283.27099609375,
           "ma25": null,
           "ma75": null,
           "ma125": null,
@@ -252,7 +252,7 @@
         {
           "date": "2025-10-27",
           "close": 2230.302734375,
-          "ma25": 2262.229345703125,
+          "ma25": 2262.2293359375,
           "ma75": null,
           "ma125": null,
           "ma200": null
@@ -260,7 +260,7 @@
         {
           "date": "2025-10-28",
           "close": 2230.79345703125,
-          "ma25": 2260.903740234375,
+          "ma25": 2260.90373046875,
           "ma75": null,
           "ma125": null,
           "ma200": null
@@ -268,7 +268,7 @@
         {
           "date": "2025-10-29",
           "close": 2237.661865234375,
-          "ma25": 2258.789306640625,
+          "ma25": 2258.789296875,
           "ma75": null,
           "ma125": null,
           "ma200": null
@@ -653,7 +653,7 @@
           "date": "2026-01-13",
           "close": 2729.741455078125,
           "ma25": 2475.371142578125,
-          "ma75": 2356.73494140625,
+          "ma75": 2356.7349381510417,
           "ma125": null,
           "ma200": null
         },
@@ -661,7 +661,7 @@
           "date": "2026-01-14",
           "close": 2825.409912109375,
           "ma25": 2489.677265625,
-          "ma75": 2364.2212923177085,
+          "ma75": 2364.2212890625,
           "ma125": null,
           "ma200": null
         },
@@ -669,7 +669,7 @@
           "date": "2026-01-15",
           "close": 2908.32275390625,
           "ma25": 2506.730791015625,
-          "ma75": 2372.4586263020833,
+          "ma75": 2372.458623046875,
           "ma125": null,
           "ma200": null
         },
@@ -1054,7 +1054,7 @@
           "close": 2664.0,
           "ma25": 2697.420205078125,
           "ma75": 2669.671435546875,
-          "ma125": 2520.76959765625,
+          "ma125": 2520.769595703125,
           "ma200": null
         },
         {
@@ -1062,7 +1062,7 @@
           "close": 2621.0,
           "ma25": 2684.16111328125,
           "ma75": 2671.714677734375,
-          "ma125": 2523.62612890625,
+          "ma125": 2523.626126953125,
           "ma200": null
         },
         {
@@ -1070,7 +1070,7 @@
           "close": 2600.0,
           "ma25": 2672.6916796875,
           "ma75": 2673.2882161458333,
-          "ma125": 2526.101947265625,
+          "ma125": 2526.1019453125,
           "ma200": null
         },
         {
@@ -1655,7 +1655,7 @@
           "ma25": 3349.08,
           "ma75": 3066.8133333333335,
           "ma125": 2946.8166328125,
-          "ma200": 2725.535998535156
+          "ma200": 2725.535997314453
         },
         {
           "date": "2026-07-17",
@@ -1663,7 +1663,7 @@
           "ma25": 3361.52,
           "ma75": 3078.173333333333,
           "ma125": 2951.997353515625,
-          "ma200": 2731.5813305664065
+          "ma200": 2731.581329345703
         },
         {
           "date": "2026-07-21",
@@ -1671,7 +1671,7 @@
           "ma25": 3375.04,
           "ma75": 3091.24,
           "ma125": 2957.370771484375,
-          "ma200": 2738.0287170410156
+          "ma200": 2738.0287158203123
         },
         {
           "date": "2026-07-22",
@@ -2072,8 +2072,8 @@
       "cached": false,
       "stale": false,
       "cache_age_seconds": 0,
-      "price": 6794.0,
-      "analysis_price": 6794.0,
+      "price": 6830.0,
+      "analysis_price": 6830.0,
       "as_of": "2026-09-18",
       "grade": 4,
       "stars": "★★★★☆",
@@ -2081,31 +2081,31 @@
       "order": "MA25 > 株価 > MA75 > MA125 > MA200",
       "moving_averages": {
         "25": {
-          "value": 6848.88,
+          "value": 6850.32,
           "direction": "上向き",
-          "slope_5d_pct": 0.1052373101343429,
-          "price_distance_pct": -0.801298898506031,
+          "slope_5d_pct": 0.12628477216121148,
+          "price_distance_pct": -0.29662847866960274,
           "price_above": false
         },
         "75": {
-          "value": 6724.053333333333,
+          "value": 6724.533333333334,
           "direction": "上向き",
-          "slope_5d_pct": 0.9524648380729639,
-          "price_distance_pct": 1.0402455661664423,
+          "slope_5d_pct": 0.9596713816145019,
+          "price_distance_pct": 1.5683864059959474,
           "price_above": true
         },
         "125": {
-          "value": 6266.25936328125,
+          "value": 6266.54736328125,
           "direction": "上向き",
-          "slope_5d_pct": 1.1688187402368655,
-          "price_distance_pct": 8.421940525015303,
+          "slope_5d_pct": 1.173468503055175,
+          "price_distance_pct": 8.991436656495932,
           "price_above": true
         },
         "200": {
-          "value": 5888.908894042968,
+          "value": 5889.088894042969,
           "direction": "上向き",
-          "slope_5d_pct": 1.0868531636079481,
-          "price_distance_pct": 15.369419399111317,
+          "slope_5d_pct": 1.0899429776799474,
+          "price_distance_pct": 15.977193125897582,
           "price_above": true
         }
       },
@@ -4064,11 +4064,11 @@
         },
         {
           "date": "2026-09-18",
-          "close": 6794.0,
-          "ma25": 6848.88,
-          "ma75": 6724.053333333333,
-          "ma125": 6266.25936328125,
-          "ma200": 5888.908894042968
+          "close": 6830.0,
+          "ma25": 6850.32,
+          "ma75": 6724.533333333334,
+          "ma125": 6266.54736328125,
+          "ma200": 5889.088894042969
         }
       ],
       "decision": {
@@ -4079,21 +4079,21 @@
         "stretched": false,
         "falling_knife": false,
         "risk_level": "低め",
-        "daily_sigma_pct": 1.23,
-        "annualized_vol_pct": 19.5,
-        "return20_pct": 2.85,
-        "return60_pct": 6.89,
-        "drawdown60_pct": -5.82,
-        "rebound_from_low60_pct": 7.16,
-        "distance_ma25_pct": -0.8,
-        "distance_ma75_pct": 1.04,
+        "daily_sigma_pct": 1.21,
+        "annualized_vol_pct": 19.1,
+        "return20_pct": 3.39,
+        "return60_pct": 7.46,
+        "drawdown60_pct": -5.32,
+        "rebound_from_low60_pct": 7.73,
+        "distance_ma25_pct": -0.3,
+        "distance_ma75_pct": 1.57,
         "limit_prices": {
-          "aggressive": 6740,
-          "standard": 6672,
-          "deep": 6556
+          "aggressive": 6775,
+          "standard": 6707,
+          "deep": 6591
         },
-        "invalidation_price": 6420,
-        "review_upside_price": 7270,
+        "invalidation_price": 6454,
+        "review_upside_price": 7308,
         "reasons": [
           {
             "name": "長期トレンド",
@@ -4102,8 +4102,8 @@
           },
           {
             "name": "移動平均の傾き",
-            "impact": 7.3,
-            "detail": "MA25 +0.11% / MA75 +0.95%"
+            "impact": 7.4,
+            "detail": "MA25 +0.13% / MA75 +0.96%"
           },
           {
             "name": "並び順",
@@ -4113,12 +4113,12 @@
           {
             "name": "買われ過ぎ/押し目",
             "impact": 9.0,
-            "detail": "株価-MA25 -0.8%"
+            "detail": "株価-MA25 -0.3%"
           },
           {
             "name": "20日モメンタム",
-            "impact": 1.8,
-            "detail": "20日 +2.8%"
+            "impact": 2.2,
+            "detail": "20日 +3.4%"
           }
         ],
         "method": "MA25/75/125/200 + 20日momentum + 20日volatility。テクニカル参考値であり将来収益を保証しません。"
@@ -4133,8 +4133,8 @@
       "cached": false,
       "stale": false,
       "cache_age_seconds": 0,
-      "price": 3033.0,
-      "analysis_price": 3033.0,
+      "price": 3035.0,
+      "analysis_price": 3035.0,
       "as_of": "2026-09-18",
       "grade": 4,
       "stars": "★★★★☆",
@@ -4142,31 +4142,31 @@
       "order": "MA25 > 株価 > MA75 > MA200 > MA125",
       "moving_averages": {
         "25": {
-          "value": 3038.86,
+          "value": 3038.94,
           "direction": "上向き",
-          "slope_5d_pct": 0.4249834765366778,
-          "price_distance_pct": -0.19283547119643973,
+          "slope_5d_pct": 0.4276272306675599,
+          "price_distance_pct": -0.1296504702297585,
           "price_above": false
         },
         "75": {
-          "value": 2748.76,
+          "value": 2748.786666666667,
           "direction": "上向き",
-          "slope_5d_pct": 2.0142364779438537,
-          "price_distance_pct": 10.340662698816905,
+          "slope_5d_pct": 2.0152261531571902,
+          "price_distance_pct": 10.412351631507711,
           "price_above": true
         },
         "125": {
-          "value": 2623.3987578125,
+          "value": 2623.4147578125,
           "direction": "上向き",
-          "slope_5d_pct": 0.4076045303713194,
-          "price_distance_pct": 15.613380961155986,
+          "slope_5d_pct": 0.4082169121785606,
+          "price_distance_pct": 15.688912359809049,
           "price_above": true
         },
         "200": {
-          "value": 2697.007598876953,
+          "value": 2697.0175988769533,
           "direction": "上向き",
-          "slope_5d_pct": 0.04080186061417024,
-          "price_distance_pct": 12.457970131895646,
+          "slope_5d_pct": 0.0411727932059236,
+          "price_distance_pct": 12.531709146569291,
           "price_above": true
         }
       },
@@ -6125,11 +6125,11 @@
         },
         {
           "date": "2026-09-18",
-          "close": 3033.0,
-          "ma25": 3038.86,
-          "ma75": 2748.76,
-          "ma125": 2623.3987578125,
-          "ma200": 2697.007598876953
+          "close": 3035.0,
+          "ma25": 3038.94,
+          "ma75": 2748.786666666667,
+          "ma125": 2623.4147578125,
+          "ma200": 2697.0175988769533
         }
       ],
       "decision": {
@@ -6140,21 +6140,21 @@
         "stretched": false,
         "falling_knife": false,
         "risk_level": "中",
-        "daily_sigma_pct": 1.6,
+        "daily_sigma_pct": 1.59,
         "annualized_vol_pct": 25.3,
-        "return20_pct": 0.86,
-        "return60_pct": 27.76,
-        "drawdown60_pct": -4.86,
-        "rebound_from_low60_pct": 26.74,
-        "distance_ma25_pct": -0.19,
-        "distance_ma75_pct": 10.34,
+        "return20_pct": 0.93,
+        "return60_pct": 27.84,
+        "drawdown60_pct": -4.8,
+        "rebound_from_low60_pct": 26.83,
+        "distance_ma25_pct": -0.13,
+        "distance_ma75_pct": 10.41,
         "limit_prices": {
-          "aggressive": 3002,
-          "standard": 2975,
+          "aggressive": 3004,
+          "standard": 2977,
           "deep": 2757
         },
         "invalidation_price": 2694,
-        "review_upside_price": 3245,
+        "review_upside_price": 3247,
         "reasons": [
           {
             "name": "長期トレンド",
@@ -6164,7 +6164,7 @@
           {
             "name": "移動平均の傾き",
             "impact": 6.4,
-            "detail": "MA25 +0.42% / MA75 +2.01%"
+            "detail": "MA25 +0.43% / MA75 +2.02%"
           },
           {
             "name": "並び順",
@@ -6174,7 +6174,7 @@
           {
             "name": "買われ過ぎ/押し目",
             "impact": 9.0,
-            "detail": "株価-MA25 -0.2%"
+            "detail": "株価-MA25 -0.1%"
           },
           {
             "name": "20日モメンタム",
@@ -6194,8 +6194,8 @@
       "cached": false,
       "stale": false,
       "cache_age_seconds": 0,
-      "price": 4368.0,
-      "analysis_price": 4368.0,
+      "price": 4451.0,
+      "analysis_price": 4451.0,
       "as_of": "2026-09-18",
       "grade": 3,
       "stars": "★★★☆☆",
@@ -6203,31 +6203,31 @@
       "order": "株価 > MA25 > MA200 > MA125 > MA75",
       "moving_averages": {
         "25": {
-          "value": 4302.84,
+          "value": 4306.16,
           "direction": "上向き",
-          "slope_5d_pct": 0.5421016721032457,
-          "price_distance_pct": 1.5143486627436697,
+          "slope_5d_pct": 0.6196782906973342,
+          "price_distance_pct": 3.3635536069259064,
           "price_above": true
         },
         "75": {
-          "value": 4087.346666666667,
+          "value": 4088.4533333333334,
           "direction": "上向き",
-          "slope_5d_pct": 0.9221399176954748,
-          "price_distance_pct": 6.866394172584656,
+          "slope_5d_pct": 0.9494650205761346,
+          "price_distance_pct": 8.86757502429607,
           "price_above": true
         },
         "125": {
-          "value": 4095.53759375,
+          "value": 4096.20159375,
           "direction": "上向き",
-          "slope_5d_pct": 0.07235547592423508,
-          "price_distance_pct": 6.652665248776901,
+          "slope_5d_pct": 0.08857997454376765,
+          "price_distance_pct": 8.661644163005855,
           "price_above": true
         },
         "200": {
-          "value": 4154.310500488281,
+          "value": 4154.725500488281,
           "direction": "下向き",
-          "slope_5d_pct": -0.039831435258042,
-          "price_distance_pct": 5.143801829126704,
+          "slope_5d_pct": -0.029845790239579895,
+          "price_distance_pct": 7.131024648364859,
           "price_above": true
         }
       },
@@ -8186,36 +8186,36 @@
         },
         {
           "date": "2026-09-18",
-          "close": 4368.0,
-          "ma25": 4302.84,
-          "ma75": 4087.346666666667,
-          "ma125": 4095.53759375,
-          "ma200": 4154.310500488281
+          "close": 4451.0,
+          "ma25": 4306.16,
+          "ma75": 4088.4533333333334,
+          "ma125": 4096.20159375,
+          "ma200": 4154.725500488281
         }
       ],
       "decision": {
-        "score": 69,
+        "score": 71,
         "rank": "B",
         "label": "分割買い候補",
         "heat": "通常",
         "stretched": false,
         "falling_knife": false,
         "risk_level": "低め",
-        "daily_sigma_pct": 1.14,
-        "annualized_vol_pct": 18.1,
-        "return20_pct": 0.3,
-        "return60_pct": 19.54,
-        "drawdown60_pct": -4.71,
-        "rebound_from_low60_pct": 16.92,
-        "distance_ma25_pct": 1.51,
-        "distance_ma75_pct": 6.87,
+        "daily_sigma_pct": 1.26,
+        "annualized_vol_pct": 20.0,
+        "return20_pct": 2.2,
+        "return60_pct": 21.81,
+        "drawdown60_pct": -2.9,
+        "rebound_from_low60_pct": 19.14,
+        "distance_ma25_pct": 3.36,
+        "distance_ma75_pct": 8.87,
         "limit_prices": {
-          "aggressive": 4333,
-          "standard": 4289,
-          "deep": 4100
+          "aggressive": 4414,
+          "standard": 4319,
+          "deep": 4101
         },
-        "invalidation_price": 4006,
-        "review_upside_price": 4674,
+        "invalidation_price": 4007,
+        "review_upside_price": 4763,
         "reasons": [
           {
             "name": "長期トレンド",
@@ -8224,8 +8224,8 @@
           },
           {
             "name": "移動平均の傾き",
-            "impact": 3.3,
-            "detail": "MA25 +0.54% / MA75 +0.92%"
+            "impact": 3.6,
+            "detail": "MA25 +0.62% / MA75 +0.95%"
           },
           {
             "name": "並び順",
@@ -8235,12 +8235,12 @@
           {
             "name": "買われ過ぎ/押し目",
             "impact": 7.0,
-            "detail": "株価-MA25 +1.5%"
+            "detail": "株価-MA25 +3.4%"
           },
           {
             "name": "20日モメンタム",
-            "impact": 0.2,
-            "detail": "20日 +0.3%"
+            "impact": 1.4,
+            "detail": "20日 +2.2%"
           }
         ],
         "method": "MA25/75/125/200 + 20日momentum + 20日volatility。テクニカル参考値であり将来収益を保証しません。"
@@ -8255,8 +8255,8 @@
       "cached": false,
       "stale": false,
       "cache_age_seconds": 0,
-      "price": 3494.0,
-      "analysis_price": 3494.0,
+      "price": 3460.0,
+      "analysis_price": 3460.0,
       "as_of": "2026-09-18",
       "grade": 2,
       "stars": "★★☆☆☆",
@@ -8264,31 +8264,31 @@
       "order": "MA200 > MA25 > MA125 > MA75 > 株価",
       "moving_averages": {
         "25": {
-          "value": 3532.8,
+          "value": 3531.44,
           "direction": "上向き",
-          "slope_5d_pct": 0.3659174072138116,
-          "price_distance_pct": -1.0982789855072506,
+          "slope_5d_pct": 0.3272801654583102,
+          "price_distance_pct": -2.0229707994472546,
           "price_above": false
         },
         "75": {
-          "value": 3502.9466666666667,
+          "value": 3502.4933333333333,
           "direction": "上向き",
-          "slope_5d_pct": 0.306584503546925,
-          "price_distance_pct": -0.255404021756922,
+          "slope_5d_pct": 0.29360334150383416,
+          "price_distance_pct": -1.2132309554717224,
           "price_above": false
         },
         "125": {
-          "value": 3531.27485546875,
+          "value": 3531.00285546875,
           "direction": "下向き",
-          "slope_5d_pct": -0.17927058461014722,
-          "price_distance_pct": -1.0555636985046357,
+          "slope_5d_pct": -0.18695937676376229,
+          "price_distance_pct": -2.0108410662648457,
           "price_above": false
         },
         "200": {
-          "value": 3667.801364746094,
+          "value": 3667.631364746094,
           "direction": "下向き",
-          "slope_5d_pct": -0.20609898842909313,
-          "price_distance_pct": -4.738570807476794,
+          "slope_5d_pct": -0.2107243651834123,
+          "price_distance_pct": -5.661184129405217,
           "price_above": false
         }
       },
@@ -10247,36 +10247,36 @@
         },
         {
           "date": "2026-09-18",
-          "close": 3494.0,
-          "ma25": 3532.8,
-          "ma75": 3502.9466666666667,
-          "ma125": 3531.27485546875,
-          "ma200": 3667.801364746094
+          "close": 3460.0,
+          "ma25": 3531.44,
+          "ma75": 3502.4933333333333,
+          "ma125": 3531.00285546875,
+          "ma200": 3667.631364746094
         }
       ],
       "decision": {
-        "score": 25,
+        "score": 24,
         "rank": "E",
         "label": "下降優勢・見送り",
         "heat": "通常",
         "stretched": false,
         "falling_knife": false,
-        "risk_level": "低め",
-        "daily_sigma_pct": 1.32,
-        "annualized_vol_pct": 21.0,
-        "return20_pct": -1.27,
-        "return60_pct": 3.9,
-        "drawdown60_pct": -11.21,
-        "rebound_from_low60_pct": 6.04,
-        "distance_ma25_pct": -1.1,
-        "distance_ma75_pct": -0.26,
+        "risk_level": "中",
+        "daily_sigma_pct": 1.4,
+        "annualized_vol_pct": 22.2,
+        "return20_pct": -2.23,
+        "return60_pct": 2.88,
+        "drawdown60_pct": -12.07,
+        "rebound_from_low60_pct": 5.01,
+        "distance_ma25_pct": -2.02,
+        "distance_ma75_pct": -1.21,
         "limit_prices": {
-          "aggressive": 3464,
-          "standard": 3431,
-          "deep": 3372
+          "aggressive": 3429,
+          "standard": 3398,
+          "deep": 3339
         },
-        "invalidation_price": 3302,
-        "review_upside_price": 3739,
+        "invalidation_price": 3270,
+        "review_upside_price": 3702,
         "reasons": [
           {
             "name": "長期トレンド",
@@ -10285,8 +10285,8 @@
           },
           {
             "name": "移動平均の傾き",
-            "impact": 0.6,
-            "detail": "MA25 +0.37% / MA75 +0.31%"
+            "impact": 0.5,
+            "detail": "MA25 +0.33% / MA75 +0.29%"
           },
           {
             "name": "並び順",
@@ -10296,12 +10296,12 @@
           {
             "name": "買われ過ぎ/押し目",
             "impact": 0.0,
-            "detail": "株価-MA25 -1.1%"
+            "detail": "株価-MA25 -2.0%"
           },
           {
             "name": "20日モメンタム",
-            "impact": -0.8,
-            "detail": "20日 -1.3%"
+            "impact": -1.5,
+            "detail": "20日 -2.2%"
           }
         ],
         "method": "MA25/75/125/200 + 20日momentum + 20日volatility。テクニカル参考値であり将来収益を保証しません。"
@@ -10316,8 +10316,8 @@
       "cached": false,
       "stale": false,
       "cache_age_seconds": 0,
-      "price": 6880.0,
-      "analysis_price": 6880.0,
+      "price": 6886.0,
+      "analysis_price": 6886.0,
       "as_of": "2026-09-18",
       "grade": 4,
       "stars": "★★★★☆",
@@ -10325,31 +10325,31 @@
       "order": "株価 > MA25 > MA75 > MA125 > MA200",
       "moving_averages": {
         "25": {
-          "value": 6870.72,
+          "value": 6870.96,
           "direction": "下向き",
-          "slope_5d_pct": -0.7608978247681697,
-          "price_distance_pct": 0.13506590284568798,
+          "slope_5d_pct": -0.7574313198717375,
+          "price_distance_pct": 0.21889226541851325,
           "price_above": true
         },
         "75": {
-          "value": 6494.419830729166,
+          "value": 6494.499830729167,
           "direction": "上向き",
-          "slope_5d_pct": 0.8739273579558393,
-          "price_distance_pct": 5.937099530375489,
+          "slope_5d_pct": 0.8751699499654597,
+          "price_distance_pct": 6.028180452302467,
           "price_above": true
         },
         "125": {
-          "value": 6246.82304296875,
+          "value": 6246.87104296875,
           "direction": "上向き",
-          "slope_5d_pct": 0.7407954619467194,
-          "price_distance_pct": 10.135983565981377,
+          "slope_5d_pct": 0.7415695447323012,
+          "price_distance_pct": 10.231185382810647,
           "price_above": true
         },
         "200": {
-          "value": 6017.775910644531,
+          "value": 6017.805910644532,
           "direction": "上向き",
-          "slope_5d_pct": 0.5667545553459608,
-          "price_distance_pct": 14.327952754610319,
+          "slope_5d_pct": 0.5672559037978475,
+          "price_distance_pct": 14.427086919167209,
           "price_above": true
         }
       },
@@ -12308,11 +12308,11 @@
         },
         {
           "date": "2026-09-18",
-          "close": 6880.0,
-          "ma25": 6870.72,
-          "ma75": 6494.419830729166,
-          "ma125": 6246.82304296875,
-          "ma200": 6017.775910644531
+          "close": 6886.0,
+          "ma25": 6870.96,
+          "ma75": 6494.499830729167,
+          "ma125": 6246.87104296875,
+          "ma200": 6017.805910644532
         }
       ],
       "decision": {
@@ -12325,19 +12325,19 @@
         "risk_level": "低め",
         "daily_sigma_pct": 1.06,
         "annualized_vol_pct": 16.8,
-        "return20_pct": -1.43,
-        "return60_pct": 18.28,
-        "drawdown60_pct": -3.57,
-        "rebound_from_low60_pct": 18.32,
-        "distance_ma25_pct": 0.14,
-        "distance_ma75_pct": 5.94,
+        "return20_pct": -1.35,
+        "return60_pct": 18.38,
+        "drawdown60_pct": -3.49,
+        "rebound_from_low60_pct": 18.42,
+        "distance_ma25_pct": 0.22,
+        "distance_ma75_pct": 6.03,
         "limit_prices": {
-          "aggressive": 6825,
-          "standard": 6756,
+          "aggressive": 6831,
+          "standard": 6762,
           "deep": 6514
         },
         "invalidation_price": 6365,
-        "review_upside_price": 7362,
+        "review_upside_price": 7368,
         "reasons": [
           {
             "name": "長期トレンド",
@@ -12347,7 +12347,7 @@
           {
             "name": "移動平均の傾き",
             "impact": 3.1,
-            "detail": "MA25 -0.76% / MA75 +0.87%"
+            "detail": "MA25 -0.76% / MA75 +0.88%"
           },
           {
             "name": "並び順",
@@ -12357,12 +12357,12 @@
           {
             "name": "買われ過ぎ/押し目",
             "impact": 7.0,
-            "detail": "株価-MA25 +0.1%"
+            "detail": "株価-MA25 +0.2%"
           },
           {
             "name": "20日モメンタム",
             "impact": -0.9,
-            "detail": "20日 -1.4%"
+            "detail": "20日 -1.3%"
           }
         ],
         "method": "MA25/75/125/200 + 20日momentum + 20日volatility。テクニカル参考値であり将来収益を保証しません。"
@@ -12377,40 +12377,40 @@
       "cached": false,
       "stale": false,
       "cache_age_seconds": 0,
-      "price": 1389.0,
-      "analysis_price": 1389.0,
+      "price": 1384.5,
+      "analysis_price": 1384.5,
       "as_of": "2026-09-18",
       "grade": 4,
       "stars": "★★★★☆",
       "label": "長期上昇トレンド",
-      "order": "MA25 > 株価 > MA125 > MA75 > MA200",
+      "order": "MA25 > MA125 > 株価 > MA75 > MA200",
       "moving_averages": {
         "25": {
-          "value": 1393.16,
+          "value": 1392.98,
           "direction": "下向き",
-          "slope_5d_pct": -0.2748747315676425,
-          "price_distance_pct": -0.29860173992937167,
+          "slope_5d_pct": -0.287759484609873,
+          "price_distance_pct": -0.6087668164654225,
           "price_above": false
         },
         "75": {
-          "value": 1379.1733333333334,
+          "value": 1379.1133333333332,
           "direction": "上向き",
-          "slope_5d_pct": 0.5389591139492778,
-          "price_distance_pct": 0.712504108741463,
+          "slope_5d_pct": 0.5345852347558022,
+          "price_distance_pct": 0.3905891224796676,
           "price_above": true
         },
         "125": {
-          "value": 1388.8463935546874,
+          "value": 1388.8103935546876,
           "direction": "下向き",
-          "slope_5d_pct": -0.027794334189279457,
-          "price_distance_pct": 0.011060002461427132,
-          "price_above": true
+          "slope_5d_pct": -0.03038569304699701,
+          "price_distance_pct": -0.31036587677423233,
+          "price_above": false
         },
         "200": {
-          "value": 1372.6560736083984,
+          "value": 1372.6335736083984,
           "direction": "上向き",
-          "slope_5d_pct": 0.36958022350128683,
-          "price_distance_pct": 1.1906789111883809,
+          "slope_5d_pct": 0.3679350076322363,
+          "price_distance_pct": 0.8645006664383947,
           "price_above": true
         }
       },
@@ -14369,11 +14369,11 @@
         },
         {
           "date": "2026-09-18",
-          "close": 1389.0,
-          "ma25": 1393.16,
-          "ma75": 1379.1733333333334,
-          "ma125": 1388.8463935546874,
-          "ma200": 1372.6560736083984
+          "close": 1384.5,
+          "ma25": 1392.98,
+          "ma75": 1379.1133333333332,
+          "ma125": 1388.8103935546876,
+          "ma200": 1372.6335736083984
         }
       ],
       "decision": {
@@ -14384,21 +14384,21 @@
         "stretched": false,
         "falling_knife": false,
         "risk_level": "低め",
-        "daily_sigma_pct": 0.83,
-        "annualized_vol_pct": 13.3,
-        "return20_pct": -0.43,
-        "return60_pct": 7.3,
-        "drawdown60_pct": -8.5,
-        "rebound_from_low60_pct": 6.64,
-        "distance_ma25_pct": -0.3,
-        "distance_ma75_pct": 0.71,
+        "daily_sigma_pct": 0.86,
+        "annualized_vol_pct": 13.6,
+        "return20_pct": -0.75,
+        "return60_pct": 6.95,
+        "drawdown60_pct": -8.79,
+        "rebound_from_low60_pct": 6.3,
+        "distance_ma25_pct": -0.61,
+        "distance_ma75_pct": 0.39,
         "limit_prices": {
-          "aggressive": 1378,
-          "standard": 1364,
-          "deep": 1340
+          "aggressive": 1373,
+          "standard": 1360,
+          "deep": 1336
         },
-        "invalidation_price": 1313,
-        "review_upside_price": 1486,
+        "invalidation_price": 1308,
+        "review_upside_price": 1481,
         "reasons": [
           {
             "name": "長期トレンド",
@@ -14408,22 +14408,22 @@
           {
             "name": "移動平均の傾き",
             "impact": 1.3,
-            "detail": "MA25 -0.27% / MA75 +0.54%"
+            "detail": "MA25 -0.29% / MA75 +0.53%"
           },
           {
             "name": "並び順",
             "impact": 10.0,
-            "detail": "MA25 > 株価 > MA125 > MA75 > MA200"
+            "detail": "MA25 > MA125 > 株価 > MA75 > MA200"
           },
           {
             "name": "買われ過ぎ/押し目",
             "impact": 9.0,
-            "detail": "株価-MA25 -0.3%"
+            "detail": "株価-MA25 -0.6%"
           },
           {
             "name": "20日モメンタム",
-            "impact": -0.3,
-            "detail": "20日 -0.4%"
+            "impact": -0.5,
+            "detail": "20日 -0.8%"
           }
         ],
         "method": "MA25/75/125/200 + 20日momentum + 20日volatility。テクニカル参考値であり将来収益を保証しません。"
@@ -14438,8 +14438,8 @@
       "cached": false,
       "stale": false,
       "cache_age_seconds": 0,
-      "price": 177.60000610351562,
-      "analysis_price": 177.60000610351562,
+      "price": 177.3000030517578,
+      "analysis_price": 177.3000030517578,
       "as_of": "2026-09-18",
       "grade": 5,
       "stars": "★★★★★",
@@ -14447,31 +14447,31 @@
       "order": "株価 > MA25 > MA75 > MA125 > MA200",
       "moving_averages": {
         "25": {
-          "value": 171.00000061035155,
+          "value": 170.98800048828124,
           "direction": "上向き",
-          "slope_5d_pct": 2.177395183590325,
-          "price_distance_pct": 3.859652321407392,
+          "slope_5d_pct": 2.170224767153761,
+          "price_distance_pct": 3.6914886105760214,
           "price_above": true
         },
         "75": {
-          "value": 157.02133321126303,
+          "value": 157.01733317057293,
           "direction": "上向き",
-          "slope_5d_pct": 1.2709825490130777,
-          "price_distance_pct": 13.105654162651392,
+          "slope_5d_pct": 1.2684027208926807,
+          "price_distance_pct": 12.917471894106857,
           "price_above": true
         },
         "125": {
-          "value": 155.32729357910156,
+          "value": 155.3248935546875,
           "direction": "上向き",
-          "slope_5d_pct": 0.6360967437864407,
-          "price_distance_pct": 14.339213676617323,
+          "slope_5d_pct": 0.6345417750262428,
+          "price_distance_pct": 14.147834898939248,
           "price_above": true
         },
         "200": {
-          "value": 154.35184295654298,
+          "value": 154.35034294128417,
           "direction": "上向き",
-          "slope_5d_pct": 0.4534234250722635,
-          "price_distance_pct": 15.061798227778889,
+          "slope_5d_pct": 0.45244720305215314,
+          "price_distance_pct": 14.868551422139586,
           "price_above": true
         }
       },
@@ -14486,7 +14486,7 @@
         },
         {
           "date": "2025-09-19",
-          "close": 152.77886962890625,
+          "close": 152.7788543701172,
           "ma25": null,
           "ma75": null,
           "ma125": null,
@@ -14502,7 +14502,7 @@
         },
         {
           "date": "2025-09-24",
-          "close": 152.68215942382812,
+          "close": 152.68214416503906,
           "ma25": null,
           "ma75": null,
           "ma125": null,
@@ -14671,7 +14671,7 @@
         {
           "date": "2025-10-24",
           "close": 157.1366729736328,
-          "ma25": 153.29196838378905,
+          "ma25": 153.29196716308593,
           "ma75": null,
           "ma125": null,
           "ma200": null
@@ -14679,7 +14679,7 @@
         {
           "date": "2025-10-27",
           "close": 159.7916717529297,
-          "ma25": 153.49899230957033,
+          "ma25": 153.4989910888672,
           "ma75": null,
           "ma125": null,
           "ma200": null
@@ -14687,7 +14687,7 @@
         {
           "date": "2025-10-28",
           "close": 157.72666931152344,
-          "ma25": 153.696904296875,
+          "ma25": 153.69690368652343,
           "ma75": null,
           "ma125": null,
           "ma200": null
@@ -14695,7 +14695,7 @@
         {
           "date": "2025-10-29",
           "close": 156.44834899902344,
-          "ma25": 153.83594848632814,
+          "ma25": 153.83594787597656,
           "ma75": null,
           "ma125": null,
           "ma200": null
@@ -15072,7 +15072,7 @@
           "date": "2026-01-09",
           "close": 156.44834899902344,
           "ma25": 153.9152703857422,
-          "ma75": 152.99556905110677,
+          "ma75": 152.99556864420572,
           "ma125": null,
           "ma200": null
         },
@@ -15080,7 +15080,7 @@
           "date": "2026-01-13",
           "close": 155.95668029785156,
           "ma25": 154.06867065429688,
-          "ma75": 153.01344380696614,
+          "ma75": 153.0134434000651,
           "ma125": null,
           "ma200": null
         },
@@ -15088,7 +15088,7 @@
           "date": "2026-01-14",
           "close": 156.35000610351562,
           "ma25": 154.20240417480468,
-          "ma75": 153.06105895996095,
+          "ma75": 153.06105875651042,
           "ma125": null,
           "ma200": null
         },
@@ -15096,7 +15096,7 @@
           "date": "2026-01-15",
           "close": 156.8416748046875,
           "ma25": 154.42267150878905,
-          "ma75": 153.1126513671875,
+          "ma75": 153.11265116373698,
           "ma125": null,
           "ma200": null
         },
@@ -15473,7 +15473,7 @@
           "close": 156.15333557128906,
           "ma25": 151.582802734375,
           "ma75": 152.87424763997396,
-          "ma125": 152.7388359375,
+          "ma125": 152.73883569335936,
           "ma200": null
         },
         {
@@ -15481,7 +15481,7 @@
           "close": 156.35000610351562,
           "ma25": 151.81880310058594,
           "ma75": 152.93062540690104,
-          "ma125": 152.75270739746094,
+          "ma125": 152.7527071533203,
           "ma200": null
         },
         {
@@ -15489,7 +15489,7 @@
           "close": 156.3000030517578,
           "ma25": 152.07247009277344,
           "ma75": 152.97453653971354,
-          "ma125": 152.78087646484374,
+          "ma125": 152.78087634277344,
           "ma200": null
         },
         {
@@ -15497,7 +15497,7 @@
           "close": 157.1999969482422,
           "ma25": 152.42113647460937,
           "ma75": 153.05273661295573,
-          "ma125": 152.81469848632813,
+          "ma125": 152.81469836425782,
           "ma200": null
         },
         {
@@ -16074,7 +16074,7 @@
           "ma25": 146.72800048828125,
           "ma75": 150.24333374023436,
           "ma125": 151.08749475097656,
-          "ma200": 151.8030226135254
+          "ma200": 151.8030224609375
         },
         {
           "date": "2026-07-16",
@@ -16082,7 +16082,7 @@
           "ma25": 146.73600036621093,
           "ma75": 150.17066691080728,
           "ma125": 151.04704125976562,
-          "ma200": 151.78444221496582
+          "ma200": 151.78444206237793
         },
         {
           "date": "2026-07-17",
@@ -16090,7 +16090,7 @@
           "ma25": 146.86000061035156,
           "ma75": 150.10133361816406,
           "ma125": 151.00504125976562,
-          "ma200": 151.77604789733886
+          "ma200": 151.77604782104493
         },
         {
           "date": "2026-07-21",
@@ -16098,7 +16098,7 @@
           "ma25": 147.06400024414063,
           "ma75": 150.02800028483074,
           "ma125": 150.96390783691407,
-          "ma200": 151.7696866607666
+          "ma200": 151.76968658447265
         },
         {
           "date": "2026-07-22",
@@ -16430,11 +16430,11 @@
         },
         {
           "date": "2026-09-18",
-          "close": 177.60000610351562,
-          "ma25": 171.00000061035155,
-          "ma75": 157.02133321126303,
-          "ma125": 155.32729357910156,
-          "ma200": 154.35184295654298
+          "close": 177.3000030517578,
+          "ma25": 170.98800048828124,
+          "ma75": 157.01733317057293,
+          "ma125": 155.3248935546875,
+          "ma200": 154.35034294128417
         }
       ],
       "decision": {
@@ -16445,14 +16445,14 @@
         "stretched": false,
         "falling_knife": false,
         "risk_level": "低め",
-        "daily_sigma_pct": 1.22,
-        "annualized_vol_pct": 19.4,
-        "return20_pct": 6.92,
-        "return60_pct": 22.4,
-        "drawdown60_pct": -1.33,
-        "rebound_from_low60_pct": 24.37,
-        "distance_ma25_pct": 3.86,
-        "distance_ma75_pct": 13.11,
+        "daily_sigma_pct": 1.23,
+        "annualized_vol_pct": 19.5,
+        "return20_pct": 6.74,
+        "return60_pct": 22.19,
+        "drawdown60_pct": -1.5,
+        "rebound_from_low60_pct": 24.16,
+        "distance_ma25_pct": 3.69,
+        "distance_ma75_pct": 12.92,
         "limit_prices": {
           "aggressive": 176,
           "standard": 172,
@@ -16469,7 +16469,7 @@
           {
             "name": "移動平均の傾き",
             "impact": 10.0,
-            "detail": "MA25 +2.18% / MA75 +1.27%"
+            "detail": "MA25 +2.17% / MA75 +1.27%"
           },
           {
             "name": "並び順",
@@ -16479,12 +16479,12 @@
           {
             "name": "買われ過ぎ/押し目",
             "impact": 7.0,
-            "detail": "株価-MA25 +3.9%"
+            "detail": "株価-MA25 +3.7%"
           },
           {
             "name": "20日モメンタム",
-            "impact": 4.5,
-            "detail": "20日 +6.9%"
+            "impact": 4.4,
+            "detail": "20日 +6.7%"
           }
         ],
         "method": "MA25/75/125/200 + 20日momentum + 20日volatility。テクニカル参考値であり将来収益を保証しません。"
@@ -16499,8 +16499,8 @@
       "cached": false,
       "stale": false,
       "cache_age_seconds": 0,
-      "price": 3055.0,
-      "analysis_price": 3055.0,
+      "price": 3060.0,
+      "analysis_price": 3060.0,
       "as_of": "2026-09-18",
       "grade": 5,
       "stars": "★★★★★",
@@ -16508,31 +16508,31 @@
       "order": "株価 > MA25 > MA75 > MA125 > MA200",
       "moving_averages": {
         "25": {
-          "value": 2961.2,
+          "value": 2961.4,
           "direction": "上向き",
-          "slope_5d_pct": 1.376935138207025,
-          "price_distance_pct": 3.1676347426718987,
+          "slope_5d_pct": 1.3837821553040364,
+          "price_distance_pct": 3.3295063145809323,
           "price_above": true
         },
         "75": {
-          "value": 2854.7733333333335,
+          "value": 2854.84,
           "direction": "上向き",
-          "slope_5d_pct": 0.8727689035148867,
-          "price_distance_pct": 7.013750070058089,
+          "slope_5d_pct": 0.8751245550763231,
+          "price_distance_pct": 7.186392232139105,
           "price_above": true
         },
         "125": {
-          "value": 2771.7544453125,
+          "value": 2771.7944453125,
           "direction": "上向き",
-          "slope_5d_pct": 0.6709166391636767,
-          "price_distance_pct": 10.218998842646943,
+          "slope_5d_pct": 0.672369450639243,
+          "price_distance_pct": 10.397796819850647,
           "price_above": true
         },
         "200": {
-          "value": 2722.063636474609,
+          "value": 2722.0886364746093,
           "direction": "上向き",
-          "slope_5d_pct": 0.40029940498800265,
-          "price_distance_pct": 12.231027925437576,
+          "slope_5d_pct": 0.40122150227166475,
+          "price_distance_pct": 12.413679664855493,
           "price_above": true
         }
       },
@@ -16547,7 +16547,7 @@
         },
         {
           "date": "2025-09-19",
-          "close": 2393.3837890625,
+          "close": 2393.384033203125,
           "ma25": null,
           "ma75": null,
           "ma125": null,
@@ -16732,7 +16732,7 @@
         {
           "date": "2025-10-24",
           "close": 2398.245361328125,
-          "ma25": 2354.030771484375,
+          "ma25": 2354.03078125,
           "ma75": null,
           "ma125": null,
           "ma200": null
@@ -16740,7 +16740,7 @@
         {
           "date": "2025-10-27",
           "close": 2431.253173828125,
-          "ma25": 2354.51822265625,
+          "ma25": 2354.518232421875,
           "ma75": null,
           "ma125": null,
           "ma200": null
@@ -17133,7 +17133,7 @@
           "date": "2026-01-09",
           "close": 2640.631591796875,
           "ma25": 2661.539912109375,
-          "ma75": 2524.5115950520835,
+          "ma75": 2524.5115983072915,
           "ma125": null,
           "ma200": null
         },
@@ -17141,7 +17141,7 @@
           "date": "2026-01-13",
           "close": 2679.551513671875,
           "ma25": 2664.2199609375,
-          "ma75": 2527.9847233072915,
+          "ma75": 2527.9847265625,
           "ma125": null,
           "ma200": null
         },
@@ -17534,7 +17534,7 @@
           "close": 2670.19091796875,
           "ma25": 2625.162236328125,
           "ma75": 2639.3901334635416,
-          "ma125": 2566.0330546875,
+          "ma125": 2566.033056640625,
           "ma200": null
         },
         {
@@ -17542,7 +17542,7 @@
           "close": 2683.0,
           "ma25": 2626.85697265625,
           "ma75": 2640.329462890625,
-          "ma125": 2568.14451953125,
+          "ma125": 2568.144521484375,
           "ma200": null
         },
         {
@@ -18135,7 +18135,7 @@
           "ma25": 2736.5,
           "ma75": 2680.52,
           "ma125": 2659.63809765625,
-          "ma200": 2608.9656591796875
+          "ma200": 2608.965660400391
         },
         {
           "date": "2026-07-16",
@@ -18143,7 +18143,7 @@
           "ma25": 2739.96,
           "ma75": 2682.6666666666665,
           "ma125": 2660.953685546875,
-          "ma200": 2611.0903247070314
+          "ma200": 2611.0903259277343
         },
         {
           "date": "2026-07-17",
@@ -18491,11 +18491,11 @@
         },
         {
           "date": "2026-09-18",
-          "close": 3055.0,
-          "ma25": 2961.2,
-          "ma75": 2854.7733333333335,
-          "ma125": 2771.7544453125,
-          "ma200": 2722.063636474609
+          "close": 3060.0,
+          "ma25": 2961.4,
+          "ma75": 2854.84,
+          "ma125": 2771.7944453125,
+          "ma200": 2722.0886364746093
         }
       ],
       "decision": {
@@ -18506,21 +18506,21 @@
         "stretched": false,
         "falling_knife": false,
         "risk_level": "低め",
-        "daily_sigma_pct": 1.01,
-        "annualized_vol_pct": 16.0,
-        "return20_pct": 4.78,
-        "return60_pct": 14.01,
-        "drawdown60_pct": -1.74,
-        "rebound_from_low60_pct": 15.07,
-        "distance_ma25_pct": 3.17,
-        "distance_ma75_pct": 7.01,
+        "daily_sigma_pct": 0.99,
+        "annualized_vol_pct": 15.7,
+        "return20_pct": 4.96,
+        "return60_pct": 14.2,
+        "drawdown60_pct": -1.58,
+        "rebound_from_low60_pct": 15.25,
+        "distance_ma25_pct": 3.33,
+        "distance_ma75_pct": 7.19,
         "limit_prices": {
-          "aggressive": 3031,
+          "aggressive": 3036,
           "standard": 2970,
           "deep": 2863
         },
         "invalidation_price": 2798,
-        "review_upside_price": 3269,
+        "review_upside_price": 3274,
         "reasons": [
           {
             "name": "長期トレンド",
@@ -18530,7 +18530,7 @@
           {
             "name": "移動平均の傾き",
             "impact": 7.3,
-            "detail": "MA25 +1.38% / MA75 +0.87%"
+            "detail": "MA25 +1.38% / MA75 +0.88%"
           },
           {
             "name": "並び順",
@@ -18540,12 +18540,12 @@
           {
             "name": "買われ過ぎ/押し目",
             "impact": 7.0,
-            "detail": "株価-MA25 +3.2%"
+            "detail": "株価-MA25 +3.3%"
           },
           {
             "name": "20日モメンタム",
-            "impact": 3.1,
-            "detail": "20日 +4.8%"
+            "impact": 3.2,
+            "detail": "20日 +5.0%"
           }
         ],
         "method": "MA25/75/125/200 + 20日momentum + 20日volatility。テクニカル参考値であり将来収益を保証しません。"
@@ -18560,8 +18560,8 @@
       "cached": false,
       "stale": false,
       "cache_age_seconds": 0,
-      "price": 3941.0,
-      "analysis_price": 3941.0,
+      "price": 3913.0,
+      "analysis_price": 3913.0,
       "as_of": "2026-09-18",
       "grade": 3,
       "stars": "★★★☆☆",
@@ -18569,31 +18569,31 @@
       "order": "株価 > MA25 > MA125 > MA200 > MA75",
       "moving_averages": {
         "25": {
-          "value": 3906.72,
+          "value": 3905.6,
           "direction": "上向き",
-          "slope_5d_pct": 1.5978030208463334,
-          "price_distance_pct": 0.8774624237211759,
+          "slope_5d_pct": 1.5686764032788236,
+          "price_distance_pct": 0.1894715280622794,
           "price_above": true
         },
         "75": {
-          "value": 3614.852138671875,
+          "value": 3614.478805338542,
           "direction": "上向き",
-          "slope_5d_pct": 0.8029573061606232,
-          "price_distance_pct": 9.022439890112754,
+          "slope_5d_pct": 0.7925466164235839,
+          "price_distance_pct": 8.259038459999978,
           "price_above": true
         },
         "125": {
-          "value": 3781.02472265625,
+          "value": 3780.80072265625,
           "direction": "下向き",
-          "slope_5d_pct": -0.42483129040251644,
-          "price_distance_pct": 4.231003208869888,
+          "slope_5d_pct": -0.4307304419360447,
+          "price_distance_pct": 3.49659469094874,
           "price_above": true
         },
         "200": {
-          "value": 3641.0917028808594,
+          "value": 3640.9517028808596,
           "direction": "上向き",
-          "slope_5d_pct": 0.6465419249223281,
-          "price_distance_pct": 8.236768573608044,
+          "slope_5d_pct": 0.6426720647212392,
+          "price_distance_pct": 7.471900736938797,
           "price_above": true
         }
       },
@@ -20552,15 +20552,15 @@
         },
         {
           "date": "2026-09-18",
-          "close": 3941.0,
-          "ma25": 3906.72,
-          "ma75": 3614.852138671875,
-          "ma125": 3781.02472265625,
-          "ma200": 3641.0917028808594
+          "close": 3913.0,
+          "ma25": 3905.6,
+          "ma75": 3614.478805338542,
+          "ma125": 3780.80072265625,
+          "ma200": 3640.9517028808596
         }
       ],
       "decision": {
-        "score": 77,
+        "score": 76,
         "rank": "B",
         "label": "分割買い候補",
         "heat": "通常",
@@ -20569,19 +20569,19 @@
         "risk_level": "中",
         "daily_sigma_pct": 2.02,
         "annualized_vol_pct": 32.1,
-        "return20_pct": -0.33,
-        "return60_pct": 17.85,
-        "drawdown60_pct": -4.16,
-        "rebound_from_low60_pct": 23.0,
-        "distance_ma25_pct": 0.88,
-        "distance_ma75_pct": 9.02,
+        "return20_pct": -1.04,
+        "return60_pct": 17.01,
+        "drawdown60_pct": -4.84,
+        "rebound_from_low60_pct": 22.13,
+        "distance_ma25_pct": 0.19,
+        "distance_ma75_pct": 8.26,
         "limit_prices": {
-          "aggressive": 3889,
-          "standard": 3845,
-          "deep": 3626
+          "aggressive": 3862,
+          "standard": 3818,
+          "deep": 3625
         },
-        "invalidation_price": 3543,
-        "review_upside_price": 4220,
+        "invalidation_price": 3542,
+        "review_upside_price": 4190,
         "reasons": [
           {
             "name": "長期トレンド",
@@ -20590,8 +20590,8 @@
           },
           {
             "name": "移動平均の傾き",
-            "impact": 5.8,
-            "detail": "MA25 +1.60% / MA75 +0.80%"
+            "impact": 5.7,
+            "detail": "MA25 +1.57% / MA75 +0.79%"
           },
           {
             "name": "並び順",
@@ -20601,12 +20601,12 @@
           {
             "name": "買われ過ぎ/押し目",
             "impact": 7.0,
-            "detail": "株価-MA25 +0.9%"
+            "detail": "株価-MA25 +0.2%"
           },
           {
             "name": "20日モメンタム",
-            "impact": -0.2,
-            "detail": "20日 -0.3%"
+            "impact": -0.7,
+            "detail": "20日 -1.0%"
           }
         ],
         "method": "MA25/75/125/200 + 20日momentum + 20日volatility。テクニカル参考値であり将来収益を保証しません。"
@@ -20621,40 +20621,40 @@
       "cached": false,
       "stale": false,
       "cache_age_seconds": 0,
-      "price": 3377.0,
-      "analysis_price": 3377.0,
+      "price": 3350.0,
+      "analysis_price": 3350.0,
       "as_of": "2026-09-18",
       "grade": 3,
       "stars": "★★★☆☆",
       "label": "持ち合い・転換局面",
-      "order": "MA200 > MA25 > MA125 > 株価 > MA75",
+      "order": "MA200 > MA25 > MA125 > MA75 > 株価",
       "moving_averages": {
         "25": {
-          "value": 3399.8,
+          "value": 3398.72,
           "direction": "下向き",
-          "slope_5d_pct": -0.36340191079068385,
-          "price_distance_pct": -0.6706276839814174,
+          "slope_5d_pct": -0.3950530449563283,
+          "price_distance_pct": -1.43348083984558,
           "price_above": false
         },
         "75": {
-          "value": 3373.141627604167,
+          "value": 3372.7816276041667,
           "direction": "上向き",
-          "slope_5d_pct": 0.2528457253291094,
-          "price_distance_pct": 0.11438512881458696,
-          "price_above": true
+          "slope_5d_pct": 0.24214619698266215,
+          "price_distance_pct": -0.6754551619266747,
+          "price_above": false
         },
         "125": {
-          "value": 3379.130841796875,
+          "value": 3378.914841796875,
           "direction": "下向き",
-          "slope_5d_pct": -0.14224374885631885,
-          "price_distance_pct": -0.0630588721371228,
+          "slope_5d_pct": -0.14862683266102517,
+          "price_distance_pct": -0.8557434309737877,
           "price_above": false
         },
         "200": {
-          "value": 3403.96779296875,
+          "value": 3403.83279296875,
           "direction": "上向き",
-          "slope_5d_pct": 0.12096591948935753,
-          "price_distance_pct": -0.7922458321860337,
+          "slope_5d_pct": 0.11699516206120641,
+          "price_distance_pct": -1.5815345888890775,
           "price_above": false
         }
       },
@@ -22613,36 +22613,36 @@
         },
         {
           "date": "2026-09-18",
-          "close": 3377.0,
-          "ma25": 3399.8,
-          "ma75": 3373.141627604167,
-          "ma125": 3379.130841796875,
-          "ma200": 3403.96779296875
+          "close": 3350.0,
+          "ma25": 3398.72,
+          "ma75": 3372.7816276041667,
+          "ma125": 3378.914841796875,
+          "ma200": 3403.83279296875
         }
       ],
       "decision": {
-        "score": 52,
+        "score": 42,
         "rank": "D",
         "label": "弱い・見送り優先",
-        "heat": "押し目",
+        "heat": "通常",
         "stretched": false,
         "falling_knife": false,
         "risk_level": "低め",
-        "daily_sigma_pct": 0.85,
-        "annualized_vol_pct": 13.5,
-        "return20_pct": -2.71,
-        "return60_pct": 7.36,
-        "drawdown60_pct": -8.18,
-        "rebound_from_low60_pct": 4.97,
-        "distance_ma25_pct": -0.67,
-        "distance_ma75_pct": 0.11,
+        "daily_sigma_pct": 0.9,
+        "annualized_vol_pct": 14.2,
+        "return20_pct": -3.49,
+        "return60_pct": 6.5,
+        "drawdown60_pct": -8.92,
+        "rebound_from_low60_pct": 4.13,
+        "distance_ma25_pct": -1.43,
+        "distance_ma75_pct": -0.68,
         "limit_prices": {
-          "aggressive": 3350,
-          "standard": 3316,
-          "deep": 3259
+          "aggressive": 3323,
+          "standard": 3290,
+          "deep": 3233
         },
-        "invalidation_price": 3191,
-        "review_upside_price": 3613,
+        "invalidation_price": 3166,
+        "review_upside_price": 3584,
         "reasons": [
           {
             "name": "長期トレンド",
@@ -22651,23 +22651,23 @@
           },
           {
             "name": "移動平均の傾き",
-            "impact": -0.3,
-            "detail": "MA25 -0.36% / MA75 +0.25%"
+            "impact": -0.4,
+            "detail": "MA25 -0.40% / MA75 +0.24%"
           },
           {
             "name": "並び順",
             "impact": -5.0,
-            "detail": "MA200 > MA25 > MA125 > 株価 > MA75"
+            "detail": "MA200 > MA25 > MA125 > MA75 > 株価"
           },
           {
             "name": "買われ過ぎ/押し目",
-            "impact": 9.0,
-            "detail": "株価-MA25 -0.7%"
+            "impact": 0.0,
+            "detail": "株価-MA25 -1.4%"
           },
           {
             "name": "20日モメンタム",
-            "impact": -1.8,
-            "detail": "20日 -2.7%"
+            "impact": -2.3,
+            "detail": "20日 -3.5%"
           }
         ],
         "method": "MA25/75/125/200 + 20日momentum + 20日volatility。テクニカル参考値であり将来収益を保証しません。"
@@ -22682,8 +22682,8 @@
       "cached": false,
       "stale": false,
       "cache_age_seconds": 0,
-      "price": 5407.0,
-      "analysis_price": 5407.0,
+      "price": 5403.0,
+      "analysis_price": 5403.0,
       "as_of": "2026-09-18",
       "grade": 5,
       "stars": "★★★★★",
@@ -22691,31 +22691,31 @@
       "order": "株価 > MA25 > MA75 > MA125 > MA200",
       "moving_averages": {
         "25": {
-          "value": 5344.24,
+          "value": 5344.08,
           "direction": "上向き",
-          "slope_5d_pct": 0.41864275567646825,
-          "price_distance_pct": 1.174348457404606,
+          "slope_5d_pct": 0.41563634450465514,
+          "price_distance_pct": 1.1025284052633921,
           "price_above": true
         },
         "75": {
-          "value": 5138.936256510417,
+          "value": 5138.882923177083,
           "direction": "上向き",
-          "slope_5d_pct": 0.6614261918540976,
-          "price_distance_pct": 5.216327467576165,
+          "slope_5d_pct": 0.6603814991144041,
+          "price_distance_pct": 5.139581515502356,
           "price_above": true
         },
         "125": {
-          "value": 5047.60704296875,
+          "value": 5047.57504296875,
           "direction": "上向き",
-          "slope_5d_pct": 0.45786032521522024,
-          "price_distance_pct": 7.120066082241494,
+          "slope_5d_pct": 0.457223458774747,
+          "price_distance_pct": 7.041499215080638,
           "price_above": true
         },
         "200": {
-          "value": 4919.790703125,
+          "value": 4919.770703125,
           "direction": "上向き",
-          "slope_5d_pct": 0.5746103662563229,
-          "price_distance_pct": 9.90304926113077,
+          "slope_5d_pct": 0.5742015089839958,
+          "price_distance_pct": 9.822191440102213,
           "price_above": true
         }
       },
@@ -24666,11 +24666,11 @@
         },
         {
           "date": "2026-09-18",
-          "close": 5407.0,
-          "ma25": 5344.24,
-          "ma75": 5138.936256510417,
-          "ma125": 5047.60704296875,
-          "ma200": 4919.790703125
+          "close": 5403.0,
+          "ma25": 5344.08,
+          "ma75": 5138.882923177083,
+          "ma125": 5047.57504296875,
+          "ma200": 4919.770703125
         }
       ],
       "decision": {
@@ -24681,21 +24681,21 @@
         "stretched": false,
         "falling_knife": false,
         "risk_level": "低め",
-        "daily_sigma_pct": 0.8,
-        "annualized_vol_pct": 12.7,
-        "return20_pct": 1.81,
-        "return60_pct": 13.19,
-        "drawdown60_pct": -1.15,
-        "rebound_from_low60_pct": 13.42,
-        "distance_ma25_pct": 1.17,
-        "distance_ma75_pct": 5.22,
+        "daily_sigma_pct": 0.81,
+        "annualized_vol_pct": 12.8,
+        "return20_pct": 1.73,
+        "return60_pct": 13.1,
+        "drawdown60_pct": -1.22,
+        "rebound_from_low60_pct": 13.34,
+        "distance_ma25_pct": 1.1,
+        "distance_ma75_pct": 5.14,
         "limit_prices": {
-          "aggressive": 5364,
-          "standard": 5310,
+          "aggressive": 5360,
+          "standard": 5306,
           "deep": 5154
         },
         "invalidation_price": 5036,
-        "review_upside_price": 5785,
+        "review_upside_price": 5781,
         "reasons": [
           {
             "name": "長期トレンド",
@@ -24715,12 +24715,12 @@
           {
             "name": "買われ過ぎ/押し目",
             "impact": 7.0,
-            "detail": "株価-MA25 +1.2%"
+            "detail": "株価-MA25 +1.1%"
           },
           {
             "name": "20日モメンタム",
-            "impact": 1.2,
-            "detail": "20日 +1.8%"
+            "impact": 1.1,
+            "detail": "20日 +1.7%"
           }
         ],
         "method": "MA25/75/125/200 + 20日momentum + 20日volatility。テクニカル参考値であり将来収益を保証しません。"
