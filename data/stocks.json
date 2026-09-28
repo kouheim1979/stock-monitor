@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-28T05:17:08.732027+00:00",
+  "generated_at": "2026-09-28T13:46:17.863454+00:00",
   "count": 12,
   "stocks": {
     "8306": {
@@ -11,8 +11,8 @@
       "cached": false,
       "stale": false,
       "cache_age_seconds": 0,
-      "price": 3718.0,
-      "analysis_price": 3718.0,
+      "price": 3721.0,
+      "analysis_price": 3721.0,
       "as_of": "2026-09-28",
       "grade": 5,
       "stars": "★★★★★",
@@ -20,31 +20,31 @@
       "order": "株価 > MA25 > MA75 > MA125 > MA200",
       "moving_averages": {
         "25": {
-          "value": 3641.64,
+          "value": 3641.76,
           "direction": "上向き",
-          "slope_5d_pct": 0.092351330848639,
-          "price_distance_pct": 2.096857459825796,
+          "slope_5d_pct": 0.09564959266465944,
+          "price_distance_pct": 2.1758710074249787,
           "price_above": true
         },
         "75": {
-          "value": 3516.3333333333335,
+          "value": 3516.3733333333334,
           "direction": "上向き",
-          "slope_5d_pct": 0.9717175816560619,
-          "price_distance_pct": 5.735140771637126,
+          "slope_5d_pct": 0.9728661839984332,
+          "price_distance_pct": 5.819253169932659,
           "price_above": true
         },
         "125": {
-          "value": 3267.889654296875,
+          "value": 3267.913654296875,
           "direction": "上向き",
-          "slope_5d_pct": 1.301076721312544,
-          "price_distance_pct": 13.773731469521477,
+          "slope_5d_pct": 1.301820695589062,
+          "price_distance_pct": 13.864697590995911,
           "price_above": true
         },
         "200": {
-          "value": 3040.233953857422,
+          "value": 3040.248953857422,
           "direction": "上向き",
-          "slope_5d_pct": 1.0730397522305646,
-          "price_distance_pct": 22.293220075469343,
+          "slope_5d_pct": 1.0735384295097905,
+          "price_distance_pct": 22.391292834057275,
           "price_above": true
         }
       },
@@ -1979,11 +1979,11 @@
         },
         {
           "date": "2026-09-28",
-          "close": 3718.0,
-          "ma25": 3641.64,
-          "ma75": 3516.3333333333335,
-          "ma125": 3267.889654296875,
-          "ma200": 3040.233953857422
+          "close": 3721.0,
+          "ma25": 3641.76,
+          "ma75": 3516.3733333333334,
+          "ma125": 3267.913654296875,
+          "ma200": 3040.248953857422
         }
       ],
       "decision": {
@@ -1996,19 +1996,19 @@
         "risk_level": "中",
         "daily_sigma_pct": 1.43,
         "annualized_vol_pct": 22.7,
-        "return20_pct": 3.88,
-        "return60_pct": 15.79,
-        "drawdown60_pct": -2.13,
-        "rebound_from_low60_pct": 15.93,
-        "distance_ma25_pct": 2.1,
-        "distance_ma75_pct": 5.74,
+        "return20_pct": 3.97,
+        "return60_pct": 15.88,
+        "drawdown60_pct": -2.05,
+        "rebound_from_low60_pct": 16.03,
+        "distance_ma25_pct": 2.18,
+        "distance_ma75_pct": 5.82,
         "limit_prices": {
-          "aggressive": 3683,
-          "standard": 3651,
+          "aggressive": 3686,
+          "standard": 3653,
           "deep": 3527
         },
         "invalidation_price": 3446,
-        "review_upside_price": 3978,
+        "review_upside_price": 3981,
         "reasons": [
           {
             "name": "長期トレンド",
@@ -2018,7 +2018,7 @@
           {
             "name": "移動平均の傾き",
             "impact": 7.6,
-            "detail": "MA25 +0.09% / MA75 +0.97%"
+            "detail": "MA25 +0.10% / MA75 +0.97%"
           },
           {
             "name": "並び順",
@@ -2028,12 +2028,12 @@
           {
             "name": "買われ過ぎ/押し目",
             "impact": 7.0,
-            "detail": "株価-MA25 +2.1%"
+            "detail": "株価-MA25 +2.2%"
           },
           {
             "name": "20日モメンタム",
-            "impact": 2.5,
-            "detail": "20日 +3.9%"
+            "impact": 2.6,
+            "detail": "20日 +4.0%"
           }
         ],
         "method": "MA25/75/125/200 + 20日momentum + 20日volatility。テクニカル参考値であり将来収益を保証しません。"
@@ -2048,8 +2048,8 @@
       "cached": false,
       "stale": false,
       "cache_age_seconds": 0,
-      "price": 7018.0,
-      "analysis_price": 7018.0,
+      "price": 6990.0,
+      "analysis_price": 6990.0,
       "as_of": "2026-09-28",
       "grade": 4,
       "stars": "★★★★☆",
@@ -2057,31 +2057,31 @@
       "order": "株価 > MA25 > MA75 > MA125 > MA200",
       "moving_averages": {
         "25": {
-          "value": 6859.52,
-          "direction": "横ばい",
-          "slope_5d_pct": 0.0,
-          "price_distance_pct": 2.3103657398768407,
+          "value": 6858.4,
+          "direction": "下向き",
+          "slope_5d_pct": -0.01632767307334637,
+          "price_distance_pct": 1.918814883937947,
           "price_above": true
         },
         "75": {
-          "value": 6753.2266666666665,
+          "value": 6752.8533333333335,
           "direction": "上向き",
-          "slope_5d_pct": 0.748113802411221,
-          "price_distance_pct": 3.9206937128325903,
+          "slope_5d_pct": 0.7425442234515023,
+          "price_distance_pct": 3.5117994566247424,
           "price_above": true
         },
         "125": {
-          "value": 6310.81616796875,
+          "value": 6310.59216796875,
           "direction": "上向き",
-          "slope_5d_pct": 1.1561332702829885,
-          "price_distance_pct": 11.205901316229738,
+          "slope_5d_pct": 1.152542772120868,
+          "price_distance_pct": 10.766150211382431,
           "price_above": true
         },
         "200": {
-          "value": 5923.237805175781,
+          "value": 5923.097805175781,
           "direction": "上向き",
-          "slope_5d_pct": 1.003161640759287,
-          "price_distance_pct": 18.482496074488264,
+          "slope_5d_pct": 1.000774358145473,
+          "price_distance_pct": 18.01257095386688,
           "price_above": true
         }
       },
@@ -4016,11 +4016,11 @@
         },
         {
           "date": "2026-09-28",
-          "close": 7018.0,
-          "ma25": 6859.52,
-          "ma75": 6753.2266666666665,
-          "ma125": 6310.81616796875,
-          "ma200": 5923.237805175781
+          "close": 6990.0,
+          "ma25": 6858.4,
+          "ma75": 6752.8533333333335,
+          "ma125": 6310.59216796875,
+          "ma200": 5923.097805175781
         }
       ],
       "decision": {
@@ -4031,21 +4031,21 @@
         "stretched": false,
         "falling_knife": false,
         "risk_level": "中",
-        "daily_sigma_pct": 1.52,
-        "annualized_vol_pct": 24.1,
-        "return20_pct": 4.25,
-        "return60_pct": 10.62,
-        "drawdown60_pct": -2.72,
-        "rebound_from_low60_pct": 10.59,
-        "distance_ma25_pct": 2.31,
-        "distance_ma75_pct": 3.92,
+        "daily_sigma_pct": 1.5,
+        "annualized_vol_pct": 23.8,
+        "return20_pct": 3.83,
+        "return60_pct": 10.18,
+        "drawdown60_pct": -3.11,
+        "rebound_from_low60_pct": 10.15,
+        "distance_ma25_pct": 1.92,
+        "distance_ma75_pct": 3.51,
         "limit_prices": {
-          "aggressive": 6949,
-          "standard": 6880,
-          "deep": 6772
+          "aggressive": 6922,
+          "standard": 6864,
+          "deep": 6745
         },
-        "invalidation_price": 6618,
-        "review_upside_price": 7509,
+        "invalidation_price": 6606,
+        "review_upside_price": 7479,
         "reasons": [
           {
             "name": "長期トレンド",
@@ -4054,8 +4054,8 @@
           },
           {
             "name": "移動平均の傾き",
-            "impact": 6.4,
-            "detail": "MA25 +0.00% / MA75 +0.75%"
+            "impact": 6.3,
+            "detail": "MA25 -0.02% / MA75 +0.74%"
           },
           {
             "name": "並び順",
@@ -4065,12 +4065,12 @@
           {
             "name": "買われ過ぎ/押し目",
             "impact": 7.0,
-            "detail": "株価-MA25 +2.3%"
+            "detail": "株価-MA25 +1.9%"
           },
           {
             "name": "20日モメンタム",
-            "impact": 2.8,
-            "detail": "20日 +4.2%"
+            "impact": 2.5,
+            "detail": "20日 +3.8%"
           }
         ],
         "method": "MA25/75/125/200 + 20日momentum + 20日volatility。テクニカル参考値であり将来収益を保証しません。"
@@ -4085,8 +4085,8 @@
       "cached": false,
       "stale": false,
       "cache_age_seconds": 0,
-      "price": 2907.5,
-      "analysis_price": 2907.5,
+      "price": 2902.0,
+      "analysis_price": 2902.0,
       "as_of": "2026-09-28",
       "grade": 3,
       "stars": "★★★☆☆",
@@ -4094,31 +4094,31 @@
       "order": "MA25 > 株価 > MA75 > MA200 > MA125",
       "moving_averages": {
         "25": {
-          "value": 3045.84,
+          "value": 3045.62,
           "direction": "上向き",
-          "slope_5d_pct": 0.4061288536090224,
-          "price_distance_pct": -4.541932603157095,
+          "slope_5d_pct": 0.39887655265169464,
+          "price_distance_pct": -4.715624404883078,
           "price_above": false
         },
         "75": {
-          "value": 2778.7533333333336,
+          "value": 2778.68,
           "direction": "上向き",
-          "slope_5d_pct": 1.9302063973393402,
-          "price_distance_pct": 4.633252801616061,
+          "slope_5d_pct": 1.9275163846229182,
+          "price_distance_pct": 4.438078512099275,
           "price_above": true
         },
         "125": {
-          "value": 2629.661212890625,
+          "value": 2629.617212890625,
           "direction": "上向き",
-          "slope_5d_pct": 0.38553897498863066,
-          "price_distance_pct": 10.565573456664556,
+          "slope_5d_pct": 0.3838593047355676,
+          "price_distance_pct": 10.35826757499645,
           "price_above": true
         },
         "200": {
-          "value": 2695.9662854003905,
+          "value": 2695.9387854003908,
           "direction": "下向き",
-          "slope_5d_pct": -0.028901027447569838,
-          "price_distance_pct": 7.84630415243468,
+          "slope_5d_pct": -0.029920775074465666,
+          "price_distance_pct": 7.643393674793919,
           "price_above": true
         }
       },
@@ -6053,11 +6053,11 @@
         },
         {
           "date": "2026-09-28",
-          "close": 2907.5,
-          "ma25": 3045.84,
-          "ma75": 2778.7533333333336,
-          "ma125": 2629.661212890625,
-          "ma200": 2695.9662854003905
+          "close": 2902.0,
+          "ma25": 3045.62,
+          "ma75": 2778.68,
+          "ma125": 2629.617212890625,
+          "ma200": 2695.9387854003908
         }
       ],
       "decision": {
@@ -6068,21 +6068,21 @@
         "stretched": false,
         "falling_knife": false,
         "risk_level": "中",
-        "daily_sigma_pct": 1.72,
-        "annualized_vol_pct": 27.4,
-        "return20_pct": -4.26,
-        "return60_pct": 16.37,
-        "drawdown60_pct": -8.8,
-        "rebound_from_low60_pct": 20.54,
-        "distance_ma25_pct": -4.54,
-        "distance_ma75_pct": 4.63,
+        "daily_sigma_pct": 1.74,
+        "annualized_vol_pct": 27.5,
+        "return20_pct": -4.45,
+        "return60_pct": 16.15,
+        "drawdown60_pct": -8.97,
+        "rebound_from_low60_pct": 20.32,
+        "distance_ma25_pct": -4.72,
+        "distance_ma75_pct": 4.44,
         "limit_prices": {
-          "aggressive": 2875,
-          "standard": 2847,
+          "aggressive": 2869,
+          "standard": 2842,
           "deep": 2787
         },
         "invalidation_price": 2723,
-        "review_upside_price": 3111,
+        "review_upside_price": 3105,
         "reasons": [
           {
             "name": "長期トレンド",
@@ -6092,7 +6092,7 @@
           {
             "name": "移動平均の傾き",
             "impact": 5.9,
-            "detail": "MA25 +0.41% / MA75 +1.93%"
+            "detail": "MA25 +0.40% / MA75 +1.93%"
           },
           {
             "name": "並び順",
@@ -6102,12 +6102,12 @@
           {
             "name": "買われ過ぎ/押し目",
             "impact": 0.0,
-            "detail": "株価-MA25 -4.5%"
+            "detail": "株価-MA25 -4.7%"
           },
           {
             "name": "20日モメンタム",
-            "impact": -2.8,
-            "detail": "20日 -4.3%"
+            "impact": -2.9,
+            "detail": "20日 -4.4%"
           }
         ],
         "method": "MA25/75/125/200 + 20日momentum + 20日volatility。テクニカル参考値であり将来収益を保証しません。"
@@ -6122,8 +6122,8 @@
       "cached": false,
       "stale": false,
       "cache_age_seconds": 0,
-      "price": 4267.0,
-      "analysis_price": 4267.0,
+      "price": 4245.0,
+      "analysis_price": 4245.0,
       "as_of": "2026-09-28",
       "grade": 3,
       "stars": "★★★☆☆",
@@ -6131,31 +6131,31 @@
       "order": "MA25 > 株価 > MA200 > MA75 > MA125",
       "moving_averages": {
         "25": {
-          "value": 4318.04,
+          "value": 4317.16,
           "direction": "上向き",
-          "slope_5d_pct": 0.5458017044660535,
-          "price_distance_pct": -1.1820177673203536,
+          "slope_5d_pct": 0.525310855492922,
+          "price_distance_pct": -1.671469206608045,
           "price_above": false
         },
         "75": {
-          "value": 4111.2266666666665,
+          "value": 4110.933333333333,
           "direction": "上向き",
-          "slope_5d_pct": 0.9309389914172739,
-          "price_distance_pct": 3.788974580173976,
+          "slope_5d_pct": 0.9237376349436,
+          "price_distance_pct": 3.2612221069019176,
           "price_above": true
         },
         "125": {
-          "value": 4095.40026171875,
+          "value": 4095.22426171875,
           "direction": "上向き",
-          "slope_5d_pct": 0.01399211936965461,
-          "price_distance_pct": 4.190060246009586,
+          "slope_5d_pct": 0.00969401381512025,
+          "price_distance_pct": 3.6573268937020176,
           "price_above": true
         },
         "200": {
-          "value": 4151.93046875,
+          "value": 4151.82046875,
           "direction": "下向き",
-          "slope_5d_pct": -0.08619733416352915,
-          "price_distance_pct": 2.771470575340418,
+          "slope_5d_pct": -0.08884442047095709,
+          "price_distance_pct": 2.2443054065402146,
           "price_above": true
         }
       },
@@ -8090,36 +8090,36 @@
         },
         {
           "date": "2026-09-28",
-          "close": 4267.0,
-          "ma25": 4318.04,
-          "ma75": 4111.2266666666665,
-          "ma125": 4095.40026171875,
-          "ma200": 4151.93046875
+          "close": 4245.0,
+          "ma25": 4317.16,
+          "ma75": 4110.933333333333,
+          "ma125": 4095.22426171875,
+          "ma200": 4151.82046875
         }
       ],
       "decision": {
-        "score": 71,
+        "score": 70,
         "rank": "B",
         "label": "分割買い候補",
         "heat": "押し目",
         "stretched": false,
         "falling_knife": false,
         "risk_level": "中",
-        "daily_sigma_pct": 1.4,
-        "annualized_vol_pct": 22.3,
-        "return20_pct": -0.81,
-        "return60_pct": 9.8,
-        "drawdown60_pct": -6.92,
-        "rebound_from_low60_pct": 12.47,
-        "distance_ma25_pct": -1.18,
-        "distance_ma75_pct": 3.79,
+        "daily_sigma_pct": 1.42,
+        "annualized_vol_pct": 22.6,
+        "return20_pct": -1.32,
+        "return60_pct": 9.24,
+        "drawdown60_pct": -7.4,
+        "rebound_from_low60_pct": 11.89,
+        "distance_ma25_pct": -1.67,
+        "distance_ma75_pct": 3.26,
         "limit_prices": {
-          "aggressive": 4228,
-          "standard": 4190,
-          "deep": 4118
+          "aggressive": 4206,
+          "standard": 4169,
+          "deep": 4096
         },
-        "invalidation_price": 4029,
-        "review_upside_price": 4566,
+        "invalidation_price": 4012,
+        "review_upside_price": 4542,
         "reasons": [
           {
             "name": "長期トレンド",
@@ -8128,8 +8128,8 @@
           },
           {
             "name": "移動平均の傾き",
-            "impact": 3.1,
-            "detail": "MA25 +0.55% / MA75 +0.93%"
+            "impact": 3.0,
+            "detail": "MA25 +0.53% / MA75 +0.92%"
           },
           {
             "name": "並び順",
@@ -8139,12 +8139,12 @@
           {
             "name": "買われ過ぎ/押し目",
             "impact": 9.0,
-            "detail": "株価-MA25 -1.2%"
+            "detail": "株価-MA25 -1.7%"
           },
           {
             "name": "20日モメンタム",
-            "impact": -0.5,
-            "detail": "20日 -0.8%"
+            "impact": -0.9,
+            "detail": "20日 -1.3%"
           }
         ],
         "method": "MA25/75/125/200 + 20日momentum + 20日volatility。テクニカル参考値であり将来収益を保証しません。"
@@ -8159,8 +8159,8 @@
       "cached": false,
       "stale": false,
       "cache_age_seconds": 0,
-      "price": 3466.0,
-      "analysis_price": 3466.0,
+      "price": 3431.0,
+      "analysis_price": 3431.0,
       "as_of": "2026-09-28",
       "grade": 2,
       "stars": "★★☆☆☆",
@@ -8168,31 +8168,31 @@
       "order": "MA200 > MA25 > MA125 > MA75 > 株価",
       "moving_averages": {
         "25": {
-          "value": 3534.48,
+          "value": 3533.08,
           "direction": "上向き",
-          "slope_5d_pct": 0.1314507173129531,
-          "price_distance_pct": -1.9374844390122492,
+          "slope_5d_pct": 0.09178886295129196,
+          "price_distance_pct": -2.8892637585336334,
           "price_above": false
         },
         "75": {
-          "value": 3507.3333333333335,
+          "value": 3506.866666666667,
           "direction": "上向き",
-          "slope_5d_pct": 0.2767569875421261,
-          "price_distance_pct": -1.1784831781030292,
+          "slope_5d_pct": 0.26341470852839777,
+          "price_distance_pct": -2.1633747124688685,
           "price_above": false
         },
         "125": {
-          "value": 3528.97309765625,
+          "value": 3528.69309765625,
           "direction": "下向き",
-          "slope_5d_pct": -0.13842912626564896,
-          "price_distance_pct": -1.7844595556161469,
+          "slope_5d_pct": -0.14635246233846155,
+          "price_distance_pct": -2.7685348357763817,
           "price_above": false
         },
         "200": {
-          "value": 3659.4025048828125,
+          "value": 3659.2275048828124,
           "direction": "下向き",
-          "slope_5d_pct": -0.340719505807352,
-          "price_distance_pct": -5.285084235056181,
+          "slope_5d_pct": -0.3454854133737473,
+          "price_distance_pct": -6.237040593356635,
           "price_above": false
         }
       },
@@ -10127,36 +10127,36 @@
         },
         {
           "date": "2026-09-28",
-          "close": 3466.0,
-          "ma25": 3534.48,
-          "ma75": 3507.3333333333335,
-          "ma125": 3528.97309765625,
-          "ma200": 3659.4025048828125
+          "close": 3431.0,
+          "ma25": 3533.08,
+          "ma75": 3506.866666666667,
+          "ma125": 3528.69309765625,
+          "ma200": 3659.2275048828124
         }
       ],
       "decision": {
-        "score": 23,
+        "score": 22,
         "rank": "E",
         "label": "下降優勢・見送り",
         "heat": "通常",
         "stretched": false,
         "falling_knife": false,
         "risk_level": "低め",
-        "daily_sigma_pct": 1.25,
-        "annualized_vol_pct": 19.9,
-        "return20_pct": -3.29,
-        "return60_pct": 0.41,
-        "drawdown60_pct": -11.92,
-        "rebound_from_low60_pct": 5.19,
-        "distance_ma25_pct": -1.94,
-        "distance_ma75_pct": -1.18,
+        "daily_sigma_pct": 1.26,
+        "annualized_vol_pct": 20.0,
+        "return20_pct": -4.27,
+        "return60_pct": -0.61,
+        "drawdown60_pct": -12.81,
+        "rebound_from_low60_pct": 4.13,
+        "distance_ma25_pct": -2.89,
+        "distance_ma75_pct": -2.16,
         "limit_prices": {
-          "aggressive": 3438,
-          "standard": 3404,
-          "deep": 3345
+          "aggressive": 3403,
+          "standard": 3369,
+          "deep": 3311
         },
-        "invalidation_price": 3275,
-        "review_upside_price": 3709,
+        "invalidation_price": 3242,
+        "review_upside_price": 3671,
         "reasons": [
           {
             "name": "長期トレンド",
@@ -10165,8 +10165,8 @@
           },
           {
             "name": "移動平均の傾き",
-            "impact": -0.2,
-            "detail": "MA25 +0.13% / MA75 +0.28%"
+            "impact": -0.3,
+            "detail": "MA25 +0.09% / MA75 +0.26%"
           },
           {
             "name": "並び順",
@@ -10176,12 +10176,12 @@
           {
             "name": "買われ過ぎ/押し目",
             "impact": 0.0,
-            "detail": "株価-MA25 -1.9%"
+            "detail": "株価-MA25 -2.9%"
           },
           {
             "name": "20日モメンタム",
-            "impact": -2.1,
-            "detail": "20日 -3.3%"
+            "impact": -2.8,
+            "detail": "20日 -4.3%"
           }
         ],
         "method": "MA25/75/125/200 + 20日momentum + 20日volatility。テクニカル参考値であり将来収益を保証しません。"
@@ -10196,40 +10196,40 @@
       "cached": false,
       "stale": false,
       "cache_age_seconds": 0,
-      "price": 6877.0,
-      "analysis_price": 6877.0,
+      "price": 6850.0,
+      "analysis_price": 6850.0,
       "as_of": "2026-09-28",
       "grade": 4,
       "stars": "★★★★☆",
       "label": "長期上昇トレンド",
-      "order": "株価 > MA25 > MA75 > MA125 > MA200",
+      "order": "MA25 > 株価 > MA75 > MA125 > MA200",
       "moving_averages": {
         "25": {
-          "value": 6860.8,
+          "value": 6859.72,
           "direction": "下向き",
-          "slope_5d_pct": -0.3786910763654894,
-          "price_distance_pct": 0.23612406716417844,
-          "price_above": true
+          "slope_5d_pct": -0.3943730687916758,
+          "price_distance_pct": -0.1416967456397633,
+          "price_above": false
         },
         "75": {
-          "value": 6534.035045572917,
+          "value": 6533.675045572917,
           "direction": "上向き",
-          "slope_5d_pct": 0.988630392666856,
-          "price_distance_pct": 5.248899830426468,
+          "slope_5d_pct": 0.9830663106428439,
+          "price_distance_pct": 4.841455264008232,
           "price_above": true
         },
         "125": {
-          "value": 6276.63766015625,
+          "value": 6276.42166015625,
           "direction": "上向き",
-          "slope_5d_pct": 0.7635269843782932,
-          "price_distance_pct": 9.56503103014561,
+          "slope_5d_pct": 0.7600593759218066,
+          "price_distance_pct": 9.138620234598305,
           "price_above": true
         },
         "200": {
-          "value": 6037.193220214844,
+          "value": 6037.0582202148435,
           "direction": "上向き",
-          "slope_5d_pct": 0.5596215274699778,
-          "price_distance_pct": 13.91054997168486,
+          "slope_5d_pct": 0.5573728750894791,
+          "price_distance_pct": 13.465859531767554,
           "price_above": true
         }
       },
@@ -12164,36 +12164,36 @@
         },
         {
           "date": "2026-09-28",
-          "close": 6877.0,
-          "ma25": 6860.8,
-          "ma75": 6534.035045572917,
-          "ma125": 6276.63766015625,
-          "ma200": 6037.193220214844
+          "close": 6850.0,
+          "ma25": 6859.72,
+          "ma75": 6533.675045572917,
+          "ma125": 6276.42166015625,
+          "ma200": 6037.0582202148435
         }
       ],
       "decision": {
-        "score": 100,
+        "score": 98,
         "rank": "A",
         "label": "強い候補・押し目を狙う",
-        "heat": "通常",
+        "heat": "押し目",
         "stretched": false,
         "falling_knife": false,
         "risk_level": "低め",
-        "daily_sigma_pct": 1.02,
-        "annualized_vol_pct": 16.2,
-        "return20_pct": -1.52,
-        "return60_pct": 14.12,
-        "drawdown60_pct": -3.62,
-        "rebound_from_low60_pct": 15.1,
-        "distance_ma25_pct": 0.24,
-        "distance_ma75_pct": 5.25,
+        "daily_sigma_pct": 1.04,
+        "annualized_vol_pct": 16.5,
+        "return20_pct": -1.9,
+        "return60_pct": 13.67,
+        "drawdown60_pct": -3.99,
+        "rebound_from_low60_pct": 14.64,
+        "distance_ma25_pct": -0.14,
+        "distance_ma75_pct": 4.84,
         "limit_prices": {
-          "aggressive": 6822,
-          "standard": 6753,
-          "deep": 6554
+          "aggressive": 6795,
+          "standard": 6727,
+          "deep": 6553
         },
         "invalidation_price": 6403,
-        "review_upside_price": 7358,
+        "review_upside_price": 7330,
         "reasons": [
           {
             "name": "長期トレンド",
@@ -12202,23 +12202,23 @@
           },
           {
             "name": "移動平均の傾き",
-            "impact": 4.3,
-            "detail": "MA25 -0.38% / MA75 +0.99%"
+            "impact": 4.2,
+            "detail": "MA25 -0.39% / MA75 +0.98%"
           },
           {
             "name": "並び順",
-            "impact": 18.0,
-            "detail": "株価 > MA25 > MA75 > MA125 > MA200"
+            "impact": 14.0,
+            "detail": "MA25 > 株価 > MA75 > MA125 > MA200"
           },
           {
             "name": "買われ過ぎ/押し目",
-            "impact": 7.0,
-            "detail": "株価-MA25 +0.2%"
+            "impact": 9.0,
+            "detail": "株価-MA25 -0.1%"
           },
           {
             "name": "20日モメンタム",
-            "impact": -1.0,
-            "detail": "20日 -1.5%"
+            "impact": -1.2,
+            "detail": "20日 -1.9%"
           }
         ],
         "method": "MA25/75/125/200 + 20日momentum + 20日volatility。テクニカル参考値であり将来収益を保証しません。"
@@ -12233,41 +12233,41 @@
       "cached": false,
       "stale": false,
       "cache_age_seconds": 0,
-      "price": 1377.0,
-      "analysis_price": 1377.0,
+      "price": 1370.0,
+      "analysis_price": 1370.0,
       "as_of": "2026-09-28",
-      "grade": 4,
-      "stars": "★★★★☆",
-      "label": "長期上昇トレンド",
-      "order": "MA25 > MA125 > MA75 > 株価 > MA200",
+      "grade": 3,
+      "stars": "★★★☆☆",
+      "label": "持ち合い・転換局面",
+      "order": "MA25 > MA125 > MA75 > MA200 > 株価",
       "moving_averages": {
         "25": {
-          "value": 1392.2,
+          "value": 1391.92,
           "direction": "下向き",
-          "slope_5d_pct": -0.14345144168699253,
-          "price_distance_pct": -1.091797155581098,
+          "slope_5d_pct": -0.1635346435231666,
+          "price_distance_pct": -1.5748031496063075,
           "price_above": false
         },
         "75": {
-          "value": 1383.0,
+          "value": 1382.9066666666668,
           "direction": "上向き",
-          "slope_5d_pct": 0.5335620720235967,
-          "price_distance_pct": -0.4338394793926281,
+          "slope_5d_pct": 0.5267774498543654,
+          "price_distance_pct": -0.9332999093696448,
           "price_above": false
         },
         "125": {
-          "value": 1388.4443984375,
+          "value": 1388.3883984375,
           "direction": "下向き",
-          "slope_5d_pct": -0.054932257065498646,
-          "price_distance_pct": -0.8242604781566354,
+          "slope_5d_pct": -0.05896333227449757,
+          "price_distance_pct": -1.3244419542971064,
           "price_above": false
         },
         "200": {
-          "value": 1374.9174639892578,
+          "value": 1374.8824639892578,
           "direction": "上向き",
-          "slope_5d_pct": 0.3036523606612995,
-          "price_distance_pct": 0.15146625635984456,
-          "price_above": true
+          "slope_5d_pct": 0.3010990235159161,
+          "price_distance_pct": -0.35511864593072984,
+          "price_above": false
         }
       },
       "history": [
@@ -14201,61 +14201,61 @@
         },
         {
           "date": "2026-09-28",
-          "close": 1377.0,
-          "ma25": 1392.2,
-          "ma75": 1383.0,
-          "ma125": 1388.4443984375,
-          "ma200": 1374.9174639892578
+          "close": 1370.0,
+          "ma25": 1391.92,
+          "ma75": 1382.9066666666668,
+          "ma125": 1388.3883984375,
+          "ma200": 1374.8824639892578
         }
       ],
       "decision": {
-        "score": 82,
-        "rank": "A",
-        "label": "強い候補・押し目を狙う",
+        "score": 50,
+        "rank": "D",
+        "label": "弱い・見送り優先",
         "heat": "通常",
         "stretched": false,
         "falling_knife": false,
         "risk_level": "低め",
-        "daily_sigma_pct": 0.9,
-        "annualized_vol_pct": 14.4,
-        "return20_pct": -2.17,
-        "return60_pct": 4.36,
-        "drawdown60_pct": -9.29,
-        "rebound_from_low60_pct": 5.28,
-        "distance_ma25_pct": -1.09,
-        "distance_ma75_pct": -0.43,
+        "daily_sigma_pct": 0.91,
+        "annualized_vol_pct": 14.5,
+        "return20_pct": -2.66,
+        "return60_pct": 3.83,
+        "drawdown60_pct": -9.75,
+        "rebound_from_low60_pct": 4.74,
+        "distance_ma25_pct": -1.57,
+        "distance_ma75_pct": -0.93,
         "limit_prices": {
-          "aggressive": 1366,
-          "standard": 1352,
-          "deep": 1329
+          "aggressive": 1359,
+          "standard": 1345,
+          "deep": 1322
         },
-        "invalidation_price": 1301,
-        "review_upside_price": 1473,
+        "invalidation_price": 1295,
+        "review_upside_price": 1466,
         "reasons": [
           {
             "name": "長期トレンド",
-            "impact": 22.0,
-            "detail": "長期上昇トレンド"
+            "impact": 0.0,
+            "detail": "持ち合い・転換局面"
           },
           {
             "name": "移動平均の傾き",
-            "impact": 1.4,
-            "detail": "MA25 -0.14% / MA75 +0.53%"
+            "impact": 1.3,
+            "detail": "MA25 -0.16% / MA75 +0.53%"
           },
           {
             "name": "並び順",
-            "impact": 10.0,
-            "detail": "MA25 > MA125 > MA75 > 株価 > MA200"
+            "impact": 0.0,
+            "detail": "MA25 > MA125 > MA75 > MA200 > 株価"
           },
           {
             "name": "買われ過ぎ/押し目",
             "impact": 0.0,
-            "detail": "株価-MA25 -1.1%"
+            "detail": "株価-MA25 -1.6%"
           },
           {
             "name": "20日モメンタム",
-            "impact": -1.4,
-            "detail": "20日 -2.2%"
+            "impact": -1.7,
+            "detail": "20日 -2.7%"
           }
         ],
         "method": "MA25/75/125/200 + 20日momentum + 20日volatility。テクニカル参考値であり将来収益を保証しません。"
@@ -14270,8 +14270,8 @@
       "cached": false,
       "stale": false,
       "cache_age_seconds": 0,
-      "price": 175.3000030517578,
-      "analysis_price": 175.3000030517578,
+      "price": 174.6999969482422,
+      "analysis_price": 174.6999969482422,
       "as_of": "2026-09-28",
       "grade": 5,
       "stars": "★★★★★",
@@ -14279,31 +14279,31 @@
       "order": "株価 > MA25 > MA75 > MA125 > MA200",
       "moving_averages": {
         "25": {
-          "value": 172.7880010986328,
+          "value": 172.7640008544922,
           "direction": "上向き",
-          "slope_5d_pct": 1.865302580966266,
-          "price_distance_pct": 1.4538057834762919,
+          "slope_5d_pct": 1.851153495868596,
+          "price_distance_pct": 1.1206015629266153,
           "price_above": true
         },
         "75": {
-          "value": 158.16533325195311,
+          "value": 158.1573331705729,
           "direction": "上向き",
-          "slope_5d_pct": 1.2608091751209471,
-          "price_distance_pct": 10.833391519815304,
+          "slope_5d_pct": 1.2556873529278478,
+          "price_distance_pct": 10.459624884941633,
           "price_above": true
         },
         "125": {
-          "value": 155.82222680664063,
+          "value": 155.8174267578125,
           "direction": "上向き",
-          "slope_5d_pct": 0.5649505933125631,
-          "price_distance_pct": 12.499998648644084,
+          "slope_5d_pct": 0.5618527254208194,
+          "price_distance_pct": 12.118394317844118,
           "price_above": true
         },
         "200": {
-          "value": 154.6931346130371,
+          "value": 154.69013458251953,
           "direction": "上向き",
-          "slope_5d_pct": 0.4036064393472705,
-          "price_distance_pct": 13.321126687534335,
+          "slope_5d_pct": 0.40165926900810334,
+          "price_distance_pct": 12.935448288105533,
           "price_above": true
         }
       },
@@ -16238,11 +16238,11 @@
         },
         {
           "date": "2026-09-28",
-          "close": 175.3000030517578,
-          "ma25": 172.7880010986328,
-          "ma75": 158.16533325195311,
-          "ma125": 155.82222680664063,
-          "ma200": 154.6931346130371
+          "close": 174.6999969482422,
+          "ma25": 172.7640008544922,
+          "ma75": 158.1573331705729,
+          "ma125": 155.8174267578125,
+          "ma200": 154.69013458251953
         }
       ],
       "decision": {
@@ -16253,21 +16253,21 @@
         "stretched": false,
         "falling_knife": false,
         "risk_level": "低め",
-        "daily_sigma_pct": 1.26,
-        "annualized_vol_pct": 20.0,
-        "return20_pct": 3.36,
-        "return60_pct": 20.07,
-        "drawdown60_pct": -2.61,
-        "rebound_from_low60_pct": 22.76,
-        "distance_ma25_pct": 1.45,
-        "distance_ma75_pct": 10.83,
+        "daily_sigma_pct": 1.27,
+        "annualized_vol_pct": 20.2,
+        "return20_pct": 3.01,
+        "return60_pct": 19.66,
+        "drawdown60_pct": -2.94,
+        "rebound_from_low60_pct": 22.34,
+        "distance_ma25_pct": 1.12,
+        "distance_ma75_pct": 10.46,
         "limit_prices": {
-          "aggressive": 174,
+          "aggressive": 173,
           "standard": 172,
           "deep": 159
         },
         "invalidation_price": 155,
-        "review_upside_price": 188,
+        "review_upside_price": 187,
         "reasons": [
           {
             "name": "長期トレンド",
@@ -16277,7 +16277,7 @@
           {
             "name": "移動平均の傾き",
             "impact": 9.0,
-            "detail": "MA25 +1.87% / MA75 +1.26%"
+            "detail": "MA25 +1.85% / MA75 +1.26%"
           },
           {
             "name": "並び順",
@@ -16287,12 +16287,12 @@
           {
             "name": "買われ過ぎ/押し目",
             "impact": 7.0,
-            "detail": "株価-MA25 +1.5%"
+            "detail": "株価-MA25 +1.1%"
           },
           {
             "name": "20日モメンタム",
-            "impact": 2.2,
-            "detail": "20日 +3.4%"
+            "impact": 2.0,
+            "detail": "20日 +3.0%"
           }
         ],
         "method": "MA25/75/125/200 + 20日momentum + 20日volatility。テクニカル参考値であり将来収益を保証しません。"
@@ -16307,40 +16307,40 @@
       "cached": false,
       "stale": false,
       "cache_age_seconds": 0,
-      "price": 3010.0,
-      "analysis_price": 3010.0,
+      "price": 2981.5,
+      "analysis_price": 2981.5,
       "as_of": "2026-09-28",
-      "grade": 5,
-      "stars": "★★★★★",
-      "label": "最強の上昇（パーフェクトオーダー）",
-      "order": "株価 > MA25 > MA75 > MA125 > MA200",
+      "grade": 4,
+      "stars": "★★★★☆",
+      "label": "長期上昇トレンド",
+      "order": "MA25 > 株価 > MA75 > MA125 > MA200",
       "moving_averages": {
         "25": {
-          "value": 2983.48,
+          "value": 2982.34,
           "direction": "上向き",
-          "slope_5d_pct": 1.3775340305952621,
-          "price_distance_pct": 0.8888948476275971,
-          "price_above": true
+          "slope_5d_pct": 1.3387972571646145,
+          "price_distance_pct": -0.02816580269184854,
+          "price_above": false
         },
         "75": {
-          "value": 2868.9866666666667,
+          "value": 2868.6066666666666,
           "direction": "上向き",
-          "slope_5d_pct": 0.8728997899789981,
-          "price_distance_pct": 4.9150919720784,
+          "slope_5d_pct": 0.8595390789079005,
+          "price_distance_pct": 3.9354762242296504,
           "price_above": true
         },
         "125": {
-          "value": 2781.307583984375,
+          "value": 2781.079583984375,
           "direction": "上向き",
-          "slope_5d_pct": 0.6047010727432411,
-          "price_distance_pct": 8.222478424626821,
+          "slope_5d_pct": 0.5964539187870654,
+          "price_distance_pct": 7.206568886766207,
           "price_above": true
         },
         "200": {
-          "value": 2727.6254443359376,
+          "value": 2727.4829443359376,
           "direction": "上向き",
-          "slope_5d_pct": 0.36242376210307015,
-          "price_distance_pct": 10.35239483670416,
+          "slope_5d_pct": 0.3571805035699871,
+          "price_distance_pct": 9.313240846897685,
           "price_above": true
         }
       },
@@ -18275,61 +18275,61 @@
         },
         {
           "date": "2026-09-28",
-          "close": 3010.0,
-          "ma25": 2983.48,
-          "ma75": 2868.9866666666667,
-          "ma125": 2781.307583984375,
-          "ma200": 2727.6254443359376
+          "close": 2981.5,
+          "ma25": 2982.34,
+          "ma75": 2868.6066666666666,
+          "ma125": 2781.079583984375,
+          "ma200": 2727.4829443359376
         }
       ],
       "decision": {
         "score": 100,
         "rank": "A",
         "label": "強い候補・押し目を狙う",
-        "heat": "通常",
+        "heat": "押し目",
         "stretched": false,
         "falling_knife": false,
         "risk_level": "低め",
-        "daily_sigma_pct": 0.97,
-        "annualized_vol_pct": 15.4,
-        "return20_pct": 3.88,
-        "return60_pct": 10.78,
-        "drawdown60_pct": -3.18,
-        "rebound_from_low60_pct": 13.37,
-        "distance_ma25_pct": 0.89,
-        "distance_ma75_pct": 4.92,
+        "daily_sigma_pct": 1.04,
+        "annualized_vol_pct": 16.6,
+        "return20_pct": 2.9,
+        "return60_pct": 9.74,
+        "drawdown60_pct": -4.1,
+        "rebound_from_low60_pct": 12.3,
+        "distance_ma25_pct": -0.03,
+        "distance_ma75_pct": 3.94,
         "limit_prices": {
-          "aggressive": 2986,
-          "standard": 2956,
-          "deep": 2878
+          "aggressive": 2958,
+          "standard": 2928,
+          "deep": 2877
         },
-        "invalidation_price": 2812,
-        "review_upside_price": 3221,
+        "invalidation_price": 2811,
+        "review_upside_price": 3190,
         "reasons": [
           {
             "name": "長期トレンド",
-            "impact": 32.0,
-            "detail": "最強の上昇（パーフェクトオーダー）"
+            "impact": 22.0,
+            "detail": "長期上昇トレンド"
           },
           {
             "name": "移動平均の傾き",
-            "impact": 7.1,
-            "detail": "MA25 +1.38% / MA75 +0.87%"
+            "impact": 6.9,
+            "detail": "MA25 +1.34% / MA75 +0.86%"
           },
           {
             "name": "並び順",
-            "impact": 18.0,
-            "detail": "株価 > MA25 > MA75 > MA125 > MA200"
+            "impact": 14.0,
+            "detail": "MA25 > 株価 > MA75 > MA125 > MA200"
           },
           {
             "name": "買われ過ぎ/押し目",
-            "impact": 7.0,
-            "detail": "株価-MA25 +0.9%"
+            "impact": 9.0,
+            "detail": "株価-MA25 -0.0%"
           },
           {
             "name": "20日モメンタム",
-            "impact": 2.5,
-            "detail": "20日 +3.9%"
+            "impact": 1.9,
+            "detail": "20日 +2.9%"
           }
         ],
         "method": "MA25/75/125/200 + 20日momentum + 20日volatility。テクニカル参考値であり将来収益を保証しません。"
@@ -18344,8 +18344,8 @@
       "cached": false,
       "stale": false,
       "cache_age_seconds": 0,
-      "price": 3819.0,
-      "analysis_price": 3819.0,
+      "price": 3815.0,
+      "analysis_price": 3815.0,
       "as_of": "2026-09-28",
       "grade": 3,
       "stars": "★★★☆☆",
@@ -18353,31 +18353,31 @@
       "order": "MA25 > 株価 > MA125 > MA200 > MA75",
       "moving_averages": {
         "25": {
-          "value": 3904.6,
+          "value": 3904.44,
           "direction": "上向き",
-          "slope_5d_pct": 0.3443667763157965,
-          "price_distance_pct": -2.1922860216155304,
+          "slope_5d_pct": 0.34025493421052655,
+          "price_distance_pct": -2.2907254305354896,
           "price_above": false
         },
         "75": {
-          "value": 3624.07068359375,
+          "value": 3624.0173502604166,
           "direction": "上向き",
-          "slope_5d_pct": 0.5210683128265448,
-          "price_distance_pct": 5.378739363133822,
+          "slope_5d_pct": 0.5195890029257688,
+          "price_distance_pct": 5.2699154358590405,
           "price_above": true
         },
         "125": {
-          "value": 3765.0965625,
+          "value": 3765.0645625,
           "direction": "下向き",
-          "slope_5d_pct": -0.6647666645335781,
-          "price_distance_pct": 1.4316614887616153,
+          "slope_5d_pct": -0.6656109264041477,
+          "price_distance_pct": 1.326283697691566,
           "price_above": true
         },
         "200": {
-          "value": 3650.3559765625,
+          "value": 3650.3359765625,
           "direction": "上向き",
-          "slope_5d_pct": 0.487851407674178,
-          "price_distance_pct": 4.619933631686801,
+          "slope_5d_pct": 0.487300843005678,
+          "price_distance_pct": 4.51092788430294,
           "price_above": true
         }
       },
@@ -20312,11 +20312,11 @@
         },
         {
           "date": "2026-09-28",
-          "close": 3819.0,
-          "ma25": 3904.6,
-          "ma75": 3624.07068359375,
-          "ma125": 3765.0965625,
-          "ma200": 3650.3559765625
+          "close": 3815.0,
+          "ma25": 3904.44,
+          "ma75": 3624.0173502604166,
+          "ma125": 3765.0645625,
+          "ma200": 3650.3359765625
         }
       ],
       "decision": {
@@ -20327,21 +20327,21 @@
         "stretched": false,
         "falling_knife": false,
         "risk_level": "中",
-        "daily_sigma_pct": 2.04,
-        "annualized_vol_pct": 32.4,
-        "return20_pct": -0.47,
-        "return60_pct": 16.5,
-        "drawdown60_pct": -7.13,
-        "rebound_from_low60_pct": 19.19,
-        "distance_ma25_pct": -2.19,
-        "distance_ma75_pct": 5.38,
+        "daily_sigma_pct": 2.05,
+        "annualized_vol_pct": 32.5,
+        "return20_pct": -0.57,
+        "return60_pct": 16.38,
+        "drawdown60_pct": -7.22,
+        "rebound_from_low60_pct": 19.07,
+        "distance_ma25_pct": -2.29,
+        "distance_ma75_pct": 5.27,
         "limit_prices": {
-          "aggressive": 3768,
-          "standard": 3725,
+          "aggressive": 3764,
+          "standard": 3721,
           "deep": 3635
         },
         "invalidation_price": 3552,
-        "review_upside_price": 4092,
+        "review_upside_price": 4088,
         "reasons": [
           {
             "name": "長期トレンド",
@@ -20361,12 +20361,12 @@
           {
             "name": "買われ過ぎ/押し目",
             "impact": 9.0,
-            "detail": "株価-MA25 -2.2%"
+            "detail": "株価-MA25 -2.3%"
           },
           {
             "name": "20日モメンタム",
-            "impact": -0.3,
-            "detail": "20日 -0.5%"
+            "impact": -0.4,
+            "detail": "20日 -0.6%"
           }
         ],
         "method": "MA25/75/125/200 + 20日momentum + 20日volatility。テクニカル参考値であり将来収益を保証しません。"
@@ -20381,47 +20381,47 @@
       "cached": false,
       "stale": false,
       "cache_age_seconds": 0,
-      "price": 3388.0,
-      "analysis_price": 3388.0,
+      "price": 3375.0,
+      "analysis_price": 3375.0,
       "as_of": "2026-09-28",
       "grade": 3,
       "stars": "★★★☆☆",
       "label": "持ち合い・転換局面",
-      "order": "MA200 > MA25 > 株価 > MA75 > MA125",
+      "order": "MA200 > MA25 > MA75 > MA125 > 株価",
       "moving_averages": {
         "25": {
-          "value": 3396.48,
+          "value": 3395.96,
           "direction": "下向き",
-          "slope_5d_pct": -0.2033260856790342,
-          "price_distance_pct": -0.2496702468437917,
+          "slope_5d_pct": -0.21860492448727564,
+          "price_distance_pct": -0.6172039717782352,
           "price_above": false
         },
         "75": {
-          "value": 3380.011220703125,
+          "value": 3379.8378873697916,
           "direction": "上向き",
-          "slope_5d_pct": 0.35723304729586847,
-          "price_distance_pct": 0.2363536324359483,
-          "price_above": true
+          "slope_5d_pct": 0.3520865396092532,
+          "price_distance_pct": -0.14313962772801725,
+          "price_above": false
         },
         "125": {
-          "value": 3377.88566015625,
+          "value": 3377.78166015625,
           "direction": "下向き",
-          "slope_5d_pct": -0.09282176596691061,
-          "price_distance_pct": 0.29942812934886653,
-          "price_above": true
+          "slope_5d_pct": -0.09589775715836968,
+          "price_distance_pct": -0.08235168628754064,
+          "price_above": false
         },
         "200": {
-          "value": 3404.2393212890624,
+          "value": 3404.1743127441405,
           "direction": "上向き",
-          "slope_5d_pct": 0.04889050184657684,
-          "price_distance_pct": -0.4770323046181524,
+          "slope_5d_pct": 0.04698018448421326,
+          "price_distance_pct": -0.8570158300919339,
           "price_above": false
         }
       },
       "history": [
         {
           "date": "2025-09-29",
-          "close": 3241.673828125,
+          "close": 3241.673583984375,
           "ma25": null,
           "ma75": null,
           "ma125": null,
@@ -20461,7 +20461,7 @@
         },
         {
           "date": "2025-10-06",
-          "close": 3221.503173828125,
+          "close": 3221.50341796875,
           "ma25": null,
           "ma75": null,
           "ma125": null,
@@ -20501,7 +20501,7 @@
         },
         {
           "date": "2025-10-14",
-          "close": 3081.270751953125,
+          "close": 3081.27099609375,
           "ma25": null,
           "ma75": null,
           "ma125": null,
@@ -20525,7 +20525,7 @@
         },
         {
           "date": "2025-10-17",
-          "close": 3110.085693359375,
+          "close": 3110.0859375,
           "ma25": null,
           "ma75": null,
           "ma125": null,
@@ -20565,7 +20565,7 @@
         },
         {
           "date": "2025-10-24",
-          "close": 3291.619384765625,
+          "close": 3291.61962890625,
           "ma25": null,
           "ma75": null,
           "ma125": null,
@@ -20573,7 +20573,7 @@
         },
         {
           "date": "2025-10-27",
-          "close": 3303.1455078125,
+          "close": 3303.145263671875,
           "ma25": null,
           "ma75": null,
           "ma125": null,
@@ -20581,7 +20581,7 @@
         },
         {
           "date": "2025-10-28",
-          "close": 3242.63427734375,
+          "close": 3242.634033203125,
           "ma25": null,
           "ma75": null,
           "ma125": null,
@@ -20614,23 +20614,23 @@
         {
           "date": "2025-11-04",
           "close": 3134.09814453125,
-          "ma25": 3186.195458984375,
+          "ma25": 3186.19546875,
           "ma75": null,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2025-11-05",
-          "close": 3151.386962890625,
-          "ma25": 3182.583984375,
+          "close": 3151.38720703125,
+          "ma25": 3182.584013671875,
           "ma75": null,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2025-11-06",
-          "close": 3176.360107421875,
-          "ma25": 3180.278798828125,
+          "close": 3176.35986328125,
+          "ma25": 3180.278818359375,
           "ma75": null,
           "ma125": null,
           "ma200": null
@@ -20638,7 +20638,7 @@
         {
           "date": "2025-11-07",
           "close": 3203.25390625,
-          "ma25": 3182.04611328125,
+          "ma25": 3182.0461328125,
           "ma75": null,
           "ma125": null,
           "ma200": null
@@ -20646,15 +20646,15 @@
         {
           "date": "2025-11-10",
           "close": 3233.98974609375,
-          "ma25": 3185.888095703125,
+          "ma25": 3185.888115234375,
           "ma75": null,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2025-11-11",
-          "close": 3241.673828125,
-          "ma25": 3190.152705078125,
+          "close": 3241.673583984375,
+          "ma25": 3190.15271484375,
           "ma75": null,
           "ma125": null,
           "ma200": null
@@ -20669,8 +20669,8 @@
         },
         {
           "date": "2025-11-13",
-          "close": 3220.542724609375,
-          "ma25": 3192.496318359375,
+          "close": 3220.54296875,
+          "ma25": 3192.496328125,
           "ma75": null,
           "ma125": null,
           "ma200": null
@@ -20678,7 +20678,7 @@
         {
           "date": "2025-11-14",
           "close": 3253.19970703125,
-          "ma25": 3195.99251953125,
+          "ma25": 3195.992529296875,
           "ma75": null,
           "ma125": null,
           "ma200": null
@@ -20686,7 +20686,7 @@
         {
           "date": "2025-11-17",
           "close": 3208.056396484375,
-          "ma25": 3196.953017578125,
+          "ma25": 3196.95302734375,
           "ma75": null,
           "ma125": null,
           "ma200": null
@@ -20694,7 +20694,7 @@
         {
           "date": "2025-11-18",
           "close": 3159.071044921875,
-          "ma25": 3199.21978515625,
+          "ma25": 3199.219794921875,
           "ma75": null,
           "ma125": null,
           "ma200": null
@@ -20709,15 +20709,15 @@
         },
         {
           "date": "2025-11-20",
-          "close": 3169.636474609375,
-          "ma25": 3206.212197265625,
+          "close": 3169.63671875,
+          "ma25": 3206.21220703125,
           "ma75": null,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2025-11-21",
-          "close": 3242.63427734375,
+          "close": 3242.634033203125,
           "ma25": 3210.78416015625,
           "ma75": null,
           "ma125": null,
@@ -20726,7 +20726,7 @@
         {
           "date": "2025-11-25",
           "close": 3258.962646484375,
-          "ma25": 3216.73923828125,
+          "ma25": 3216.739228515625,
           "ma75": null,
           "ma125": null,
           "ma200": null
@@ -20734,14 +20734,14 @@
         {
           "date": "2025-11-26",
           "close": 3323.31591796875,
-          "ma25": 3222.8095703125,
+          "ma25": 3222.809560546875,
           "ma75": null,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2025-11-27",
-          "close": 3342.525634765625,
+          "close": 3342.52587890625,
           "ma25": 3228.495703125,
           "ma75": null,
           "ma125": null,
@@ -20766,7 +20766,7 @@
         {
           "date": "2025-12-02",
           "close": 3294.5009765625,
-          "ma25": 3232.299267578125,
+          "ma25": 3232.2992578125,
           "ma75": null,
           "ma125": null,
           "ma200": null
@@ -20782,14 +20782,14 @@
         {
           "date": "2025-12-04",
           "close": 3274.33056640625,
-          "ma25": 3231.646123046875,
+          "ma25": 3231.6461328125,
           "ma75": null,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2025-12-05",
-          "close": 3201.3330078125,
+          "close": 3201.332763671875,
           "ma25": 3231.838232421875,
           "ma75": null,
           "ma125": null,
@@ -20822,7 +20822,7 @@
         {
           "date": "2025-12-11",
           "close": 3282.0146484375,
-          "ma25": 3250.433447265625,
+          "ma25": 3250.4334375,
           "ma75": null,
           "ma125": null,
           "ma200": null
@@ -20845,8 +20845,8 @@
         },
         {
           "date": "2025-12-16",
-          "close": 3306.027099609375,
-          "ma25": 3265.03298828125,
+          "close": 3306.02685546875,
+          "ma25": 3265.032978515625,
           "ma75": null,
           "ma125": null,
           "ma200": null
@@ -20861,8 +20861,8 @@
         },
         {
           "date": "2025-12-18",
-          "close": 3306.027099609375,
-          "ma25": 3268.337099609375,
+          "close": 3306.02685546875,
+          "ma25": 3268.33708984375,
           "ma75": null,
           "ma125": null,
           "ma200": null
@@ -20870,7 +20870,7 @@
         {
           "date": "2025-12-19",
           "close": 3292.580078125,
-          "ma25": 3271.21859375,
+          "ma25": 3271.21857421875,
           "ma75": null,
           "ma125": null,
           "ma200": null
@@ -20878,7 +20878,7 @@
         {
           "date": "2025-12-22",
           "close": 3286.817138671875,
-          "ma25": 3272.563291015625,
+          "ma25": 3272.563271484375,
           "ma75": null,
           "ma125": null,
           "ma200": null
@@ -20886,15 +20886,15 @@
         {
           "date": "2025-12-23",
           "close": 3293.54052734375,
-          "ma25": 3275.98265625,
+          "ma25": 3275.98263671875,
           "ma75": null,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2025-12-24",
-          "close": 3296.421875,
-          "ma25": 3281.476689453125,
+          "close": 3296.422119140625,
+          "ma25": 3281.4766796875,
           "ma75": null,
           "ma125": null,
           "ma200": null
@@ -20902,23 +20902,23 @@
         {
           "date": "2025-12-25",
           "close": 3343.486328125,
-          "ma25": 3287.9696484375,
+          "ma25": 3287.969638671875,
           "ma75": null,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2025-12-26",
-          "close": 3336.7626953125,
-          "ma25": 3294.654697265625,
+          "close": 3336.762939453125,
+          "ma25": 3294.6546875,
           "ma75": null,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2025-12-29",
-          "close": 3367.498779296875,
-          "ma25": 3299.64927734375,
+          "close": 3367.49853515625,
+          "ma25": 3299.649267578125,
           "ma75": null,
           "ma125": null,
           "ma200": null
@@ -20926,7 +20926,7 @@
         {
           "date": "2025-12-30",
           "close": 3359.814697265625,
-          "ma25": 3303.683359375,
+          "ma25": 3303.683349609375,
           "ma75": null,
           "ma125": null,
           "ma200": null
@@ -20934,7 +20934,7 @@
         {
           "date": "2026-01-05",
           "close": 3363.65673828125,
-          "ma25": 3305.2969921875,
+          "ma25": 3305.296982421875,
           "ma75": null,
           "ma125": null,
           "ma200": null
@@ -20942,23 +20942,23 @@
         {
           "date": "2026-01-06",
           "close": 3384.78759765625,
-          "ma25": 3306.987470703125,
+          "ma25": 3306.987451171875,
           "ma75": null,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2026-01-07",
-          "close": 3373.26171875,
-          "ma25": 3307.56376953125,
+          "close": 3373.261474609375,
+          "ma25": 3307.563740234375,
           "ma75": null,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2026-01-08",
-          "close": 3342.525634765625,
-          "ma25": 3310.291572265625,
+          "close": 3342.52587890625,
+          "ma25": 3310.291552734375,
           "ma75": null,
           "ma125": null,
           "ma200": null
@@ -20966,39 +20966,39 @@
         {
           "date": "2026-01-09",
           "close": 3371.340576171875,
-          "ma25": 3313.36515625,
+          "ma25": 3313.36513671875,
           "ma75": null,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2026-01-13",
-          "close": 3451.06201171875,
-          "ma25": 3321.2028125,
+          "close": 3451.061767578125,
+          "ma25": 3321.202783203125,
           "ma75": null,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2026-01-14",
-          "close": 3437.614990234375,
-          "ma25": 3327.734189453125,
+          "close": 3437.61474609375,
+          "ma25": 3327.734150390625,
           "ma75": null,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2026-01-15",
-          "close": 3487.560546875,
-          "ma25": 3339.183291015625,
+          "close": 3487.560791015625,
+          "ma25": 3339.183271484375,
           "ma75": null,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2026-01-16",
-          "close": 3502.9287109375,
-          "ma25": 3348.365634765625,
+          "close": 3502.928466796875,
+          "ma25": 3348.36560546875,
           "ma75": null,
           "ma125": null,
           "ma200": null
@@ -21006,240 +21006,240 @@
         {
           "date": "2026-01-19",
           "close": 3473.1533203125,
-          "ma25": 3356.08802734375,
+          "ma25": 3356.087998046875,
           "ma75": null,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2026-01-20",
-          "close": 3451.06201171875,
-          "ma25": 3362.38888671875,
-          "ma75": 3264.5975618489583,
+          "close": 3451.061767578125,
+          "ma25": 3362.38884765625,
+          "ma75": 3264.5975520833335,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2026-01-21",
           "close": 3419.365478515625,
-          "ma25": 3367.882919921875,
-          "ma75": 3266.966783854167,
+          "ma25": 3367.882880859375,
+          "ma75": 3266.96677734375,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2026-01-22",
           "close": 3452.022216796875,
-          "ma25": 3373.031171875,
-          "ma75": 3269.8738834635415,
+          "ma25": 3373.0311328125,
+          "ma75": 3269.873876953125,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2026-01-23",
-          "close": 3433.77294921875,
-          "ma25": 3376.412119140625,
-          "ma75": 3273.536575520833,
+          "close": 3433.772705078125,
+          "ma25": 3376.4120703125,
+          "ma75": 3273.5365657552084,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2026-01-26",
-          "close": 3380.94580078125,
-          "ma25": 3379.4088671875,
-          "ma75": 3276.776650390625,
+          "close": 3380.945556640625,
+          "ma25": 3379.408818359375,
+          "ma75": 3276.776637369792,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2026-01-27",
-          "close": 3388.62939453125,
-          "ma25": 3383.865556640625,
-          "ma75": 3280.1575944010415,
+          "close": 3388.629638671875,
+          "ma25": 3383.865517578125,
+          "ma75": 3280.1575846354167,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2026-01-28",
-          "close": 3340.60498046875,
-          "ma25": 3385.248671875,
-          "ma75": 3281.745618489583,
+          "close": 3340.604736328125,
+          "ma25": 3385.2486328125,
+          "ma75": 3281.7456022135416,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2026-01-29",
           "close": 3354.3359375,
-          "ma25": 3387.71890625,
-          "ma75": 3283.811272786458,
+          "ma25": 3387.7188671875,
+          "ma75": 3283.8112565104166,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2026-01-30",
           "close": 3371.990234375,
-          "ma25": 3391.125830078125,
-          "ma75": 3286.560546875,
+          "ma25": 3391.125791015625,
+          "ma75": 3286.5605305989584,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2026-02-02",
           "close": 3380.817626953125,
-          "ma25": 3394.6169140625,
-          "ma75": 3289.1841959635417,
+          "ma25": 3394.616875,
+          "ma75": 3289.1841796875,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2026-02-03",
           "close": 3422.991943359375,
-          "ma25": 3399.679716796875,
-          "ma75": 3293.45873046875,
+          "ma25": 3399.67966796875,
+          "ma75": 3293.458714192708,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2026-02-04",
           "close": 3438.684814453125,
-          "ma25": 3403.48765625,
-          "ma75": 3298.2242513020833,
+          "ma25": 3403.487607421875,
+          "ma75": 3298.2242317708333,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2026-02-05",
           "close": 3514.206298828125,
-          "ma25": 3410.585400390625,
-          "ma75": 3303.817431640625,
+          "ma25": 3410.585341796875,
+          "ma75": 3303.817412109375,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2026-02-06",
           "close": 3553.438232421875,
-          "ma25": 3418.022978515625,
-          "ma75": 3309.4854720052085,
+          "ma25": 3418.0229296875,
+          "ma75": 3309.4854524739585,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2026-02-09",
           "close": 3570.11181640625,
-          "ma25": 3426.43486328125,
-          "ma75": 3315.619153645833,
+          "ma25": 3426.434814453125,
+          "ma75": 3315.619130859375,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2026-02-10",
           "close": 3626.998291015625,
-          "ma25": 3436.968525390625,
-          "ma75": 3321.691695963542,
+          "ma25": 3436.9684765625,
+          "ma75": 3321.6916731770834,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2026-02-12",
           "close": 3689.76953125,
-          "ma25": 3449.167802734375,
-          "ma75": 3328.2169921875,
+          "ma25": 3449.16775390625,
+          "ma75": 3328.2169694010418,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2026-02-13",
           "close": 3670.153564453125,
-          "ma25": 3461.0434765625,
-          "ma75": 3333.71234375,
+          "ma25": 3461.0434375,
+          "ma75": 3333.7123209635415,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2026-02-16",
           "close": 3621.113525390625,
-          "ma25": 3472.1869921875,
-          "ma75": 3338.2208561197917,
+          "ma25": 3472.186943359375,
+          "ma75": 3338.2208333333333,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2026-02-17",
           "close": 3647.59521484375,
-          "ma25": 3483.237177734375,
-          "ma75": 3342.9672005208336,
+          "ma25": 3483.23712890625,
+          "ma75": 3342.9671744791667,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2026-02-18",
           "close": 3719.193603515625,
-          "ma25": 3493.96244140625,
-          "ma75": 3348.5145084635415,
+          "ma25": 3493.96240234375,
+          "ma75": 3348.5144856770835,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2026-02-19",
           "close": 3704.4814453125,
-          "ma25": 3504.637099609375,
-          "ma75": 3354.672470703125,
+          "ma25": 3504.6370703125,
+          "ma75": 3354.672451171875,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2026-02-20",
           "close": 3680.9423828125,
-          "ma25": 3512.372373046875,
-          "ma75": 3361.131298828125,
+          "ma25": 3512.372333984375,
+          "ma75": 3361.131279296875,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2026-02-24",
           "close": 3696.635009765625,
-          "ma25": 3520.120625,
-          "ma75": 3367.773746744792,
+          "ma25": 3520.120595703125,
+          "ma75": 3367.773727213542,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2026-02-25",
           "close": 3719.193603515625,
-          "ma25": 3529.962236328125,
-          "ma75": 3374.960302734375,
+          "ma25": 3529.96220703125,
+          "ma75": 3374.960283203125,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2026-02-26",
           "close": 3727.039794921875,
-          "ma25": 3541.00134765625,
-          "ma75": 3382.86619140625,
+          "ma25": 3541.001328125,
+          "ma75": 3382.866171875,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2026-02-27",
           "close": 3752.540771484375,
-          "ma25": 3554.328359375,
-          "ma75": 3390.8815755208334,
+          "ma25": 3554.32833984375,
+          "ma75": 3390.881552734375,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2026-03-02",
           "close": 3738.8095703125,
-          "ma25": 3565.799853515625,
-          "ma75": 3398.3809016927084,
+          "ma25": 3565.799833984375,
+          "ma75": 3398.3808821614584,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2026-03-03",
           "close": 3599.535888671875,
-          "ma25": 3572.43037109375,
-          "ma75": 3403.6646614583333,
+          "ma25": 3572.430361328125,
+          "ma75": 3403.6646419270833,
           "ma125": null,
           "ma200": null
         },
@@ -21247,15 +21247,15 @@
           "date": "2026-03-04",
           "close": 3531.860595703125,
           "ma25": 3578.466962890625,
-          "ma75": 3407.6362727864584,
+          "ma75": 3407.6362532552084,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2026-03-05",
           "close": 3496.552001953125,
-          "ma25": 3582.7838671875,
-          "ma75": 3411.0346484375,
+          "ma25": 3582.783857421875,
+          "ma75": 3411.0346321614584,
           "ma125": null,
           "ma200": null
         },
@@ -21263,7 +21263,7 @@
           "date": "2026-03-06",
           "close": 3499.494384765625,
           "ma25": 3589.139443359375,
-          "ma75": 3414.24173828125,
+          "ma75": 3414.2417220052084,
           "ma125": null,
           "ma200": null
         },
@@ -21271,7 +21271,7 @@
           "date": "2026-03-09",
           "close": 3514.206298828125,
           "ma25": 3595.5342578125,
-          "ma75": 3418.157252604167,
+          "ma75": 3418.157233072917,
           "ma125": null,
           "ma200": null
         },
@@ -21279,7 +21279,7 @@
           "date": "2026-03-10",
           "close": 3536.7646484375,
           "ma25": 3602.125234375,
-          "ma75": 3421.9381184895833,
+          "ma75": 3421.9380989583333,
           "ma125": null,
           "ma200": null
         },
@@ -21287,7 +21287,7 @@
           "date": "2026-03-11",
           "close": 3540.68798828125,
           "ma25": 3608.520048828125,
-          "ma75": 3426.3732063802086,
+          "ma75": 3426.3731868489585,
           "ma125": null,
           "ma200": null
         },
@@ -21295,7 +21295,7 @@
           "date": "2026-03-12",
           "close": 3475.955078125,
           "ma25": 3610.63857421875,
-          "ma75": 3430.5983268229165,
+          "ma75": 3430.5983072916665,
           "ma125": null,
           "ma200": null
         },
@@ -21303,7 +21303,7 @@
           "date": "2026-03-13",
           "close": 3474.974365234375,
           "ma25": 3612.09015625,
-          "ma75": 3434.5158203125,
+          "ma75": 3434.51580078125,
           "ma125": null,
           "ma200": null
         },
@@ -21311,7 +21311,7 @@
           "date": "2026-03-16",
           "close": 3468.108642578125,
           "ma25": 3610.24625,
-          "ma75": 3438.49544921875,
+          "ma75": 3438.495426432292,
           "ma125": null,
           "ma200": null
         },
@@ -21319,7 +21319,7 @@
           "date": "2026-03-17",
           "close": 3477.916748046875,
           "ma25": 3607.225390625,
-          "ma75": 3441.632548828125,
+          "ma75": 3441.632529296875,
           "ma125": null,
           "ma200": null
         },
@@ -21327,7 +21327,7 @@
           "date": "2026-03-18",
           "close": 3538.726318359375,
           "ma25": 3605.969970703125,
-          "ma75": 3445.3627311197915,
+          "ma75": 3445.3627115885415,
           "ma125": null,
           "ma200": null
         },
@@ -21335,7 +21335,7 @@
           "date": "2026-03-19",
           "close": 3422.991943359375,
           "ma25": 3597.809716796875,
-          "ma75": 3446.6917447916667,
+          "ma75": 3446.6917252604167,
           "ma125": null,
           "ma200": null
         },
@@ -21343,7 +21343,7 @@
           "date": "2026-03-23",
           "close": 3384.74072265625,
           "ma25": 3585.608564453125,
-          "ma75": 3447.254612630208,
+          "ma75": 3447.25458984375,
           "ma125": null,
           "ma200": null
         },
@@ -21351,7 +21351,7 @@
           "date": "2026-03-24",
           "close": 3426.9150390625,
           "ma25": 3575.8790234375,
-          "ma75": 3448.16208984375,
+          "ma75": 3448.1620670572916,
           "ma125": null,
           "ma200": null
         },
@@ -21359,7 +21359,7 @@
           "date": "2026-03-25",
           "close": 3452.416015625,
           "ma25": 3569.131123046875,
-          "ma75": 3450.5365625,
+          "ma75": 3450.5365397135415,
           "ma125": null,
           "ma200": null
         },
@@ -21367,7 +21367,7 @@
           "date": "2026-03-26",
           "close": 3475.955078125,
           "ma25": 3562.265517578125,
-          "ma75": 3452.9559505208335,
+          "ma75": 3452.955927734375,
           "ma125": null,
           "ma200": null
         },
@@ -21375,7 +21375,7 @@
           "date": "2026-03-27",
           "close": 3482.82080078125,
           "ma25": 3552.81060546875,
-          "ma75": 3455.991953125,
+          "ma75": 3455.991930338542,
           "ma125": null,
           "ma200": null
         },
@@ -21383,7 +21383,7 @@
           "date": "2026-03-30",
           "close": 3461.2431640625,
           "ma25": 3543.08107421875,
-          "ma75": 3458.48412109375,
+          "ma75": 3458.484098307292,
           "ma125": null,
           "ma200": null
         },
@@ -21391,7 +21391,7 @@
           "date": "2026-03-31",
           "close": 3452.416015625,
           "ma25": 3533.94001953125,
-          "ma75": 3461.83189453125,
+          "ma75": 3461.831875,
           "ma125": null,
           "ma200": null
         },
@@ -21399,7 +21399,7 @@
           "date": "2026-04-01",
           "close": 3512.24462890625,
           "ma25": 3526.564404296875,
-          "ma75": 3465.0168880208334,
+          "ma75": 3465.0168684895834,
           "ma125": null,
           "ma200": null
         },
@@ -21407,7 +21407,7 @@
           "date": "2026-04-02",
           "close": 3529.899169921875,
           "ma25": 3518.992626953125,
-          "ma75": 3468.347630208333,
+          "ma75": 3468.347610677083,
           "ma125": null,
           "ma200": null
         },
@@ -21415,232 +21415,232 @@
           "date": "2026-04-03",
           "close": 3491.64794921875,
           "ma25": 3509.576953125,
-          "ma75": 3470.9890625,
-          "ma125": 3368.874197265625,
+          "ma75": 3470.98904296875,
+          "ma125": 3368.8741875,
           "ma200": null
         },
         {
           "date": "2026-04-06",
           "close": 3495.571044921875,
           "ma25": 3499.2981640625,
-          "ma75": 3473.8364811197916,
-          "ma125": 3370.905375,
+          "ma75": 3473.8364615885416,
+          "ma125": 3370.9053671875,
           "ma200": null
         },
         {
           "date": "2026-04-07",
           "close": 3509.30224609375,
           "ma25": 3490.11787109375,
-          "ma75": 3476.316298828125,
-          "ma125": 3373.107875,
+          "ma75": 3476.316279296875,
+          "ma125": 3373.1078671875,
           "ma200": null
         },
         {
           "date": "2026-04-08",
           "close": 3556.380615234375,
           "ma25": 3488.39166015625,
-          "ma75": 3479.0780501302083,
-          "ma125": 3376.2863515625,
+          "ma75": 3479.0780305989583,
+          "ma125": 3376.28634375,
           "ma200": null
         },
         {
           "date": "2026-04-09",
           "close": 3565.2080078125,
           "ma25": 3489.725556640625,
-          "ma75": 3482.5337955729165,
-          "ma125": 3379.704494140625,
+          "ma75": 3482.533779296875,
+          "ma125": 3379.704486328125,
           "ma200": null
         },
         {
           "date": "2026-04-10",
           "close": 3578.939208984375,
           "ma25": 3493.021044921875,
-          "ma75": 3486.5568229166665,
-          "ma125": 3383.2555390625,
+          "ma75": 3486.556806640625,
+          "ma125": 3383.25553125,
           "ma200": null
         },
         {
           "date": "2026-04-13",
           "close": 3519.1103515625,
           "ma25": 3493.80568359375,
-          "ma75": 3489.3979329427084,
-          "ma125": 3385.636396484375,
+          "ma75": 3489.397919921875,
+          "ma125": 3385.63638671875,
           "ma200": null
         },
         {
           "date": "2026-04-14",
           "close": 3401.414306640625,
           "ma25": 3489.29400390625,
-          "ma75": 3490.849055989583,
-          "ma125": 3387.252416015625,
+          "ma75": 3490.84904296875,
+          "ma125": 3387.25240625,
           "ma200": null
         },
         {
           "date": "2026-04-15",
           "close": 3447.511962890625,
           "ma25": 3485.723896484375,
-          "ma75": 3492.991653645833,
-          "ma125": 3389.506154296875,
+          "ma75": 3492.991640625,
+          "ma125": 3389.50614453125,
           "ma200": null
         },
         {
           "date": "2026-04-16",
           "close": 3430.83837890625,
           "ma25": 3481.329912109375,
-          "ma75": 3494.822291666667,
-          "ma125": 3391.480509765625,
+          "ma75": 3494.822278645833,
+          "ma125": 3391.4805,
           "ma200": null
         },
         {
           "date": "2026-04-17",
           "close": 3414.164794921875,
           "ma25": 3478.85830078125,
-          "ma75": 3496.392197265625,
-          "ma125": 3393.97461328125,
+          "ma75": 3496.3921809895833,
+          "ma125": 3393.974603515625,
           "ma200": null
         },
         {
           "date": "2026-04-20",
           "close": 3451.43505859375,
           "ma25": 3477.916728515625,
-          "ma75": 3497.831513671875,
-          "ma125": 3396.935927734375,
+          "ma75": 3497.831497395833,
+          "ma125": 3396.935916015625,
           "ma200": null
         },
         {
           "date": "2026-04-21",
           "close": 3417.107177734375,
           "ma25": 3475.876669921875,
-          "ma75": 3498.9027734375,
-          "ma125": 3399.51504296875,
+          "ma75": 3498.90275390625,
+          "ma125": 3399.51503125,
           "ma200": null
         },
         {
           "date": "2026-04-22",
           "close": 3395.529541015625,
           "ma25": 3472.581181640625,
-          "ma75": 3499.2765169270833,
-          "ma125": 3401.65259765625,
+          "ma75": 3499.2765006510417,
+          "ma125": 3401.6525859375,
           "ma200": null
         },
         {
           "date": "2026-04-23",
           "close": 3363.1630859375,
           "ma25": 3465.55865234375,
-          "ma75": 3499.321162109375,
-          "ma125": 3403.677216796875,
+          "ma75": 3499.3211458333335,
+          "ma125": 3403.677203125,
           "ma200": null
         },
         {
           "date": "2026-04-24",
           "close": 3322.9501953125,
           "ma25": 3461.556982421875,
-          "ma75": 3498.778408203125,
-          "ma125": 3404.888357421875,
+          "ma75": 3498.7783919270832,
+          "ma125": 3404.88834375,
           "ma200": null
         },
         {
           "date": "2026-04-27",
           "close": 3324.911865234375,
           "ma25": 3459.163828125,
-          "ma75": 3497.9800651041664,
-          "ma125": 3405.884673828125,
+          "ma75": 3497.980048828125,
+          "ma125": 3405.88466015625,
           "ma200": null
         },
         {
           "date": "2026-04-28",
           "close": 3388.663818359375,
           "ma25": 3457.633779296875,
-          "ma75": 3498.1854264322915,
-          "ma125": 3406.929966796875,
+          "ma75": 3498.1854134114583,
+          "ma125": 3406.929953125,
           "ma200": null
         },
         {
           "date": "2026-04-30",
           "close": 3344.52783203125,
           "ma25": 3453.318251953125,
-          "ma75": 3498.2121223958334,
-          "ma125": 3407.422388671875,
+          "ma75": 3498.2121061197918,
+          "ma125": 3407.422375,
           "ma200": null
         },
         {
           "date": "2026-05-01",
           "close": 3351.3935546875,
           "ma25": 3448.335791015625,
-          "ma75": 3497.946162109375,
-          "ma125": 3407.90058203125,
+          "ma75": 3497.9461458333335,
+          "ma125": 3407.90056640625,
           "ma200": null
         },
         {
           "date": "2026-05-07",
           "close": 3365.124755859375,
           "ma25": 3443.62794921875,
-          "ma75": 3496.80033203125,
-          "ma125": 3408.396416015625,
+          "ma75": 3496.800319010417,
+          "ma125": 3408.39640234375,
           "ma200": null
         },
         {
           "date": "2026-05-08",
           "close": 3341.58544921875,
           "ma25": 3438.841640625,
-          "ma75": 3495.5199381510415,
-          "ma125": 3409.188025390625,
+          "ma75": 3495.5199283854167,
+          "ma125": 3409.188013671875,
           "ma200": null
         },
         {
           "date": "2026-05-11",
           "close": 3364.143798828125,
           "ma25": 3435.310751953125,
-          "ma75": 3493.8743815104167,
-          "ma125": 3410.52893359375,
+          "ma75": 3493.8743684895835,
+          "ma125": 3410.528921875,
           "ma200": null
         },
         {
           "date": "2026-05-12",
           "close": 3392.587158203125,
           "ma25": 3430.524453125,
-          "ma75": 3492.4031608072914,
-          "ma125": 3412.08201953125,
+          "ma75": 3492.4031510416667,
+          "ma125": 3412.0820078125,
           "ma200": null
         },
         {
           "date": "2026-05-13",
           "close": 3432.7998046875,
           "ma25": 3426.640478515625,
-          "ma75": 3491.8651139322915,
-          "ma125": 3414.102802734375,
+          "ma75": 3491.8651041666667,
+          "ma125": 3414.102791015625,
           "ma200": null
         },
         {
           "date": "2026-05-14",
           "close": 3357.2783203125,
           "ma25": 3421.265693359375,
-          "ma75": 3490.6146647135415,
-          "ma125": 3415.888244140625,
+          "ma75": 3490.614658203125,
+          "ma125": 3415.888232421875,
           "ma200": null
         },
         {
           "date": "2026-05-15",
           "close": 3330.796630859375,
           "ma25": 3414.674716796875,
-          "ma75": 3489.4337467447917,
-          "ma125": 3417.323521484375,
+          "ma75": 3489.433740234375,
+          "ma125": 3417.3235078125,
           "ma200": null
         },
         {
           "date": "2026-05-18",
           "close": 3274.89111328125,
           "ma25": 3405.298271484375,
-          "ma75": 3487.0719986979166,
-          "ma125": 3418.11176953125,
+          "ma75": 3487.0719921875,
+          "ma125": 3418.1117578125,
           "ma200": null
         },
         {
           "date": "2026-05-19",
           "close": 3336.681396484375,
           "ma25": 3396.510302734375,
-          "ma75": 3485.7774446614585,
-          "ma125": 3419.179189453125,
+          "ma75": 3485.77744140625,
+          "ma125": 3419.179177734375,
           "ma200": null
         },
         {
@@ -21648,15 +21648,15 @@
           "close": 3273.910400390625,
           "ma25": 3384.8583984375,
           "ma75": 3484.3503059895834,
-          "ma125": 3419.4985546875,
+          "ma125": 3419.49854296875,
           "ma200": null
         },
         {
           "date": "2026-05-21",
           "close": 3262.140625,
           "ma25": 3372.186455078125,
-          "ma75": 3482.6637890625,
-          "ma125": 3419.6622890625,
+          "ma75": 3482.663785807292,
+          "ma125": 3419.662279296875,
           "ma200": null
         },
         {
@@ -21664,7 +21664,7 @@
           "close": 3271.94873046875,
           "ma25": 3362.299990234375,
           "ma75": 3481.7483723958335,
-          "ma125": 3419.766177734375,
+          "ma125": 3419.76616796875,
           "ma200": null
         },
         {
@@ -21672,7 +21672,7 @@
           "close": 3279.795166015625,
           "ma25": 3357.435224609375,
           "ma75": 3480.7544954427085,
-          "ma125": 3420.240197265625,
+          "ma125": 3420.240185546875,
           "ma200": null
         },
         {
@@ -21680,7 +21680,7 @@
           "close": 3280.77587890625,
           "ma25": 3350.76578125,
           "ma75": 3479.538304036458,
-          "ma125": 3420.460806640625,
+          "ma125": 3420.460794921875,
           "ma200": null
         },
         {
@@ -21688,7 +21688,7 @@
           "close": 3273.910400390625,
           "ma25": 3344.488662109375,
           "ma75": 3478.1128743489585,
-          "ma125": 3420.987638671875,
+          "ma125": 3420.987626953125,
           "ma200": null
         },
         {
@@ -21696,7 +21696,7 @@
           "close": 3297.449462890625,
           "ma25": 3339.820048828125,
           "ma75": 3476.438974609375,
-          "ma125": 3422.094666015625,
+          "ma125": 3422.094654296875,
           "ma200": null
         },
         {
@@ -21704,7 +21704,7 @@
           "close": 3288.622314453125,
           "ma25": 3333.3075390625,
           "ma75": 3474.4381412760417,
-          "ma125": 3422.954345703125,
+          "ma125": 3422.954333984375,
           "ma200": null
         },
         {
@@ -21712,7 +21712,7 @@
           "close": 3217.02392578125,
           "ma25": 3325.304208984375,
           "ma75": 3470.4757096354165,
-          "ma125": 3423.3334453125,
+          "ma125": 3423.333431640625,
           "ma200": null
         },
         {
@@ -21720,7 +21720,7 @@
           "close": 3174.849609375,
           "ma25": 3316.47701171875,
           "ma75": 3465.427861328125,
-          "ma125": 3422.79116796875,
+          "ma125": 3422.79115625,
           "ma200": null
         },
         {
@@ -21728,7 +21728,7 @@
           "close": 3218.004638671875,
           "ma25": 3310.670673828125,
           "ma75": 3460.7330989583334,
-          "ma125": 3422.46350390625,
+          "ma125": 3422.4634921875,
           "ma200": null
         },
         {
@@ -21736,7 +21736,7 @@
           "close": 3230.755126953125,
           "ma25": 3306.98287109375,
           "ma75": 3455.4498567708333,
-          "ma125": 3421.723017578125,
+          "ma125": 3421.723005859375,
           "ma200": null
         },
         {
@@ -21744,7 +21744,7 @@
           "close": 3141.502197265625,
           "ma25": 3299.646484375,
           "ma75": 3448.1396256510416,
-          "ma125": 3420.114830078125,
+          "ma125": 3420.11481640625,
           "ma200": null
         },
         {
@@ -21752,7 +21752,7 @@
           "close": 3191.523193359375,
           "ma25": 3291.760859375,
           "ma75": 3441.7578873697917,
-          "ma125": 3418.776181640625,
+          "ma125": 3418.77616796875,
           "ma200": null
         },
         {
@@ -21760,7 +21760,7 @@
           "close": 3163.079833984375,
           "ma25": 3284.502939453125,
           "ma75": 3435.650771484375,
-          "ma125": 3417.88617578125,
+          "ma125": 3417.886162109375,
           "ma200": null
         },
         {
@@ -21768,7 +21768,7 @@
           "close": 3255.275146484375,
           "ma25": 3280.658203125,
           "ma75": 3430.4198372395836,
-          "ma125": 3417.572369140625,
+          "ma125": 3417.57235546875,
           "ma200": null
         },
         {
@@ -21776,7 +21776,7 @@
           "close": 3194.465576171875,
           "ma25": 3273.8318359375,
           "ma75": 3423.4234635416665,
-          "ma125": 3417.08712890625,
+          "ma125": 3417.087115234375,
           "ma200": null
         },
         {
@@ -21784,7 +21784,7 @@
           "close": 3225.85107421875,
           "ma25": 3269.2024609375,
           "ma75": 3417.0417252604166,
-          "ma125": 3416.69929296875,
+          "ma125": 3416.699279296875,
           "ma200": null
         },
         {
@@ -21792,7 +21792,7 @@
           "close": 3270.968017578125,
           "ma25": 3265.4754296875,
           "ma75": 3411.575400390625,
-          "ma125": 3417.256373046875,
+          "ma125": 3417.256361328125,
           "ma200": null
         },
         {
@@ -21800,7 +21800,7 @@
           "close": 3232.716796875,
           "ma25": 3259.080615234375,
           "ma75": 3405.38982421875,
-          "ma125": 3416.931146484375,
+          "ma125": 3416.931134765625,
           "ma200": null
         },
         {
@@ -21808,7 +21808,7 @@
           "close": 3213.100830078125,
           "ma25": 3250.29265625,
           "ma75": 3398.6419205729167,
-          "ma125": 3416.395205078125,
+          "ma125": 3416.395193359375,
           "ma200": null
         },
         {
@@ -21816,7 +21816,7 @@
           "close": 3213.100830078125,
           "ma25": 3244.525556640625,
           "ma75": 3391.7894010416667,
-          "ma125": 3415.7516875,
+          "ma125": 3415.75167578125,
           "ma200": null
         },
         {
@@ -21824,7 +21824,7 @@
           "close": 3208.19677734375,
           "ma25": 3239.6215625,
           "ma75": 3384.531481119792,
-          "ma125": 3415.16114453125,
+          "ma125": 3415.1611328125,
           "ma200": null
         },
         {
@@ -21832,7 +21832,7 @@
           "close": 3172.887939453125,
           "ma25": 3235.541435546875,
           "ma75": 3376.985859375,
-          "ma125": 3413.957720703125,
+          "ma125": 3413.957708984375,
           "ma200": null
         },
         {
@@ -21840,7 +21840,7 @@
           "close": 3170.92626953125,
           "ma25": 3228.91123046875,
           "ma75": 3371.271064453125,
-          "ma125": 3412.53113671875,
+          "ma125": 3412.531125,
           "ma200": null
         },
         {
@@ -21848,7 +21848,7 @@
           "close": 3145.425537109375,
           "ma25": 3223.7718359375,
           "ma75": 3366.1185970052084,
-          "ma125": 3411.24632421875,
+          "ma125": 3411.246314453125,
           "ma200": null
         },
         {
@@ -21856,7 +21856,7 @@
           "close": 3217.02392578125,
           "ma25": 3221.96716796875,
           "ma75": 3362.391555989583,
-          "ma125": 3410.764818359375,
+          "ma125": 3410.76480859375,
           "ma200": null
         },
         {
@@ -21864,7 +21864,7 @@
           "close": 3275.871826171875,
           "ma25": 3222.124091796875,
           "ma75": 3359.409921875,
-          "ma125": 3410.523576171875,
+          "ma125": 3410.523568359375,
           "ma200": null
         },
         {
@@ -21872,7 +21872,7 @@
           "close": 3316.084716796875,
           "ma25": 3223.575673828125,
           "ma75": 3356.76830078125,
-          "ma125": 3410.71161328125,
+          "ma125": 3410.71160546875,
           "ma200": null
         },
         {
@@ -21880,7 +21880,7 @@
           "close": 3317.0654296875,
           "ma25": 3225.027255859375,
           "ma75": 3353.8389778645833,
-          "ma125": 3410.953599609375,
+          "ma125": 3410.953591796875,
           "ma200": null
         },
         {
@@ -21888,7 +21888,7 @@
           "close": 3298.430419921875,
           "ma25": 3226.008056640625,
           "ma75": 3350.608876953125,
-          "ma125": 3410.99271875,
+          "ma125": 3410.9927109375,
           "ma200": null
         },
         {
@@ -21896,7 +21896,7 @@
           "close": 3356.297607421875,
           "ma25": 3228.361982421875,
           "ma75": 3349.0134440104166,
-          "ma125": 3411.471724609375,
+          "ma125": 3411.47171484375,
           "ma200": null
         },
         {
@@ -21904,7 +21904,7 @@
           "close": 3378.85595703125,
           "ma25": 3231.971328125,
           "ma75": 3347.731865234375,
-          "ma125": 3411.754681640625,
+          "ma125": 3411.754671875,
           "ma200": null
         },
         {
@@ -21912,7 +21912,7 @@
           "close": 3457.31982421875,
           "ma25": 3241.5831640625,
           "ma75": 3347.5880143229165,
-          "ma125": 3412.719138671875,
+          "ma125": 3412.719126953125,
           "ma200": null
         },
         {
@@ -21920,7 +21920,7 @@
           "close": 3452.416015625,
           "ma25": 3252.6858203125,
           "ma75": 3347.2480045572916,
-          "ma125": 3413.3984765625,
+          "ma125": 3413.398466796875,
           "ma200": null
         },
         {
@@ -21928,7 +21928,7 @@
           "close": 3437.703857421875,
           "ma25": 3261.4737890625,
           "ma75": 3345.9010384114586,
-          "ma125": 3414.02158984375,
+          "ma125": 3414.021580078125,
           "ma200": null
         },
         {
@@ -21936,7 +21936,7 @@
           "close": 3408.27978515625,
           "ma25": 3268.574775390625,
           "ma75": 3345.7048763020834,
-          "ma125": 3414.37857421875,
+          "ma125": 3414.378564453125,
           "ma200": null
         },
         {
@@ -21944,7 +21944,7 @@
           "close": 3388.663818359375,
           "ma25": 3278.461240234375,
           "ma75": 3345.7571842447915,
-          "ma125": 3414.409583984375,
+          "ma125": 3414.40957421875,
           "ma200": null
         },
         {
@@ -21952,7 +21952,7 @@
           "close": 3405.33740234375,
           "ma25": 3287.01380859375,
           "ma75": 3345.469482421875,
-          "ma125": 3414.666189453125,
+          "ma125": 3414.666181640625,
           "ma200": null
         },
         {
@@ -21960,7 +21960,7 @@
           "close": 3440.646240234375,
           "ma25": 3298.11646484375,
           "ma75": 3345.3125520833332,
-          "ma125": 3415.451154296875,
+          "ma125": 3415.45114453125,
           "ma200": null
         },
         {
@@ -21968,7 +21968,7 @@
           "close": 3448.49267578125,
           "ma25": 3305.845166015625,
           "ma75": 3344.94638671875,
-          "ma125": 3416.06837109375,
+          "ma125": 3416.068361328125,
           "ma200": null
         },
         {
@@ -21976,7 +21976,7 @@
           "close": 3486.743896484375,
           "ma25": 3317.536298828125,
           "ma75": 3344.9986946614586,
-          "ma125": 3416.353826171875,
+          "ma125": 3416.353818359375,
           "ma200": null
         },
         {
@@ -21984,7 +21984,7 @@
           "close": 3477.916748046875,
           "ma25": 3327.61892578125,
           "ma75": 3345.2210091145835,
-          "ma125": 3416.676240234375,
+          "ma125": 3416.676234375,
           "ma200": null
         },
         {
@@ -21992,7 +21992,7 @@
           "close": 3480.859130859375,
           "ma25": 3336.0145703125,
           "ma75": 3345.6002506510417,
-          "ma125": 3416.62262890625,
+          "ma125": 3416.62262109375,
           "ma200": null
         },
         {
@@ -22000,7 +22000,7 @@
           "close": 3459.281494140625,
           "ma25": 3345.077158203125,
           "ma75": 3344.894075520833,
-          "ma125": 3416.273451171875,
+          "ma125": 3416.2734453125,
           "ma200": null
         },
         {
@@ -22008,7 +22008,7 @@
           "close": 3446.531005859375,
           "ma25": 3354.414365234375,
           "ma75": 3343.7825,
-          "ma125": 3416.06047265625,
+          "ma125": 3416.060466796875,
           "ma200": null
         },
         {
@@ -22016,32 +22016,32 @@
           "close": 3468.108642578125,
           "ma25": 3364.614677734375,
           "ma75": 3343.468642578125,
-          "ma125": 3416.196845703125,
-          "ma200": 3359.3471142578123
+          "ma125": 3416.196841796875,
+          "ma200": 3359.347108154297
         },
         {
           "date": "2026-07-27",
           "close": 3569.131103515625,
           "ma25": 3379.05205078125,
           "ma75": 3344.449443359375,
-          "ma125": 3417.394970703125,
-          "ma200": 3360.9844006347657
+          "ma125": 3417.394966796875,
+          "ma200": 3360.9843957519533
         },
         {
           "date": "2026-07-28",
           "close": 3586.785400390625,
           "ma25": 3395.60794921875,
           "ma75": 3345.4825520833333,
-          "ma125": 3418.473076171875,
-          "ma200": 3362.74837890625
+          "ma125": 3418.473072265625,
+          "ma200": 3362.7483740234375
         },
         {
           "date": "2026-07-29",
           "close": 3678.0,
           "ma25": 3415.8908984375,
           "ma75": 3347.1041438802085,
-          "ma125": 3420.426892578125,
-          "ma200": 3365.3430236816407
+          "ma125": 3420.426890625,
+          "ma200": 3365.3430187988283
         },
         {
           "date": "2026-07-30",
@@ -22049,15 +22049,15 @@
           "ma25": 3433.553876953125,
           "ma75": 3347.3947037760418,
           "ma125": 3422.075326171875,
-          "ma200": 3367.588322753906
+          "ma200": 3367.5883178710938
         },
         {
           "date": "2026-07-31",
           "close": 3488.0,
           "ma25": 3444.392919921875,
           "ma75": 3346.1821809895832,
-          "ma125": 3422.870291015625,
-          "ma200": 3369.353029785156
+          "ma125": 3422.8702890625,
+          "ma200": 3369.353024902344
         },
         {
           "date": "2026-08-03",
@@ -22065,7 +22065,7 @@
           "ma25": 3448.158046875,
           "ma75": 3344.19404296875,
           "ma125": 3423.105451171875,
-          "ma200": 3370.0955139160155
+          "ma200": 3370.0955078125
         },
         {
           "date": "2026-08-04",
@@ -22073,7 +22073,7 @@
           "ma25": 3449.554658203125,
           "ma75": 3343.5218522135415,
           "ma125": 3423.078763671875,
-          "ma200": 3370.8534545898438
+          "ma200": 3370.853448486328
         },
         {
           "date": "2026-08-05",
@@ -22081,7 +22081,7 @@
           "ma25": 3451.032041015625,
           "ma75": 3342.2750260416665,
           "ma125": 3422.934841796875,
-          "ma200": 3371.794481201172
+          "ma200": 3371.7944750976562
         },
         {
           "date": "2026-08-06",
@@ -22089,7 +22089,7 @@
           "ma25": 3455.69482421875,
           "ma75": 3342.06384765625,
           "ma125": 3423.20830078125,
-          "ma200": 3372.9492614746096
+          "ma200": 3372.949255371094
         },
         {
           "date": "2026-08-07",
@@ -22097,7 +22097,7 @@
           "ma25": 3458.522919921875,
           "ma75": 3342.2349837239585,
           "ma125": 3423.240365234375,
-          "ma200": 3374.5722521972657
+          "ma200": 3374.57224609375
         },
         {
           "date": "2026-08-10",
@@ -22105,7 +22105,7 @@
           "ma25": 3460.368681640625,
           "ma75": 3341.8825162760418,
           "ma125": 3423.13088671875,
-          "ma200": 3376.2908984375
+          "ma200": 3376.2908911132813
         },
         {
           "date": "2026-08-12",
@@ -22113,7 +22113,7 @@
           "ma25": 3458.955888671875,
           "ma75": 3341.94775390625,
           "ma125": 3422.393236328125,
-          "ma200": 3377.9273095703124
+          "ma200": 3377.927302246094
         },
         {
           "date": "2026-08-13",
@@ -22121,7 +22121,7 @@
           "ma25": 3457.899248046875,
           "ma75": 3342.3540266927084,
           "ma125": 3421.37373046875,
-          "ma200": 3379.415633544922
+          "ma200": 3379.415626220703
         },
         {
           "date": "2026-08-14",
@@ -22129,7 +22129,7 @@
           "ma25": 3458.15109375,
           "ma75": 3343.431852213542,
           "ma125": 3420.3648359375,
-          "ma200": 3381.085205078125
+          "ma200": 3381.085196533203
         },
         {
           "date": "2026-08-17",
@@ -22137,7 +22137,7 @@
           "ma25": 3458.05990234375,
           "ma75": 3344.5391829427085,
           "ma125": 3418.596849609375,
-          "ma200": 3382.2574169921877
+          "ma200": 3382.257408447266
         },
         {
           "date": "2026-08-18",
@@ -22145,7 +22145,7 @@
           "ma25": 3457.793349609375,
           "ma75": 3345.300358072917,
           "ma125": 3416.134693359375,
-          "ma200": 3383.165555419922
+          "ma200": 3383.165546875
         },
         {
           "date": "2026-08-19",
@@ -22153,7 +22153,7 @@
           "ma25": 3456.539853515625,
           "ma75": 3345.1048404947915,
           "ma125": 3413.76546484375,
-          "ma200": 3383.7455444335938
+          "ma200": 3383.745535888672
         },
         {
           "date": "2026-08-20",
@@ -22161,7 +22161,7 @@
           "ma25": 3456.39400390625,
           "ma75": 3346.337802734375,
           "ma125": 3412.292556640625,
-          "ma200": 3384.5156689453124
+          "ma200": 3384.5156604003905
         },
         {
           "date": "2026-08-21",
@@ -22169,7 +22169,7 @@
           "ma25": 3457.294296875,
           "ma75": 3347.9325553385415,
           "ma125": 3410.879794921875,
-          "ma200": 3385.4125720214843
+          "ma200": 3385.4125622558595
         },
         {
           "date": "2026-08-24",
@@ -22177,7 +22177,7 @@
           "ma25": 3456.944541015625,
           "ma75": 3349.43755859375,
           "ma125": 3408.95024609375,
-          "ma200": 3386.2868444824217
+          "ma200": 3386.2868359375
         },
         {
           "date": "2026-08-25",
@@ -22185,7 +22185,7 @@
           "ma25": 3456.22787109375,
           "ma75": 3351.0164192708335,
           "ma125": 3406.99439453125,
-          "ma200": 3387.373673095703
+          "ma200": 3387.3736657714844
         },
         {
           "date": "2026-08-26",
@@ -22193,7 +22193,7 @@
           "ma25": 3455.433505859375,
           "ma75": 3352.307835286458,
           "ma125": 3405.23485546875,
-          "ma200": 3388.6960217285155
+          "ma200": 3388.696014404297
         },
         {
           "date": "2026-08-27",
@@ -22201,7 +22201,7 @@
           "ma25": 3455.46224609375,
           "ma75": 3353.2066731770833,
           "ma125": 3403.341775390625,
-          "ma200": 3390.0037646484375
+          "ma200": 3390.003757324219
         },
         {
           "date": "2026-08-28",
@@ -22209,7 +22209,7 @@
           "ma25": 3454.721005859375,
           "ma75": 3353.14267578125,
           "ma125": 3401.0122265625,
-          "ma200": 3391.242755126953
+          "ma200": 3391.2427478027344
         },
         {
           "date": "2026-08-31",
@@ -22217,7 +22217,7 @@
           "ma25": 3453.83666015625,
           "ma75": 3354.3256315104168,
           "ma125": 3398.763908203125,
-          "ma200": 3392.8022644042967
+          "ma200": 3392.802257080078
         },
         {
           "date": "2026-09-01",
@@ -22225,7 +22225,7 @@
           "ma25": 3449.871416015625,
           "ma75": 3356.1816764322916,
           "ma125": 3396.50358203125,
-          "ma200": 3394.3953295898436
+          "ma200": 3394.3953210449217
         },
         {
           "date": "2026-09-02",
@@ -22233,7 +22233,7 @@
           "ma25": 3442.84,
           "ma75": 3357.9964615885415,
           "ma125": 3393.88110546875,
-          "ma200": 3395.5685290527344
+          "ma200": 3395.5685217285154
         },
         {
           "date": "2026-09-03",
@@ -22241,7 +22241,7 @@
           "ma25": 3431.8,
           "ma75": 3358.8673763020834,
           "ma125": 3392.300818359375,
-          "ma200": 3396.5622595214845
+          "ma200": 3396.5622521972655
         },
         {
           "date": "2026-09-04",
@@ -22249,7 +22249,7 @@
           "ma25": 3423.48,
           "ma75": 3360.2685709635416,
           "ma125": 3391.07793359375,
-          "ma200": 3397.2873107910154
+          "ma200": 3397.287303466797
         },
         {
           "date": "2026-09-07",
@@ -22257,7 +22257,7 @@
           "ma25": 3417.56,
           "ma75": 3361.3066959635416,
           "ma125": 3389.825517578125,
-          "ma200": 3397.7789416503906
+          "ma200": 3397.778935546875
         },
         {
           "date": "2026-09-08",
@@ -22265,7 +22265,7 @@
           "ma25": 3414.84,
           "ma75": 3361.7073795572915,
           "ma125": 3388.2455625,
-          "ma200": 3397.9941284179686
+          "ma200": 3397.9941223144533
         },
         {
           "date": "2026-09-09",
@@ -22273,7 +22273,7 @@
           "ma25": 3413.64,
           "ma75": 3362.25677734375,
           "ma125": 3386.699912109375,
-          "ma200": 3398.4964147949217
+          "ma200": 3398.496407470703
         },
         {
           "date": "2026-09-10",
@@ -22281,7 +22281,7 @@
           "ma25": 3414.36,
           "ma75": 3363.473098958333,
           "ma125": 3385.381794921875,
-          "ma200": 3399.090416259766
+          "ma200": 3399.0904089355467
         },
         {
           "date": "2026-09-11",
@@ -22289,7 +22289,7 @@
           "ma25": 3412.2,
           "ma75": 3364.6342936197916,
           "ma125": 3383.944291015625,
-          "ma200": 3399.855134277344
+          "ma200": 3399.855126953125
         },
         {
           "date": "2026-09-14",
@@ -22297,7 +22297,7 @@
           "ma25": 3409.76,
           "ma75": 3365.54830078125,
           "ma125": 3383.064650390625,
-          "ma200": 3400.8897790527344
+          "ma200": 3400.889771728516
         },
         {
           "date": "2026-09-15",
@@ -22305,7 +22305,7 @@
           "ma25": 3406.44,
           "ma75": 3366.260003255208,
           "ma125": 3382.00085546875,
-          "ma200": 3401.6939672851563
+          "ma200": 3401.6939599609377
         },
         {
           "date": "2026-09-16",
@@ -22313,7 +22313,7 @@
           "ma25": 3403.4,
           "ma75": 3367.9796842447918,
           "ma125": 3381.023986328125,
-          "ma200": 3402.575784912109
+          "ma200": 3402.5757763671877
         },
         {
           "date": "2026-09-17",
@@ -22321,7 +22321,7 @@
           "ma25": 3402.48,
           "ma75": 3371.021689453125,
           "ma125": 3380.42465234375,
-          "ma200": 3403.3776135253906
+          "ma200": 3403.377606201172
         },
         {
           "date": "2026-09-18",
@@ -22329,7 +22329,7 @@
           "ma25": 3398.72,
           "ma75": 3372.7816276041667,
           "ma125": 3378.914841796875,
-          "ma200": 3403.832800292969
+          "ma200": 3403.83279296875
         },
         {
           "date": "2026-09-24",
@@ -22337,7 +22337,7 @@
           "ma25": 3396.44,
           "ma75": 3374.3582259114582,
           "ma125": 3378.32290625,
-          "ma200": 3403.961220703125
+          "ma200": 3403.9612133789065
         },
         {
           "date": "2026-09-25",
@@ -22345,40 +22345,40 @@
           "ma25": 3395.92,
           "ma75": 3377.3915299479168,
           "ma125": 3378.19698046875,
-          "ma200": 3404.093592529297
+          "ma200": 3404.093583984375
         },
         {
           "date": "2026-09-28",
-          "close": 3388.0,
-          "ma25": 3396.48,
-          "ma75": 3380.011220703125,
-          "ma125": 3377.88566015625,
-          "ma200": 3404.2393212890624
+          "close": 3375.0,
+          "ma25": 3395.96,
+          "ma75": 3379.8378873697916,
+          "ma125": 3377.78166015625,
+          "ma200": 3404.1743127441405
         }
       ],
       "decision": {
-        "score": 57,
-        "rank": "C",
-        "label": "監視・条件待ち",
-        "heat": "押し目",
+        "score": 48,
+        "rank": "D",
+        "label": "弱い・見送り優先",
+        "heat": "通常",
         "stretched": false,
         "falling_knife": false,
         "risk_level": "低め",
-        "daily_sigma_pct": 0.92,
-        "annualized_vol_pct": 14.5,
-        "return20_pct": -2.11,
-        "return60_pct": 2.17,
-        "drawdown60_pct": -7.88,
-        "rebound_from_low60_pct": 2.72,
-        "distance_ma25_pct": -0.25,
-        "distance_ma75_pct": 0.24,
+        "daily_sigma_pct": 0.91,
+        "annualized_vol_pct": 14.4,
+        "return20_pct": -2.48,
+        "return60_pct": 1.78,
+        "drawdown60_pct": -8.24,
+        "rebound_from_low60_pct": 2.32,
+        "distance_ma25_pct": -0.62,
+        "distance_ma75_pct": -0.14,
         "limit_prices": {
-          "aggressive": 3361,
-          "standard": 3327,
-          "deep": 3269
+          "aggressive": 3348,
+          "standard": 3314,
+          "deep": 3257
         },
-        "invalidation_price": 3202,
-        "review_upside_price": 3625,
+        "invalidation_price": 3189,
+        "review_upside_price": 3611,
         "reasons": [
           {
             "name": "長期トレンド",
@@ -22388,22 +22388,22 @@
           {
             "name": "移動平均の傾き",
             "impact": 0.2,
-            "detail": "MA25 -0.20% / MA75 +0.36%"
+            "detail": "MA25 -0.22% / MA75 +0.35%"
           },
           {
             "name": "並び順",
             "impact": -1.0,
-            "detail": "MA200 > MA25 > 株価 > MA75 > MA125"
+            "detail": "MA200 > MA25 > MA75 > MA125 > 株価"
           },
           {
             "name": "買われ過ぎ/押し目",
-            "impact": 9.0,
-            "detail": "株価-MA25 -0.2%"
+            "impact": 0.0,
+            "detail": "株価-MA25 -0.6%"
           },
           {
             "name": "20日モメンタム",
-            "impact": -1.4,
-            "detail": "20日 -2.1%"
+            "impact": -1.6,
+            "detail": "20日 -2.5%"
           }
         ],
         "method": "MA25/75/125/200 + 20日momentum + 20日volatility。テクニカル参考値であり将来収益を保証しません。"
@@ -22418,40 +22418,40 @@
       "cached": false,
       "stale": false,
       "cache_age_seconds": 0,
-      "price": 5386.0,
-      "analysis_price": 5386.0,
+      "price": 5356.0,
+      "analysis_price": 5356.0,
       "as_of": "2026-09-28",
-      "grade": 5,
-      "stars": "★★★★★",
-      "label": "最強の上昇（パーフェクトオーダー）",
-      "order": "株価 > MA25 > MA75 > MA125 > MA200",
+      "grade": 4,
+      "stars": "★★★★☆",
+      "label": "長期上昇トレンド",
+      "order": "MA25 > 株価 > MA75 > MA125 > MA200",
       "moving_averages": {
         "25": {
-          "value": 5364.8,
+          "value": 5363.6,
           "direction": "上向き",
-          "slope_5d_pct": 0.6121346696273289,
-          "price_distance_pct": 0.39516850581569063,
-          "price_above": true
+          "slope_5d_pct": 0.5896297185380872,
+          "price_distance_pct": -0.14169587590424637,
+          "price_above": false
         },
         "75": {
-          "value": 5159.973990885416,
+          "value": 5159.573990885417,
           "direction": "上向き",
-          "slope_5d_pct": 0.6983753961573136,
-          "price_distance_pct": 4.380371093223268,
+          "slope_5d_pct": 0.6905692811982833,
+          "price_distance_pct": 3.807019910201448,
           "price_above": true
         },
         "125": {
-          "value": 5063.2190546875,
+          "value": 5062.9790546875,
           "direction": "上向き",
-          "slope_5d_pct": 0.4936157095553062,
-          "price_distance_pct": 6.375014429084813,
+          "slope_5d_pct": 0.488852244354665,
+          "price_distance_pct": 5.787520393575596,
           "price_above": true
         },
         "200": {
-          "value": 4934.879194335937,
+          "value": 4934.7291796875,
           "direction": "上向き",
-          "slope_5d_pct": 0.5351046902607015,
-          "price_distance_pct": 9.141476171936326,
+          "slope_5d_pct": 0.5320489387886873,
+          "price_distance_pct": 8.536857950514287,
           "price_above": true
         }
       },
@@ -22594,7 +22594,7 @@
         },
         {
           "date": "2025-10-23",
-          "close": 4203.79443359375,
+          "close": 4203.7939453125,
           "ma25": null,
           "ma75": null,
           "ma125": null,
@@ -22602,7 +22602,7 @@
         },
         {
           "date": "2025-10-27",
-          "close": 4292.244140625,
+          "close": 4292.24365234375,
           "ma25": null,
           "ma75": null,
           "ma125": null,
@@ -22626,7 +22626,7 @@
         },
         {
           "date": "2025-10-30",
-          "close": 4236.8408203125,
+          "close": 4236.84130859375,
           "ma25": null,
           "ma75": null,
           "ma125": null,
@@ -22634,7 +22634,7 @@
         },
         {
           "date": "2025-10-31",
-          "close": 4202.82177734375,
+          "close": 4202.822265625,
           "ma25": null,
           "ma75": null,
           "ma125": null,
@@ -22642,7 +22642,7 @@
         },
         {
           "date": "2025-11-04",
-          "close": 4209.62548828125,
+          "close": 4209.6259765625,
           "ma25": null,
           "ma75": null,
           "ma125": null,
@@ -22650,7 +22650,7 @@
         },
         {
           "date": "2025-11-05",
-          "close": 4200.87841796875,
+          "close": 4200.8779296875,
           "ma25": 4146.13640625,
           "ma75": null,
           "ma125": null,
@@ -22666,15 +22666,15 @@
         },
         {
           "date": "2025-11-07",
-          "close": 4265.02880859375,
-          "ma25": 4162.154580078125,
+          "close": 4265.0283203125,
+          "ma25": 4162.154560546875,
           "ma75": null,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2025-11-10",
-          "close": 4276.69189453125,
+          "close": 4276.6923828125,
           "ma25": 4172.88517578125,
           "ma75": null,
           "ma125": null,
@@ -22698,15 +22698,15 @@
         },
         {
           "date": "2025-11-13",
-          "close": 4351.5341796875,
-          "ma25": 4205.66017578125,
+          "close": 4351.53466796875,
+          "ma25": 4205.6601953125,
           "ma75": null,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2025-11-14",
-          "close": 4363.1982421875,
+          "close": 4363.19775390625,
           "ma25": 4213.98029296875,
           "ma75": null,
           "ma125": null,
@@ -22714,8 +22714,8 @@
         },
         {
           "date": "2025-11-17",
-          "close": 4351.5341796875,
-          "ma25": 4221.639453125,
+          "close": 4351.53466796875,
+          "ma25": 4221.63947265625,
           "ma75": null,
           "ma125": null,
           "ma200": null
@@ -22723,30 +22723,30 @@
         {
           "date": "2025-11-18",
           "close": 4251.4208984375,
-          "ma25": 4224.7108984375,
+          "ma25": 4224.71091796875,
           "ma75": null,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2025-11-19",
-          "close": 4232.953125,
-          "ma25": 4228.24888671875,
+          "close": 4232.95361328125,
+          "ma25": 4228.24892578125,
           "ma75": null,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2025-11-20",
-          "close": 4281.55224609375,
-          "ma25": 4236.607890625,
+          "close": 4281.5517578125,
+          "ma25": 4236.60791015625,
           "ma75": null,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2025-11-21",
-          "close": 4316.54345703125,
+          "close": 4316.54296875,
           "ma25": 4244.57810546875,
           "ma75": null,
           "ma125": null,
@@ -22754,8 +22754,8 @@
         },
         {
           "date": "2025-11-25",
-          "close": 4303.9072265625,
-          "ma25": 4252.08173828125,
+          "close": 4303.90771484375,
+          "ma25": 4252.0817578125,
           "ma75": null,
           "ma125": null,
           "ma200": null
@@ -22763,14 +22763,14 @@
         {
           "date": "2025-11-26",
           "close": 4360.2822265625,
-          "ma25": 4262.7734765625,
+          "ma25": 4262.77349609375,
           "ma75": null,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2025-11-27",
-          "close": 4380.69384765625,
+          "close": 4380.693359375,
           "ma25": 4271.443515625,
           "ma75": null,
           "ma125": null,
@@ -22778,31 +22778,31 @@
         },
         {
           "date": "2025-11-28",
-          "close": 4393.32958984375,
-          "ma25": 4280.8911328125,
+          "close": 4393.3291015625,
+          "ma25": 4280.89111328125,
           "ma75": null,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2025-12-01",
-          "close": 4335.98291015625,
-          "ma25": 4286.06205078125,
+          "close": 4335.982421875,
+          "ma25": 4286.06201171875,
           "ma75": null,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2025-12-02",
-          "close": 4329.17919921875,
-          "ma25": 4291.07744140625,
+          "close": 4329.1787109375,
+          "ma25": 4291.07740234375,
           "ma75": null,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2025-12-03",
-          "close": 4328.20654296875,
+          "close": 4328.20703125,
           "ma25": 4292.5159375,
           "ma75": null,
           "ma125": null,
@@ -22827,7 +22827,7 @@
         {
           "date": "2025-12-08",
           "close": 4354.4501953125,
-          "ma25": 4306.12361328125,
+          "ma25": 4306.12359375,
           "ma75": null,
           "ma125": null,
           "ma200": null
@@ -22835,47 +22835,47 @@
         {
           "date": "2025-12-09",
           "close": 4359.31005859375,
-          "ma25": 4312.38314453125,
+          "ma25": 4312.38310546875,
           "ma75": null,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2025-12-10",
-          "close": 4406.93701171875,
-          "ma25": 4320.27560546875,
+          "close": 4406.9365234375,
+          "ma25": 4320.27552734375,
           "ma75": null,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2025-12-11",
-          "close": 4419.572265625,
-          "ma25": 4329.023359375,
+          "close": 4419.57275390625,
+          "ma25": 4329.0233203125,
           "ma75": null,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2025-12-12",
-          "close": 4515.79833984375,
-          "ma25": 4339.1319140625,
+          "close": 4515.7978515625,
+          "ma25": 4339.13185546875,
           "ma75": null,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2025-12-15",
-          "close": 4539.1259765625,
-          "ma25": 4350.09580078125,
+          "close": 4539.12548828125,
+          "ma25": 4350.0957421875,
           "ma75": null,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2025-12-16",
-          "close": 4474.9755859375,
-          "ma25": 4358.0271484375,
+          "close": 4474.97509765625,
+          "ma25": 4358.02705078125,
           "ma75": null,
           "ma125": null,
           "ma200": null
@@ -22883,15 +22883,15 @@
         {
           "date": "2025-12-17",
           "close": 4484.69482421875,
-          "ma25": 4365.80294921875,
+          "ma25": 4365.8028515625,
           "ma75": null,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2025-12-18",
-          "close": 4476.9189453125,
-          "ma25": 4372.140234375,
+          "close": 4476.91943359375,
+          "ma25": 4372.14015625,
           "ma75": null,
           "ma125": null,
           "ma200": null
@@ -22899,15 +22899,15 @@
         {
           "date": "2025-12-19",
           "close": 4487.61083984375,
-          "ma25": 4377.58330078125,
+          "ma25": 4377.583203125,
           "ma75": null,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2025-12-22",
-          "close": 4481.779296875,
-          "ma25": 4382.32654296875,
+          "close": 4481.77880859375,
+          "ma25": 4382.3264453125,
           "ma75": null,
           "ma125": null,
           "ma200": null
@@ -22915,15 +22915,15 @@
         {
           "date": "2025-12-23",
           "close": 4502.1904296875,
-          "ma25": 4388.35279296875,
+          "ma25": 4388.35267578125,
           "ma75": null,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2025-12-24",
-          "close": 4474.0029296875,
-          "ma25": 4397.25607421875,
+          "close": 4474.00341796875,
+          "ma25": 4397.2559765625,
           "ma75": null,
           "ma125": null,
           "ma200": null
@@ -22931,15 +22931,15 @@
         {
           "date": "2025-12-25",
           "close": 4505.1064453125,
-          "ma25": 4408.14220703125,
+          "ma25": 4408.14208984375,
           "ma75": null,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2025-12-26",
-          "close": 4488.5830078125,
-          "ma25": 4416.4234375,
+          "close": 4488.58251953125,
+          "ma25": 4416.4233203125,
           "ma75": null,
           "ma125": null,
           "ma200": null
@@ -22947,7 +22947,7 @@
         {
           "date": "2025-12-29",
           "close": 4509.96630859375,
-          "ma25": 4424.1603515625,
+          "ma25": 4424.16025390625,
           "ma75": null,
           "ma125": null,
           "ma200": null
@@ -22955,7 +22955,7 @@
         {
           "date": "2025-12-30",
           "close": 4503.16259765625,
-          "ma25": 4432.13056640625,
+          "ma25": 4432.13044921875,
           "ma75": null,
           "ma125": null,
           "ma200": null
@@ -22963,15 +22963,15 @@
         {
           "date": "2026-01-05",
           "close": 4571.20068359375,
-          "ma25": 4440.5673046875,
+          "ma25": 4440.5671875,
           "ma75": null,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2026-01-06",
-          "close": 4624.65966796875,
-          "ma25": 4450.3259375,
+          "close": 4624.6591796875,
+          "ma25": 4450.3258203125,
           "ma75": null,
           "ma125": null,
           "ma200": null
@@ -22979,7 +22979,7 @@
         {
           "date": "2026-01-07",
           "close": 4582.8642578125,
-          "ma25": 4457.90732421875,
+          "ma25": 4457.9072265625,
           "ma75": null,
           "ma125": null,
           "ma200": null
@@ -22987,7 +22987,7 @@
         {
           "date": "2026-01-08",
           "close": 4551.76123046875,
-          "ma25": 4466.53845703125,
+          "ma25": 4466.53837890625,
           "ma75": null,
           "ma125": null,
           "ma200": null
@@ -22995,7 +22995,7 @@
         {
           "date": "2026-01-09",
           "close": 4616.88330078125,
-          "ma25": 4478.04662109375,
+          "ma25": 4478.0465625,
           "ma75": null,
           "ma125": null,
           "ma200": null
@@ -23003,7 +23003,7 @@
         {
           "date": "2026-01-13",
           "close": 4710.193359375,
-          "ma25": 4493.32609375,
+          "ma25": 4493.326015625,
           "ma75": null,
           "ma125": null,
           "ma200": null
@@ -23011,31 +23011,31 @@
         {
           "date": "2026-01-14",
           "close": 4761.7080078125,
-          "ma25": 4508.838828125,
+          "ma25": 4508.83875,
           "ma75": null,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2026-01-15",
-          "close": 4817.11083984375,
-          "ma25": 4528.82265625,
+          "close": 4817.1103515625,
+          "ma25": 4528.82255859375,
           "ma75": null,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2026-01-16",
-          "close": 4816.13818359375,
-          "ma25": 4547.29017578125,
+          "close": 4816.138671875,
+          "ma25": 4547.29009765625,
           "ma75": null,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2026-01-19",
-          "close": 4777.259765625,
-          "ma25": 4564.0081640625,
+          "close": 4777.25927734375,
+          "ma25": 4564.00806640625,
           "ma75": null,
           "ma125": null,
           "ma200": null
@@ -23043,176 +23043,176 @@
         {
           "date": "2026-01-20",
           "close": 4760.73583984375,
-          "ma25": 4578.1601171875,
+          "ma25": 4578.1600390625,
           "ma75": null,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2026-01-21",
-          "close": 4703.38916015625,
-          "ma25": 4589.51279296875,
-          "ma75": 4354.890852864583,
+          "close": 4703.3896484375,
+          "ma25": 4589.51271484375,
+          "ma75": 4354.890813802083,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2026-01-22",
           "close": 4728.66064453125,
-          "ma25": 4598.02728515625,
-          "ma75": 4363.768229166667,
+          "ma25": 4598.0272265625,
+          "ma75": 4363.768190104167,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2026-01-23",
-          "close": 4738.38037109375,
-          "ma25": 4605.9974609375,
-          "ma75": 4372.749280598959,
+          "close": 4738.380859375,
+          "ma25": 4605.99744140625,
+          "ma75": 4372.749248046875,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2026-01-26",
-          "close": 4622.71533203125,
-          "ma25": 4611.90705078125,
-          "ma75": 4380.939791666667,
+          "close": 4622.7158203125,
+          "ma25": 4611.9070703125,
+          "ma75": 4380.939765625,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2026-01-27",
-          "close": 4607.1640625,
+          "close": 4607.16357421875,
           "ma25": 4616.8058203125,
-          "ma75": 4389.1821484375,
+          "ma75": 4389.182115885416,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2026-01-28",
           "close": 4562.45263671875,
-          "ma25": 4620.22716796875,
-          "ma75": 4396.40068359375,
+          "ma25": 4620.2271484375,
+          "ma75": 4396.400651041667,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2026-01-29",
           "close": 4591.6123046875,
-          "ma25": 4624.3872265625,
-          "ma75": 4402.543567708333,
+          "ma25": 4624.38720703125,
+          "ma75": 4402.54353515625,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2026-01-30",
-          "close": 4637.29541015625,
-          "ma25": 4630.60787109375,
-          "ma75": 4408.971569010417,
+          "close": 4637.294921875,
+          "ma25": 4630.6078515625,
+          "ma75": 4408.971529947917,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2026-02-02",
           "close": 4645.07080078125,
-          "ma25": 4636.3230859375,
-          "ma75": 4415.438444010417,
+          "ma25": 4636.32306640625,
+          "ma75": 4415.438404947917,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2026-02-03",
           "close": 4760.73583984375,
-          "ma25": 4647.79240234375,
-          "ma75": 4423.253125,
+          "ma25": 4647.79236328125,
+          "ma75": 4423.2530859375,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2026-02-04",
-          "close": 4837.5224609375,
-          "ma25": 4661.08904296875,
-          "ma75": 4432.49337890625,
+          "close": 4837.52197265625,
+          "ma25": 4661.088984375,
+          "ma75": 4432.493333333333,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2026-02-05",
           "close": 4906.5322265625,
-          "ma25": 4677.80701171875,
-          "ma75": 4443.612779947916,
+          "ma25": 4677.80697265625,
+          "ma75": 4443.612734375,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2026-02-06",
           "close": 4875.42919921875,
-          "ma25": 4692.42552734375,
-          "ma75": 4453.721328125,
+          "ma25": 4692.42548828125,
+          "ma75": 4453.721282552084,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2026-02-09",
           "close": 4980.64697265625,
-          "ma25": 4711.52490234375,
-          "ma75": 4465.245735677084,
+          "ma25": 4711.52486328125,
+          "ma75": 4465.245690104167,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2026-02-10",
           "close": 5021.94775390625,
-          "ma25": 4729.55478515625,
-          "ma75": 4477.63185546875,
+          "ma25": 4729.55474609375,
+          "ma75": 4477.631809895834,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2026-02-12",
           "close": 5089.79833984375,
-          "ma25": 4748.16033203125,
-          "ma75": 4489.976595052083,
+          "ma25": 4748.1603125,
+          "ma75": 4489.976549479166,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2026-02-13",
           "close": 5063.248046875,
-          "ma25": 4767.37568359375,
-          "ma75": 4502.058046875,
+          "ma25": 4767.3756640625,
+          "ma75": 4502.0580013020835,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2026-02-16",
           "close": 5015.064453125,
-          "ma25": 4785.9078125,
-          "ma75": 4512.836106770833,
+          "ma25": 4785.90779296875,
+          "ma75": 4512.836061197917,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2026-02-17",
           "close": 4998.34716796875,
-          "ma25": 4801.1663671875,
-          "ma75": 4523.430143229167,
+          "ma25": 4801.16634765625,
+          "ma75": 4523.430104166667,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2026-02-18",
           "close": 5077.99853515625,
-          "ma25": 4815.87857421875,
-          "ma75": 4533.906868489584,
+          "ma25": 4815.8785546875,
+          "ma75": 4533.9068359375,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2026-02-19",
           "close": 5106.515625,
-          "ma25": 4829.67087890625,
-          "ma75": 4545.34701171875,
+          "ma25": 4829.670859375,
+          "ma75": 4545.346979166667,
           "ma125": null,
           "ma200": null
         },
@@ -23220,15 +23220,15 @@
           "date": "2026-02-20",
           "close": 5040.63134765625,
           "ma25": 4838.61169921875,
-          "ma75": 4556.28453125,
+          "ma75": 4556.284498697917,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2026-02-24",
           "close": 5037.68115234375,
-          "ma25": 4847.47341796875,
-          "ma75": 4566.96240234375,
+          "ma25": 4847.4733984375,
+          "ma75": 4566.96236328125,
           "ma125": null,
           "ma200": null
         },
@@ -23236,7 +23236,7 @@
           "date": "2026-02-25",
           "close": 5100.615234375,
           "ma25": 4860.40763671875,
-          "ma75": 4578.932981770833,
+          "ma75": 4578.932936197917,
           "ma125": null,
           "ma200": null
         },
@@ -23244,87 +23244,87 @@
           "date": "2026-02-26",
           "close": 5124.2158203125,
           "ma25": 4874.9468359375,
-          "ma75": 4591.12751953125,
+          "ma75": 4591.127467447916,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2026-02-27",
           "close": 5171.416015625,
-          "ma25": 4893.66791015625,
-          "ma75": 4604.068020833333,
+          "ma25": 4893.667890625,
+          "ma75": 4604.0679752604165,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2026-03-02",
           "close": 5154.69921875,
-          "ma25": 4910.709453125,
-          "ma75": 4615.956217447917,
+          "ma25": 4910.70943359375,
+          "ma75": 4615.956171875,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2026-03-03",
           "close": 5005.23095703125,
-          "ma25": 4921.3834765625,
-          "ma75": 4625.8255794270835,
+          "ma25": 4921.3834375,
+          "ma75": 4625.8255403645835,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2026-03-04",
           "close": 4843.9619140625,
-          "ma25": 4930.23333984375,
-          "ma75": 4633.3891796875,
+          "ma25": 4930.23328125,
+          "ma75": 4633.389134114584,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2026-03-05",
           "close": 4906.89599609375,
-          "ma25": 4942.2226171875,
-          "ma75": 4641.610462239583,
+          "ma25": 4942.222578125,
+          "ma75": 4641.610416666666,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2026-03-06",
           "close": 4903.9462890625,
-          "ma25": 4955.88236328125,
-          "ma75": 4649.416588541667,
+          "ma25": 4955.88232421875,
+          "ma75": 4649.41654296875,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2026-03-09",
           "close": 4800.69482421875,
-          "ma25": 4964.2456640625,
-          "ma75": 4655.405397135417,
+          "ma25": 4964.245625,
+          "ma75": 4655.405345052083,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2026-03-10",
           "close": 4890.17919921875,
-          "ma25": 4974.361015625,
-          "ma75": 4662.431809895833,
+          "ma25": 4974.36099609375,
+          "ma75": 4662.431764322917,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2026-03-11",
           "close": 4930.49658203125,
-          "ma25": 4985.778046875,
-          "ma75": 4670.15130859375,
+          "ma25": 4985.77802734375,
+          "ma75": 4670.151256510417,
           "ma125": null,
           "ma200": null
         },
         {
           "date": "2026-03-12",
           "close": 4838.06201171875,
-          "ma25": 4988.87109375,
-          "ma75": 4677.973190104167,
+          "ma25": 4988.87107421875,
+          "ma75": 4677.973138020833,
           "ma125": null,
           "ma200": null
         },
@@ -23332,7 +23332,7 @@
           "date": "2026-03-13",
           "close": 4819.37841796875,
           "ma25": 4988.14533203125,
-          "ma75": 4685.792194010417,
+          "ma75": 4685.7921354166665,
           "ma125": null,
           "ma200": null
         },
@@ -23340,7 +23340,7 @@
           "date": "2026-03-16",
           "close": 4776.111328125,
           "ma25": 4982.92849609375,
-          "ma75": 4692.386315104167,
+          "ma75": 4692.386263020833,
           "ma125": null,
           "ma200": null
         },
@@ -23348,7 +23348,7 @@
           "date": "2026-03-17",
           "close": 4776.111328125,
           "ma25": 4978.95578125,
-          "ma75": 4698.51388671875,
+          "ma75": 4698.513841145833,
           "ma125": null,
           "ma200": null
         },
@@ -23356,7 +23356,7 @@
           "date": "2026-03-18",
           "close": 4922.6298828125,
           "ma25": 4976.63509765625,
-          "ma75": 4706.763522135417,
+          "ma75": 4706.763470052083,
           "ma125": null,
           "ma200": null
         },
@@ -23364,7 +23364,7 @@
           "date": "2026-03-19",
           "close": 4782.99462890625,
           "ma25": 4967.07697265625,
-          "ma75": 4712.3996875,
+          "ma75": 4712.399635416667,
           "ma125": null,
           "ma200": null
         },
@@ -23372,7 +23372,7 @@
           "date": "2026-03-23",
           "close": 4635.49267578125,
           "ma25": 4948.90474609375,
-          "ma75": 4715.797005208334,
+          "ma75": 4715.796959635417,
           "ma125": null,
           "ma200": null
         },
@@ -23380,7 +23380,7 @@
           "date": "2026-03-24",
           "close": 4782.01123046875,
           "ma25": 4937.6552734375,
-          "ma75": 4720.979427083334,
+          "ma75": 4720.9793880208335,
           "ma125": null,
           "ma200": null
         },
@@ -23388,7 +23388,7 @@
           "date": "2026-03-25",
           "close": 4892.14599609375,
           "ma25": 4932.73853515625,
-          "ma75": 4728.394934895833,
+          "ma75": 4728.39490234375,
           "ma125": null,
           "ma200": null
         },
@@ -23396,7 +23396,7 @@
           "date": "2026-03-26",
           "close": 4887.2294921875,
           "ma25": 4928.293828125,
-          "ma75": 4735.83560546875,
+          "ma75": 4735.835579427084,
           "ma125": null,
           "ma200": null
         },
@@ -23404,7 +23404,7 @@
           "date": "2026-03-27",
           "close": 4918.6962890625,
           "ma25": 4921.92173828125,
-          "ma75": 4743.7088020833335,
+          "ma75": 4743.70876953125,
           "ma125": null,
           "ma200": null
         },
@@ -23412,7 +23412,7 @@
           "date": "2026-03-30",
           "close": 4827.2451171875,
           "ma25": 4910.75091796875,
-          "ma75": 4749.753541666667,
+          "ma75": 4749.753509114584,
           "ma125": null,
           "ma200": null
         },
@@ -23420,7 +23420,7 @@
           "date": "2026-03-31",
           "close": 4809.544921875,
           "ma25": 4901.5074609375,
-          "ma75": 4756.313938802084,
+          "ma75": 4756.31390625,
           "ma125": null,
           "ma200": null
         },
@@ -23428,7 +23428,7 @@
           "date": "2026-04-01",
           "close": 4980.64697265625,
           "ma25": 4899.22609375,
-          "ma75": 4764.6632291666665,
+          "ma75": 4764.663196614583,
           "ma125": null,
           "ma200": null
         },
@@ -23436,7 +23436,7 @@
           "date": "2026-04-02",
           "close": 4916.7294921875,
           "ma25": 4891.8706640625,
-          "ma75": 4772.09548828125,
+          "ma75": 4772.095455729167,
           "ma125": null,
           "ma200": null
         },
@@ -23444,7 +23444,7 @@
           "date": "2026-04-03",
           "close": 4956.0634765625,
           "ma25": 4885.1445703125,
-          "ma75": 4779.4171744791665,
+          "ma75": 4779.4171484375,
           "ma125": null,
           "ma200": null
         },
@@ -23452,168 +23452,168 @@
           "date": "2026-04-06",
           "close": 4936.396484375,
           "ma25": 4875.7437890625,
-          "ma75": 4786.3081640625,
-          "ma125": 4566.8168515625,
+          "ma75": 4786.308131510416,
+          "ma125": 4566.81682421875,
           "ma200": null
         },
         {
           "date": "2026-04-07",
           "close": 4947.21337890625,
           "ma25": 4867.44435546875,
-          "ma75": 4792.0603645833335,
-          "ma125": 4573.89169921875,
+          "ma75": 4792.060338541667,
+          "ma125": 4573.891671875,
           "ma200": null
         },
         {
           "date": "2026-04-08",
           "close": 5077.01513671875,
           "ma25": 4870.31572265625,
-          "ma75": 4799.232220052083,
-          "ma125": 4581.989408203125,
+          "ma75": 4799.232200520833,
+          "ma125": 4581.989380859375,
           "ma200": null
         },
         {
           "date": "2026-04-09",
           "close": 5025.880859375,
           "ma25": 4877.59248046875,
-          "ma75": 4806.577623697916,
-          "ma125": 4590.1290390625,
+          "ma75": 4806.577610677084,
+          "ma125": 4590.12901171875,
           "ma200": null
         },
         {
           "date": "2026-04-10",
           "close": 4984.58056640625,
           "ma25": 4880.69986328125,
-          "ma75": 4813.242766927084,
-          "ma125": 4598.09378515625,
+          "ma75": 4813.24275390625,
+          "ma125": 4598.0937578125,
           "ma200": null
         },
         {
           "date": "2026-04-13",
           "close": 4972.7802734375,
           "ma25": 4883.45322265625,
-          "ma75": 4819.854251302083,
-          "ma125": 4605.70752734375,
+          "ma75": 4819.854231770833,
+          "ma125": 4605.7075,
           "ma200": null
         },
         {
           "date": "2026-04-14",
           "close": 4960.97998046875,
           "ma25": 4889.86462890625,
-          "ma75": 4826.16583984375,
-          "ma125": 4612.34819921875,
+          "ma75": 4826.1658203125,
+          "ma125": 4612.348171875,
           "ma200": null
         },
         {
           "date": "2026-04-15",
           "close": 4966.88037109375,
           "ma25": 4892.93267578125,
-          "ma75": 4832.633854166666,
-          "ma125": 4618.8416796875,
+          "ma75": 4832.633841145834,
+          "ma125": 4618.84165234375,
           "ma200": null
         },
         {
           "date": "2026-04-16",
           "close": 4985.56396484375,
           "ma25": 4895.13537109375,
-          "ma75": 4839.078834635417,
-          "ma125": 4625.44575,
+          "ma75": 4839.078821614583,
+          "ma125": 4625.44572265625,
           "ma200": null
         },
         {
           "date": "2026-04-17",
           "close": 4930.49658203125,
           "ma25": 4898.83275390625,
-          "ma75": 4845.165416666667,
-          "ma125": 4631.49264453125,
+          "ma75": 4845.165397135416,
+          "ma125": 4631.4926171875,
           "ma200": null
         },
         {
           "date": "2026-04-20",
           "close": 4956.0634765625,
           "ma25": 4904.30015625,
-          "ma75": 4851.178177083333,
-          "ma125": 4637.985125,
+          "ma75": 4851.178157552084,
+          "ma125": 4637.98509765625,
           "ma200": null
         },
         {
           "date": "2026-04-21",
           "close": 4961.96337890625,
           "ma25": 4911.73423828125,
-          "ma75": 4857.489915364583,
-          "ma125": 4645.10021484375,
+          "ma75": 4857.48990234375,
+          "ma125": 4645.1001875,
           "ma200": null
         },
         {
           "date": "2026-04-22",
           "close": 4877.39599609375,
           "ma25": 4915.785625,
-          "ma75": 4862.3889778645835,
-          "ma125": 4651.181078125,
+          "ma75": 4862.38896484375,
+          "ma125": 4651.18105078125,
           "ma200": null
         },
         {
           "date": "2026-04-23",
           "close": 4844.9453125,
           "ma25": 4912.6782421875,
-          "ma75": 4866.946080729167,
-          "ma125": 4657.010109375,
+          "ma75": 4866.946067708333,
+          "ma125": 4657.01008203125,
           "ma200": null
         },
         {
           "date": "2026-04-24",
           "close": 4828.228515625,
           "ma25": 4914.48759765625,
-          "ma75": 4870.373118489583,
-          "ma125": 4662.89202734375,
+          "ma75": 4870.37310546875,
+          "ma125": 4662.892,
           "ma200": null
         },
         {
           "date": "2026-04-27",
           "close": 4816.42822265625,
           "ma25": 4921.72501953125,
-          "ma75": 4872.9300325520835,
-          "ma125": 4668.11191015625,
+          "ma75": 4872.930026041667,
+          "ma125": 4668.1118828125,
           "ma200": null
         },
         {
           "date": "2026-04-28",
           "close": 4887.2294921875,
           "ma25": 4925.93375,
-          "ma75": 4876.988235677083,
-          "ma125": 4673.9526328125,
+          "ma75": 4876.988229166666,
+          "ma125": 4673.95260546875,
           "ma200": null
         },
         {
           "date": "2026-04-30",
           "close": 4813.478515625,
           "ma25": 4922.78705078125,
-          "ma75": 4880.477799479167,
-          "ma125": 4678.80678125,
+          "ma75": 4880.47779296875,
+          "ma125": 4678.80675390625,
           "ma200": null
         },
         {
           "date": "2026-05-01",
           "close": 4839.04541015625,
           "ma25": 4920.8596875,
-          "ma75": 4883.4399609375,
-          "ma125": 4683.8887890625,
+          "ma75": 4883.439954427084,
+          "ma125": 4683.888765625,
           "ma200": null
         },
         {
           "date": "2026-05-07",
           "close": 4880.345703125,
           "ma25": 4919.3256640625,
-          "ma75": 4885.708658854167,
-          "ma125": 4688.5936015625,
+          "ma75": 4885.70865234375,
+          "ma125": 4688.59358203125,
           "ma200": null
         },
         {
           "date": "2026-05-08",
           "close": 4837.07861328125,
           "ma25": 4919.71900390625,
-          "ma75": 4886.713600260417,
-          "ma125": 4693.30219140625,
+          "ma75": 4886.71359375,
+          "ma125": 4693.302171875,
           "ma200": null
         },
         {
@@ -23621,15 +23621,15 @@
           "close": 4863.62890625,
           "ma25": 4921.88236328125,
           "ma75": 4887.3338411458335,
-          "ma125": 4698.44868359375,
+          "ma125": 4698.4486640625,
           "ma200": null
         },
         {
           "date": "2026-05-12",
           "close": 4914.7626953125,
           "ma25": 4919.2469921875,
-          "ma75": 4888.648834635416,
-          "ma125": 4703.87205859375,
+          "ma75": 4888.648828125,
+          "ma125": 4703.87203515625,
           "ma200": null
         },
         {
@@ -23637,7 +23637,7 @@
           "close": 4975.73046875,
           "ma25": 4921.60703125,
           "ma75": 4891.295110677083,
-          "ma125": 4710.055328125,
+          "ma125": 4710.05530078125,
           "ma200": null
         },
         {
@@ -23645,87 +23645,87 @@
           "close": 4985.56396484375,
           "ma25": 4922.78705078125,
           "ma75": 4894.292819010417,
-          "ma125": 4716.2628359375,
+          "ma125": 4716.2628046875,
           "ma200": null
         },
         {
           "date": "2026-05-15",
           "close": 5039.64794921875,
           "ma25": 4926.917109375,
-          "ma75": 4898.77626953125,
-          "ma125": 4722.9729921875,
+          "ma75": 4898.7762630208335,
+          "ma125": 4722.97296484375,
           "ma200": null
         },
         {
           "date": "2026-05-18",
           "close": 4954.0966796875,
           "ma25": 4927.19244140625,
-          "ma75": 4901.7820833333335,
-          "ma125": 4728.50108984375,
+          "ma75": 4901.782076822917,
+          "ma125": 4728.5010625,
           "ma200": null
         },
         {
           "date": "2026-05-19",
           "close": 5005.23095703125,
           "ma25": 4924.32107421875,
-          "ma75": 4905.340091145833,
-          "ma125": 4734.42270703125,
+          "ma75": 4905.340078125,
+          "ma125": 4734.42268359375,
           "ma200": null
         },
         {
           "date": "2026-05-20",
           "close": 4936.396484375,
           "ma25": 4920.74169921875,
-          "ma75": 4909.522506510417,
-          "ma125": 4739.70034375,
+          "ma75": 4909.522486979166,
+          "ma125": 4739.70031640625,
           "ma200": null
         },
         {
           "date": "2026-05-21",
           "close": 4954.0966796875,
           "ma25": 4919.52234375,
-          "ma75": 4914.148274739583,
-          "ma125": 4745.01071875,
+          "ma75": 4914.14826171875,
+          "ma125": 4745.01069140625,
           "ma200": null
         },
         {
           "date": "2026-05-22",
           "close": 4914.7626953125,
           "ma25": 4917.201640625,
-          "ma75": 4918.8457421875,
-          "ma125": 4749.78092578125,
+          "ma75": 4918.845729166666,
+          "ma125": 4749.7808984375,
           "ma200": null
         },
         {
           "date": "2026-05-25",
           "close": 4937.3798828125,
           "ma25": 4916.25763671875,
-          "ma75": 4923.4559765625,
-          "ma125": 4754.46769140625,
+          "ma75": 4923.455963541666,
+          "ma125": 4754.46766015625,
           "ma200": null
         },
         {
           "date": "2026-05-26",
           "close": 4930.49658203125,
           "ma25": 4914.80228515625,
-          "ma75": 4927.365325520834,
-          "ma125": 4759.006078125,
+          "ma75": 4927.365319010417,
+          "ma125": 4759.00605078125,
           "ma200": null
         },
         {
           "date": "2026-05-27",
           "close": 4924.59619140625,
           "ma25": 4912.36357421875,
-          "ma75": 4931.092330729167,
-          "ma125": 4763.59057421875,
+          "ma75": 4931.09232421875,
+          "ma125": 4763.59054296875,
           "ma200": null
         },
         {
           "date": "2026-05-28",
           "close": 4894.11279296875,
           "ma25": 4910.90822265625,
-          "ma75": 4932.870690104167,
-          "ma125": 4768.732109375,
+          "ma75": 4932.87068359375,
+          "ma125": 4768.732078125,
           "ma200": null
         },
         {
@@ -23733,7 +23733,7 @@
           "close": 4975.73046875,
           "ma25": 4911.69490234375,
           "ma75": 4934.713463541667,
-          "ma125": 4774.674328125,
+          "ma125": 4774.67429296875,
           "ma200": null
         },
         {
@@ -23741,7 +23741,7 @@
           "close": 4855.76220703125,
           "ma25": 4907.44685546875,
           "ma75": 4934.036529947916,
-          "ma125": 4779.2680078125,
+          "ma125": 4779.2679765625,
           "ma200": null
         },
         {
@@ -23749,7 +23749,7 @@
           "close": 4821.34521484375,
           "ma25": 4905.20482421875,
           "ma75": 4933.31541015625,
-          "ma125": 4783.306421875,
+          "ma125": 4783.30639453125,
           "ma200": null
         },
         {
@@ -23757,7 +23757,7 @@
           "close": 4928.52978515625,
           "ma25": 4908.548203125,
           "ma75": 4932.620514322916,
-          "ma125": 4788.30340234375,
+          "ma125": 4788.30337109375,
           "ma200": null
         },
         {
@@ -23765,7 +23765,7 @@
           "close": 4870.51220703125,
           "ma25": 4910.23955078125,
           "ma75": 4930.601373697917,
-          "ma125": 4792.3852421875,
+          "ma125": 4792.3852109375,
           "ma200": null
         },
         {
@@ -23773,7 +23773,7 @@
           "close": 4849.8623046875,
           "ma25": 4911.5769140625,
           "ma75": 4927.4022265625,
-          "ma125": 4796.13858984375,
+          "ma125": 4796.1385625,
           "ma200": null
         },
         {
@@ -23781,7 +23781,7 @@
           "close": 4853.79541015625,
           "ma25": 4910.23955078125,
           "ma75": 4924.609524739583,
-          "ma125": 4799.82231640625,
+          "ma125": 4799.82229296875,
           "ma200": null
         },
         {
@@ -23789,7 +23789,7 @@
           "close": 4859.69580078125,
           "ma25": 4912.0882421875,
           "ma75": 4922.5379427083335,
-          "ma125": 4804.01201953125,
+          "ma125": 4804.012,
           "ma200": null
         },
         {
@@ -23797,7 +23797,7 @@
           "close": 4886.24609375,
           "ma25": 4913.97626953125,
           "ma75": 4921.04326171875,
-          "ma125": 4808.4685546875,
+          "ma125": 4808.4685390625,
           "ma200": null
         },
         {
@@ -23805,7 +23805,7 @@
           "close": 4841.9951171875,
           "ma25": 4912.44224609375,
           "ma75": 4917.896549479166,
-          "ma125": 4812.57886328125,
+          "ma125": 4812.57884375,
           "ma200": null
         },
         {
@@ -23813,7 +23813,7 @@
           "close": 4888.21240234375,
           "ma25": 4914.48759765625,
           "ma75": 4914.98583984375,
-          "ma125": 4816.6934453125,
+          "ma125": 4816.69342578125,
           "ma200": null
         },
         {
@@ -23821,7 +23821,7 @@
           "close": 4946.22998046875,
           "ma25": 4917.791640625,
           "ma75": 4913.7271549479165,
-          "ma125": 4821.7231640625,
+          "ma125": 4821.72314453125,
           "ma200": null
         },
         {
@@ -23829,7 +23829,7 @@
           "close": 4898.0458984375,
           "ma25": 4917.12296875,
           "ma75": 4911.8653515625,
-          "ma125": 4826.0719296875,
+          "ma125": 4826.07191015625,
           "ma200": null
         },
         {
@@ -23837,7 +23837,7 @@
           "close": 4919.6796875,
           "ma25": 4914.8809375,
           "ma75": 4909.452877604167,
-          "ma125": 4830.55488671875,
+          "ma125": 4830.5548671875,
           "ma200": null
         },
         {
@@ -23845,7 +23845,7 @@
           "close": 4927.54638671875,
           "ma25": 4912.560234375,
           "ma75": 4906.830618489584,
-          "ma125": 4834.71976171875,
+          "ma125": 4834.71974609375,
           "ma200": null
         },
         {
@@ -23853,7 +23853,7 @@
           "close": 4878.37890625,
           "ma25": 4906.10947265625,
           "ma75": 4902.92345703125,
-          "ma125": 4838.39021484375,
+          "ma125": 4838.3901953125,
           "ma200": null
         },
         {
@@ -23861,7 +23861,7 @@
           "close": 4874.44580078125,
           "ma25": 4902.9234375,
           "ma75": 4899.186744791667,
-          "ma125": 4841.25939453125,
+          "ma125": 4841.25937890625,
           "ma200": null
         },
         {
@@ -23869,7 +23869,7 @@
           "close": 4841.9951171875,
           "ma25": 4896.39400390625,
           "ma75": 4897.010266927084,
-          "ma125": 4843.68234765625,
+          "ma125": 4843.6823359375,
           "ma200": null
         },
         {
@@ -23877,7 +23877,7 @@
           "close": 4777.0947265625,
           "ma25": 4890.02193359375,
           "ma75": 4896.118704427084,
-          "ma125": 4846.09930078125,
+          "ma125": 4846.09929296875,
           "ma200": null
         },
         {
@@ -23885,7 +23885,7 @@
           "close": 4767.26123046875,
           "ma25": 4882.548515625,
           "ma75": 4894.256907552083,
-          "ma125": 4848.35983203125,
+          "ma125": 4848.35982421875,
           "ma200": null
         },
         {
@@ -23893,7 +23893,7 @@
           "close": 4784.96142578125,
           "ma25": 4877.35646484375,
           "ma75": 4892.670442708333,
-          "ma125": 4850.824171875,
+          "ma125": 4850.82416015625,
           "ma200": null
         },
         {
@@ -23901,7 +23901,7 @@
           "close": 4853.79541015625,
           "ma25": 4874.0130859375,
           "ma75": 4893.378450520833,
-          "ma125": 4853.7536484375,
+          "ma125": 4853.75363671875,
           "ma200": null
         },
         {
@@ -23909,7 +23909,7 @@
           "close": 4854.77880859375,
           "ma25": 4870.984375,
           "ma75": 4892.9064453125,
-          "ma125": 4856.73764453125,
+          "ma125": 4856.73763671875,
           "ma200": null
         },
         {
@@ -23917,7 +23917,7 @@
           "close": 4830.1953125,
           "ma25": 4867.20833984375,
           "ma75": 4891.569095052083,
-          "ma125": 4859.36168359375,
+          "ma125": 4859.36167578125,
           "ma200": null
         },
         {
@@ -23925,7 +23925,7 @@
           "close": 4909.84619140625,
           "ma25": 4867.83767578125,
           "ma75": 4892.526217447917,
-          "ma125": 4862.8484296875,
+          "ma125": 4862.84841796875,
           "ma200": null
         },
         {
@@ -23933,7 +23933,7 @@
           "close": 5008.1806640625,
           "ma25": 4869.13568359375,
           "ma75": 4895.043580729167,
-          "ma125": 4866.8730234375,
+          "ma125": 4866.87301171875,
           "ma200": null
         },
         {
@@ -23941,7 +23941,7 @@
           "close": 5098.6484375,
           "ma25": 4878.8511328125,
           "ma75": 4899.344075520833,
-          "ma125": 4871.753546875,
+          "ma125": 4871.7535390625,
           "ma200": null
         },
         {
@@ -23949,7 +23949,7 @@
           "close": 5091.76513671875,
           "ma25": 4889.6679296875,
           "ma75": 4903.55279296875,
-          "ma125": 4876.4079375,
+          "ma125": 4876.4079296875,
           "ma200": null
         },
         {
@@ -23957,7 +23957,7 @@
           "close": 5059.31494140625,
           "ma25": 4894.8993359375,
           "ma75": 4905.375260416667,
-          "ma125": 4880.85715625,
+          "ma125": 4880.8571484375,
           "ma200": null
         },
         {
@@ -23965,7 +23965,7 @@
           "close": 5030.7978515625,
           "ma25": 4901.31076171875,
           "ma75": 4908.6793033854165,
-          "ma125": 4884.53393359375,
+          "ma125": 4884.53392578125,
           "ma200": null
         },
         {
@@ -23973,7 +23973,7 @@
           "close": 5004.24755859375,
           "ma25": 4907.486171875,
           "ma75": 4913.59603515625,
-          "ma125": 4887.57063671875,
+          "ma125": 4887.5706328125,
           "ma200": null
         },
         {
@@ -23981,7 +23981,7 @@
           "close": 4979.66357421875,
           "ma25": 4912.5208984375,
           "ma75": 4916.231399739583,
-          "ma125": 4890.74503125,
+          "ma125": 4890.74502734375,
           "ma200": null
         },
         {
@@ -23989,7 +23989,7 @@
           "close": 5026.8642578125,
           "ma25": 4919.20763671875,
           "ma75": 4918.027643229167,
-          "ma125": 4894.54585546875,
+          "ma125": 4894.5458515625,
           "ma200": null
         },
         {
@@ -23997,7 +23997,7 @@
           "close": 5072.09814453125,
           "ma25": 4926.64171875,
           "ma75": 4920.49255859375,
-          "ma125": 4898.18757421875,
+          "ma125": 4898.1875703125,
           "ma200": null
         },
         {
@@ -24005,7 +24005,7 @@
           "close": 5071.11474609375,
           "ma25": 4935.80650390625,
           "ma75": 4922.5248046875,
-          "ma125": 4901.0749453125,
+          "ma125": 4901.07494140625,
           "ma200": null
         },
         {
@@ -24013,7 +24013,7 @@
           "close": 5045.5478515625,
           "ma25": 4942.099921875,
           "ma75": 4925.4355078125,
-          "ma125": 4903.3456640625,
+          "ma125": 4903.34566015625,
           "ma200": null
         },
         {
@@ -24029,7 +24029,7 @@
           "close": 5159.6162109375,
           "ma25": 4960.11482421875,
           "ma75": 4932.161595052084,
-          "ma125": 4908.636859375,
+          "ma125": 4908.63685546875,
           "ma200": null
         },
         {
@@ -24053,80 +24053,80 @@
           "close": 5288.4345703125,
           "ma25": 4995.5153125,
           "ma75": 4942.847298177084,
-          "ma125": 4919.59071875,
-          "ma200": 4707.828269042969
+          "ma125": 4919.59071484375,
+          "ma200": 4707.828251953125
         },
         {
           "date": "2026-07-28",
           "close": 5279.58447265625,
           "ma25": 5011.720859375,
           "ma75": 4947.2789127604165,
-          "ma125": 4923.998109375,
-          "ma200": 4713.911904296875
+          "ma125": 4923.99810546875,
+          "ma200": 4713.911887207031
         },
         {
           "date": "2026-07-29",
           "close": 5455.60302734375,
           "ma25": 5036.26517578125,
           "ma75": 4952.326751302084,
-          "ma125": 4929.735890625,
-          "ma200": 4720.865911865234
+          "ma125": 4929.7358828125,
+          "ma200": 4720.86589477539
         },
         {
           "date": "2026-07-30",
           "close": 5398.5693359375,
           "ma25": 5061.12416015625,
           "ma75": 4957.295930989583,
-          "ma125": 4935.94272265625,
-          "ma200": 4727.816623535156
+          "ma125": 4935.9427109375,
+          "ma200": 4727.816606445313
         },
         {
           "date": "2026-07-31",
           "close": 5237.30029296875,
           "ma25": 5079.92572265625,
           "ma75": 4960.66552734375,
-          "ma125": 4940.9838125,
-          "ma200": 4734.0581884765625
+          "ma125": 4940.9838046875,
+          "ma200": 4734.058171386719
         },
         {
           "date": "2026-08-03",
           "close": 5136.9990234375,
           "ma25": 5094.0072265625,
           "ma75": 4962.855110677084,
-          "ma125": 4945.58018359375,
-          "ma200": 4739.63787109375
+          "ma125": 4945.58017578125,
+          "ma200": 4739.637854003906
         },
         {
           "date": "2026-08-04",
           "close": 5082.9150390625,
           "ma25": 5103.17201171875,
           "ma75": 4964.480911458333,
-          "ma125": 4949.51060546875,
-          "ma200": 4744.397966308594
+          "ma125": 4949.51059765625,
+          "ma200": 4744.39794921875
         },
         {
           "date": "2026-08-05",
           "close": 5121.265625,
           "ma25": 5113.831484375,
           "ma75": 4966.539381510417,
-          "ma125": 4953.3823671875,
-          "ma200": 4749.228317871094
+          "ma125": 4953.38236328125,
+          "ma200": 4749.22830078125
         },
         {
           "date": "2026-08-06",
           "close": 5142.8994140625,
           "ma25": 5126.3396484375,
           "ma75": 4968.6371875,
-          "ma125": 4957.36499609375,
-          "ma200": 4754.1425390625
+          "ma125": 4957.3649921875,
+          "ma200": 4754.142521972656
         },
         {
           "date": "2026-08-07",
           "close": 5284.0,
           "ma25": 5141.30580078125,
           "ma75": 4973.35056640625,
-          "ma125": 4961.551109375,
-          "ma200": 4759.689365234375
+          "ma125": 4961.55110546875,
+          "ma200": 4759.689348144531
         },
         {
           "date": "2026-08-10",
@@ -24134,7 +24134,7 @@
           "ma25": 5153.37857421875,
           "ma75": 4978.0697200520835,
           "ma125": 4965.3309296875,
-          "ma200": 4765.516848144532
+          "ma200": 4765.516831054688
         },
         {
           "date": "2026-08-12",
@@ -24142,7 +24142,7 @@
           "ma25": 5161.55263671875,
           "ma75": 4982.616875,
           "ma125": 4968.502671875,
-          "ma200": 4771.668962402344
+          "ma200": 4771.6689453125
         },
         {
           "date": "2026-08-13",
@@ -24150,7 +24150,7 @@
           "ma25": 5168.28203125,
           "ma75": 4987.71826171875,
           "ma125": 4971.57923828125,
-          "ma200": 4777.382521972656
+          "ma200": 4777.382504882812
         },
         {
           "date": "2026-08-14",
@@ -24158,7 +24158,7 @@
           "ma25": 5177.66943359375,
           "ma75": 4993.705657552084,
           "ma125": 4974.0860625,
-          "ma200": 4783.270939941406
+          "ma200": 4783.270922851562
         },
         {
           "date": "2026-08-17",
@@ -24166,7 +24166,7 @@
           "ma25": 5185.83751953125,
           "ma75": 4999.12927734375,
           "ma125": 4975.79048046875,
-          "ma200": 4788.98099609375
+          "ma200": 4788.980979003906
         },
         {
           "date": "2026-08-18",
@@ -24174,7 +24174,7 @@
           "ma25": 5195.2276171875,
           "ma75": 5004.7635677083335,
           "ma125": 4976.98409375,
-          "ma200": 4794.356281738281
+          "ma200": 4794.356264648438
         },
         {
           "date": "2026-08-19",
@@ -24182,7 +24182,7 @@
           "ma25": 5202.60107421875,
           "ma75": 5008.453841145833,
           "ma125": 4977.790109375,
-          "ma200": 4799.3905859375
+          "ma200": 4799.390568847656
         },
         {
           "date": "2026-08-20",
@@ -24190,7 +24190,7 @@
           "ma25": 5211.88650390625,
           "ma75": 5014.394127604167,
           "ma125": 4979.74159375,
-          "ma200": 4804.652036132812
+          "ma200": 4804.652019042969
         },
         {
           "date": "2026-08-21",
@@ -24198,7 +24198,7 @@
           "ma25": 5221.442578125,
           "ma75": 5020.68685546875,
           "ma125": 4982.24281640625,
-          "ma200": 4810.188063964843
+          "ma200": 4810.188049316406
         },
         {
           "date": "2026-08-24",
@@ -24206,7 +24206,7 @@
           "ma25": 5231.71798828125,
           "ma75": 5026.6555794270835,
           "ma125": 4984.242828125,
-          "ma200": 4815.366843261719
+          "ma200": 4815.366831054687
         },
         {
           "date": "2026-08-25",
@@ -24214,7 +24214,7 @@
           "ma25": 5244.09607421875,
           "ma75": 5033.561197916667,
           "ma125": 4986.230703125,
-          "ma200": 4820.899318847656
+          "ma200": 4820.899306640625
         },
         {
           "date": "2026-08-26",
@@ -24222,7 +24222,7 @@
           "ma25": 5252.85478515625,
           "ma75": 5040.099479166666,
           "ma125": 4988.73765234375,
-          "ma200": 4826.567731933594
+          "ma200": 4826.567719726562
         },
         {
           "date": "2026-08-27",
@@ -24230,7 +24230,7 @@
           "ma25": 5260.03013671875,
           "ma75": 5045.7559765625,
           "ma125": 4991.148203125,
-          "ma200": 4832.078527832031
+          "ma200": 4832.078513183594
         },
         {
           "date": "2026-08-28",
@@ -24238,7 +24238,7 @@
           "ma25": 5268.64615234375,
           "ma75": 5051.092903645834,
           "ma125": 4993.35128125,
-          "ma200": 4837.9444189453125
+          "ma200": 4837.944401855469
         },
         {
           "date": "2026-08-31",
@@ -24246,7 +24246,7 @@
           "ma25": 5278.46283203125,
           "ma75": 5056.71205078125,
           "ma125": 4995.6135546875,
-          "ma200": 4843.931291503906
+          "ma200": 4843.931271972656
         },
         {
           "date": "2026-09-01",
@@ -24254,7 +24254,7 @@
           "ma25": 5285.72544921875,
           "ma75": 5062.450078125,
           "ma125": 4998.0022265625,
-          "ma200": 4850.276899414062
+          "ma200": 4850.276882324219
         },
         {
           "date": "2026-09-02",
@@ -24262,7 +24262,7 @@
           "ma25": 5290.8220703125,
           "ma75": 5068.4887890625,
           "ma125": 5000.0206328125,
-          "ma200": 4855.996477050781
+          "ma200": 4855.9964599609375
         },
         {
           "date": "2026-09-03",
@@ -24270,7 +24270,7 @@
           "ma25": 5290.15794921875,
           "ma75": 5074.272376302083,
           "ma125": 5003.49078515625,
-          "ma200": 4861.8663330078125
+          "ma200": 4861.866318359375
         },
         {
           "date": "2026-09-04",
@@ -24278,7 +24278,7 @@
           "ma25": 5289.69517578125,
           "ma75": 5080.280423177083,
           "ma125": 5007.83508984375,
-          "ma200": 4867.417873535156
+          "ma200": 4867.417856445312
         },
         {
           "date": "2026-09-07",
@@ -24286,7 +24286,7 @@
           "ma25": 5294.5631640625,
           "ma75": 5085.679134114584,
           "ma125": 5011.451921875,
-          "ma200": 4872.761374511719
+          "ma200": 4872.761357421875
         },
         {
           "date": "2026-09-08",
@@ -24294,7 +24294,7 @@
           "ma25": 5300.483203125,
           "ma75": 5090.615631510416,
           "ma125": 5014.5003515625,
-          "ma200": 4877.593940429688
+          "ma200": 4877.593923339844
         },
         {
           "date": "2026-09-09",
@@ -24302,7 +24302,7 @@
           "ma25": 5308.3666015625,
           "ma75": 5095.1838997395835,
           "ma125": 5018.33479296875,
-          "ma200": 4882.23626953125
+          "ma200": 4882.23625
         },
         {
           "date": "2026-09-10",
@@ -24310,7 +24310,7 @@
           "ma25": 5314.9159765625,
           "ma75": 5099.910611979167,
           "ma125": 5021.493359375,
-          "ma200": 4886.845278320313
+          "ma200": 4886.845261230469
         },
         {
           "date": "2026-09-11",
@@ -24318,7 +24318,7 @@
           "ma25": 5321.96,
           "ma75": 5105.1693294270835,
           "ma125": 5024.60138671875,
-          "ma200": 4891.682607421875
+          "ma200": 4891.682587890625
         },
         {
           "date": "2026-09-14",
@@ -24326,7 +24326,7 @@
           "ma25": 5326.6,
           "ma75": 5111.9144921875,
           "ma125": 5029.096890625,
-          "ma200": 4897.425502929687
+          "ma200": 4897.425483398438
         },
         {
           "date": "2026-09-15",
@@ -24334,7 +24334,7 @@
           "ma25": 5329.48,
           "ma75": 5117.331419270833,
           "ma125": 5033.59786328125,
-          "ma200": 4903.1707373046875
+          "ma200": 4903.170715332031
         },
         {
           "date": "2026-09-16",
@@ -24342,7 +24342,7 @@
           "ma25": 5332.16,
           "ma75": 5124.187923177084,
           "ma125": 5038.34897265625,
-          "ma200": 4908.612976074219
+          "ma200": 4908.612956542969
         },
         {
           "date": "2026-09-17",
@@ -24350,7 +24350,7 @@
           "ma25": 5339.72,
           "ma75": 5132.556653645834,
           "ma125": 5043.73208203125,
-          "ma200": 4914.275258789063
+          "ma200": 4914.275241699219
         },
         {
           "date": "2026-09-18",
@@ -24358,7 +24358,7 @@
           "ma25": 5344.08,
           "ma75": 5138.882923177083,
           "ma125": 5047.57504296875,
-          "ma200": 4919.77072265625
+          "ma200": 4919.770703125
         },
         {
           "date": "2026-09-24",
@@ -24366,7 +24366,7 @@
           "ma25": 5350.0,
           "ma75": 5145.71609375,
           "ma125": 5052.3750859375,
-          "ma200": 4924.884311523438
+          "ma200": 4924.884291992187
         },
         {
           "date": "2026-09-25",
@@ -24374,65 +24374,65 @@
           "ma25": 5355.92,
           "ma75": 5152.8779296875,
           "ma125": 5058.38714453125,
-          "ma200": 4929.915842285156
+          "ma200": 4929.915825195312
         },
         {
           "date": "2026-09-28",
-          "close": 5386.0,
-          "ma25": 5364.8,
-          "ma75": 5159.973990885416,
-          "ma125": 5063.2190546875,
-          "ma200": 4934.879194335937
+          "close": 5356.0,
+          "ma25": 5363.6,
+          "ma75": 5159.573990885417,
+          "ma125": 5062.9790546875,
+          "ma200": 4934.7291796875
         }
       ],
       "decision": {
         "score": 100,
         "rank": "A",
         "label": "強い候補・押し目を狙う",
-        "heat": "通常",
+        "heat": "押し目",
         "stretched": false,
         "falling_knife": false,
         "risk_level": "低め",
-        "daily_sigma_pct": 0.8,
-        "annualized_vol_pct": 12.8,
-        "return20_pct": 0.6,
-        "return60_pct": 10.96,
-        "drawdown60_pct": -1.54,
-        "rebound_from_low60_pct": 11.51,
-        "distance_ma25_pct": 0.4,
-        "distance_ma75_pct": 4.38,
+        "daily_sigma_pct": 0.81,
+        "annualized_vol_pct": 12.9,
+        "return20_pct": 0.04,
+        "return60_pct": 10.35,
+        "drawdown60_pct": -2.08,
+        "rebound_from_low60_pct": 10.89,
+        "distance_ma25_pct": -0.14,
+        "distance_ma75_pct": 3.81,
         "limit_prices": {
-          "aggressive": 5343,
-          "standard": 5289,
-          "deep": 5175
+          "aggressive": 5313,
+          "standard": 5260,
+          "deep": 5169
         },
-        "invalidation_price": 5057,
-        "review_upside_price": 5763,
+        "invalidation_price": 5056,
+        "review_upside_price": 5731,
         "reasons": [
           {
             "name": "長期トレンド",
-            "impact": 32.0,
-            "detail": "最強の上昇（パーフェクトオーダー）"
+            "impact": 22.0,
+            "detail": "長期上昇トレンド"
           },
           {
             "name": "移動平均の傾き",
             "impact": 5.1,
-            "detail": "MA25 +0.61% / MA75 +0.70%"
+            "detail": "MA25 +0.59% / MA75 +0.69%"
           },
           {
             "name": "並び順",
-            "impact": 18.0,
-            "detail": "株価 > MA25 > MA75 > MA125 > MA200"
+            "impact": 14.0,
+            "detail": "MA25 > 株価 > MA75 > MA125 > MA200"
           },
           {
             "name": "買われ過ぎ/押し目",
-            "impact": 7.0,
-            "detail": "株価-MA25 +0.4%"
+            "impact": 9.0,
+            "detail": "株価-MA25 -0.1%"
           },
           {
             "name": "20日モメンタム",
-            "impact": 0.4,
-            "detail": "20日 +0.6%"
+            "impact": 0.0,
+            "detail": "20日 +0.0%"
           }
         ],
         "method": "MA25/75/125/200 + 20日momentum + 20日volatility。テクニカル参考値であり将来収益を保証しません。"
